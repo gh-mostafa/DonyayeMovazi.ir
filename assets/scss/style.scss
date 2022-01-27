@@ -512,7 +512,19 @@ body {
 
   $andaze: 1;
   $zaviye: 0;
-  $rang:var(--nclr-3);
+  //@at-root:var(--nclr-3);
+
+  
+  @at-root .night #{&} {
+    $rang:var(--nclr-0);
+    border-color:var(--nclr-0);
+    color:var(--nclr-0);
+  }
+  @at-root .night #{&} {
+    $rang:var(--nclr-0);
+    border-color:var(--nclr-0);
+    color:var(--nclr-0);
+  }
 
   div {
     display: flex !important;
@@ -591,16 +603,38 @@ body {
 
 @at-root .night .lamp .neon-button::before {
   background-color: var(--nclr-3) !important;
+  $rang: var(--nclr-3);
 }
 @at-root .night .lamp .neon-txt::before {
   background-color: var(--nclr-3) !important;
+  $rang: var(--nclr-3);
 }
 @at-root .day .lamp .neon-button::before {
   background-color: var(--nclr-0) !important;
+  $rang: var(--nclr-0);
 }
 @at-root .day .lamp .neon-txt::before {
   background-color: var(--nclr-0) !important;
+  $rang: var(--nclr-0);
 }
+
+@at-root .night .lamp .neon-button::after {
+  background-color: var(--nclr-3) !important;
+  $rang: var(--nclr-3);
+}
+@at-root .night .lamp .neon-txt::after {
+  background-color: var(--nclr-3) !important;
+  $rang: var(--nclr-3);
+}
+@at-root .day .lamp .neon-button::after {
+  background-color: var(--nclr-0) !important;
+  $rang: var(--nclr-0);
+}
+@at-root .day .lamp .neon-txt::after {
+  background-color: var(--nclr-0) !important;
+  $rang: var(--nclr-0);
+}
+
 
 .menu {
   position: fixed;
