@@ -1,0 +1,1011 @@
+$light-on: 0;
+$animspeed: 1s;
+
+:root {
+  --nclr-0: #645f88;
+  --nclr-1: #4deeea;
+  --nclr-2: #b4ff7a;
+  --nclr-3: #fff27d;
+  --nclr-4: #f23eff;
+  --nclr-5: #729aff;
+  --nclr-6: #05b4e1;
+  --nclr-7: #ff4089;
+  --nclr-8: hsl(317 100% 54%);
+  --nclr-9: rgb(255, 153, 20);
+
+  //--clr-bg-dark: hsl(323 21% 16%);
+  --clr-bg-light: rgb(255, 255, 255);
+  --clr-bg-dark: rgb(29, 29, 29);
+
+  //@at-root
+
+  --cubeColor: #0ff7;
+  --rotateSpeed: 60s;
+  --bounceSpeed: 2s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Blabeloo";
+  src: url("../fonts/Blabeloo.eot?c9nlkl");
+  src: url("../fonts/Blabeloo.eot?c9nlkl#iefix") format("embedded-opentype"),
+    url("../fonts/Blabeloo.ttf?c9nlkl") format("truetype"),
+    url("../fonts/Blabeloo.svg?c9nlkl#maicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "nazanin";
+  src: url("../fonts/nazanin.eot?c9nlkl");
+  src: url("../fonts/nazanin.eot?c9nlkl#iefix") format("embedded-opentype"),
+    url("../fonts/nazanin.ttf?c9nlkl") format("truetype"),
+    url("../fonts/nazanin.svg?c9nlkl#maicons") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: block;
+}
+
+@mixin neonbtn($neon-color, $fSize, $rDeg, $txtShadow, $borderR) {
+  /*animation: sizeanim $animspeed ease-in-out both;
+  @keyframes sizeanim {
+  to{font-size: $fSize;}
+  }*/
+  $deg: $rDeg;
+
+  @keyframes rap {
+    from {
+      transform: rotateY($rDeg);
+    }
+    to {
+      transform: rotateY($rDeg * 0);
+    }
+  }
+  @keyframes ram {
+    from {
+      transform: rotateY($rDeg * 0);
+    }
+    to {
+      transform: rotateY($rDeg);
+    }
+  }
+  @keyframes sap {
+    from {
+      font-size: $fSize/3;
+    }
+    to {
+      font-size: $fSize;
+    }
+  }
+  @keyframes sam {
+    from {
+      font-size: $fSize;
+    }
+    to {
+      font-size: $fSize/3;
+    }
+  }
+
+  .cirbox {
+    animation: sam $animspeed ease-in-out both;
+  }
+
+  transform-style: preserve-3d;
+  perspective: 10 * $fSize;
+  perspective-origin: 50% calc(50% - 2.5 * $fSize);
+
+  ////position: relative;
+  display: grid;
+  justify-content: center;
+
+  .neon-button,
+  .neon-txt,
+  .neon-wall,
+  .neon-circle {
+    height: 100%;
+    width: 100%;
+
+    transform: rotateY($rDeg);
+
+    transform-style: preserve-3d;
+
+    font-family: "Blabeloo";
+
+    //font-size: 10vw;
+
+    display: inline-block;
+    //cursor: pointer;
+    text-decoration: none;
+    color: $neon-color;
+    border: $neon-color 0.125 * $fSize solid;
+    padding: 0.5 * $fSize;
+    border-radius: $borderR;
+
+    @if $light-on == 0 {
+      text-shadow: 0 0 $txtShadow rgba(255, 255, 255, 0.344),
+        0 0 ($txtShadow * 3) currentColor;
+      box-shadow: inset 0 0 0.5 * $fSize 0 $neon-color,
+        0 0 0.5 * $fSize 0 $neon-color;
+    }
+    ////position: relative;
+  }
+
+  .neon-circle::before {
+    @if $light-on == 0 {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      border-radius: $borderR;
+      box-shadow: 0px 0px 0.5 * $fSize 1.25 * $fSize $neon-color;
+      //background: $neon-color;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      //max-width: 0.5em;
+
+      //transform: rotateY(90deg);
+      //transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+      //filter: blur(0.25em);
+      opacity: 0.2;
+    }
+  }
+
+  .neon-wall::before {
+    @if $light-on == 0 {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      background: $neon-color;
+      top: 0%;
+      left: 105%;
+      width: 100%;
+      height: 100%;
+      max-width: 0.5 * $fSize;
+
+      transform: rotateY(90deg);
+      //transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+      filter: blur(0.75 * $fSize);
+      opacity: 0.2;
+    }
+  }
+  .neon-wall::after {
+    @if $light-on == 0 {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      background: $neon-color;
+      top: 0%;
+      right: 105%;
+      width: 100%;
+      height: 100%;
+      max-width: 0.5 * $fSize;
+
+      transform: rotateY(90deg);
+      //transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+      filter: blur(0.75 * $fSize);
+      opacity: 0.2;
+    }
+  }
+
+  .neon-button::before,
+  .neon-txt::before {
+    @if $light-on == 0 {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      background: $neon-color;
+      top: 120%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      max-height: 1.5 * $fSize;
+
+      transform: rotateX(90deg);
+      //transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+      filter: blur(1 * $fSize);
+      opacity: 0.4;
+    }
+  }
+  .neon-button::after,
+  .neon-txt::after {
+    content: "";
+    position: absolute;
+    top: -0.05 * $fSize;
+    bottom: -0.05 * $fSize;
+    left: -0.05 * $fSize;
+    right: -0.05 * $fSize;
+    @if $light-on == 0 {
+      box-shadow: 0 0 2 * $fSize 0.5 * $fSize $neon-color;
+    }
+    opacity: 0;
+    background-color: $neon-color;
+    border-radius: $borderR;
+    z-index: -1;
+    transition: transform opacity 100ms linear;
+  }
+
+  .neon-button:hover,
+  .neon-button:focus {
+    $fSize: 16px;
+    .cirbox {
+      animation: sap $animspeed ease-in-out both;
+    }
+
+    @if $light-on == 0 {
+      color: var(--clr-bg-dark);
+      p,
+      h3,
+      h4 {
+        color: var(--clr-bg-dark);
+      }
+    }
+    @if $light-on == 1 {
+      color: var(--clr-bg-light);
+      p,
+      h3,
+      h4 {
+        color: var(--clr-bg-dark);
+      }
+    }
+    text-shadow: none;
+
+    animation: rap $animspeed linear both;
+
+    //transform: rotateY(0deg);
+  }
+
+  .neon-button:hover::before,
+  .neon-button:focus::before {
+    opacity: 1;
+  }
+  .neon-button:hover::after,
+  .neon-button:focus::after {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  @if $light-on == 1 {
+    background: var(--clr-bg-light);
+  }
+  @if $light-on == 0 {
+    background: var(--clr-bg-dark);
+  }
+  font-family: "Blabeloo";
+  //color: var(--clr-neon);
+
+  //overflow: hidden;
+
+  //perspective: 10em;
+  //perspective-origin: 50% calc(50% - 2.5em);
+}
+.menu {
+  position: sticky;
+  @if $light-on == 1 {
+    //background: var(--clr-bg-light);
+  }
+  @if $light-on == 0 {
+    //background: var(--clr-bg-dark);
+  }
+  z-index: 10;
+  top: 0px;
+
+  width: 100%;
+  height: 50px;
+  font-family: "nazanin";
+  direction: rtl;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  //justify-content: space-between;
+  //align-content: center;
+
+  .onvan {
+    font-family: "Blabeloo";
+    font-size: 0.75em;
+
+    @if $light-on == 0 {
+      text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.344),
+        0 0 0.45em currentColor;
+    }
+    p {
+      color: #6c55f9;
+    }
+    span {
+      color: #ffc107;
+    }
+
+    @if $light-on == 0 {
+      animation: logoanim 5s infinite;
+    }
+  }
+  @keyframes logoanim {
+    0% {
+      transform: rotateZ(-15deg) translate(-25%);
+      transition: ease-in-out;
+    }
+    50% {
+      transform: rotateZ(15deg) translate(-25%);
+      transition: ease-in-out;
+    }
+    100% {
+      transform: rotateZ(-15deg) translate(-25%);
+      transition: ease-in-out;
+    }
+  }
+
+  @keyframes lampanim {
+    0% {
+      transform: rotateZ(15deg) translate(25%);
+      transition: ease-in-out;
+    }
+    50% {
+      transform: rotateZ(-15deg) translate(25%);
+      transition: ease-in-out;
+    }
+    100% {
+      transform: rotateZ(15deg) translate(25%);
+      transition: ease-in-out;
+    }
+  }
+
+  .matn {
+    //color: var(--clr-bg-dark);
+    color: red;
+    text-align: center;
+    visibility: visible;
+    @if $light-on == 0 {
+      visibility: hidden;
+    }
+  }
+  .lamp {
+    @if $light-on == 1 {
+      background-image: url(/img/light-on.png);
+    }
+    @if $light-on == 0 {
+      animation: lampanim 5s infinite;
+      background-image: url(/img/light-off.png);
+    }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.page1 {
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 16px;
+
+  .part1 {
+    .neon {
+      $rang: var(--nclr-7);
+      $andaze: 1em;
+      $zaviye: 0deg;
+      h1 {
+        color: var(--nclr-2);
+      }
+      p {
+        color: var(--nclr-5);
+      }
+      @include neonbtn($rang, $andaze, $zaviye, 0.125em, 1em);
+    }
+  }
+  .part2 {
+    .neon {
+      margin-top: 50px;
+      $rang: var(--nclr-2);
+      $andaze: 1em;
+      $zaviye: 35deg;
+
+      @include neonbtn($rang, $andaze, $zaviye, 0.125em, 0.5em);
+    }
+  }
+}
+
+.DIS-img {
+  //width: 80%;
+  //margin: 0 auto;
+  padding: 1rem;
+  height: 120px;
+}
+
+.DIS-grid {
+
+
+  width: 90%;
+  margin: 3rem auto;
+  display: grid;
+  grid-gap: 3.5em;
+  margin-top: 5em;
+  justify-content: center;
+  align-content: center;
+  &-item {
+    padding: 0.5rem 0rem;
+    max-width: 300px;
+    text-align: center;
+    //box-shadow: 0px 0px 10px gray;
+    //border-radius: 1rem;
+  }
+
+  p {
+    font-family: "nazanin";
+    padding: 0px 0.75em;
+  }
+
+  .neon1 {
+    $rang: var(--nclr-1);
+    $andaze: 1em;
+    $zaviye: 0deg;
+
+    p {
+      color: var(--nclr-4);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
+  }
+
+  .neon2 {
+    $rang: var(--nclr-4);
+    $andaze: 1em;
+    $zaviye: 0deg;
+
+    p {
+      color: var(--nclr-3);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
+  }
+
+  .neon3 {
+    $rang: var(--nclr-3);
+    $andaze: 1em;
+    $zaviye: 0deg;
+
+    p {
+      color: var(--nclr-6);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
+  }
+
+  @media (min-width: 9000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.FEA-grid {
+  width: 90%;
+  display: grid;
+
+  justify-content: center;
+  align-items: center;
+
+  grid-gap: 1.5em;
+  margin: 3em auto;
+
+  &-0 {
+    width: 70vw;
+    //align-self: center;
+    //margin: 1.5em auto;
+    text-align: center;
+  }
+  &-item {
+    //width: 250px;
+    //height: 250px;
+    //max-width: 300px;
+    //max-height: 300px;
+    //align-items: center;
+    .cirbox {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+
+      /*display: flex;
+      flex-direction: column;
+      flex: 1fr 1fr 2fr;
+      align-items: center;
+      justify-content: space-between;*/
+      display: grid;
+      //grid-gap: 0.25em;
+      grid-template-rows: 2fr 1fr 2fr;
+      justify-items: center;
+      align-content: center;
+
+      font-size: 6px;
+
+      width: 14em;
+      height: 14em;
+      text-align: center;
+
+      h4 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 4em;
+        align-self: center;
+      }
+      h3 {
+        width: 80%;
+        padding: 0px;
+        padding: 0px;
+        font-size: 1.25em;
+        align-self: center;
+      }
+      p {
+        font-family: "nazanin";
+        font-weight: 900;
+        width: 80%;
+        padding: 0px;
+        margin: 0px;
+        font-size: 1.15em;
+        margin-top: 0.25em;
+      }
+    }
+  }
+
+  &-item:nth-child(even) {
+    justify-self: start;
+  }
+  &-item:nth-child(odd) {
+    justify-self: end;
+  }
+
+  .neon1 {
+    height: 100%;
+    width: 100%;
+    $rang: var(--nclr-7);
+    $andaze: 1em;
+    $zaviye: 0deg;
+    h4 {
+      font-size: 0.75em;
+      color: var(--nclr-2);
+      letter-spacing: 0.25em;
+    }
+    h3 {
+      font-size: 1.25em;
+      color: var(--nclr-4);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 1em, 2em);
+  }
+
+  .neon2 {
+    $rang: var(--nclr-6);
+    $andaze: 1em;
+    font-size: $andaze;
+    $zaviye: 30deg;
+    h4 {
+      color: $rang;
+    }
+    h3 {
+      color: var(--nclr-2);
+    }
+    p {
+      color: var(--nclr-4);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+  }
+
+  .neon3 {
+    $rang: var(--nclr-2);
+    $andaze: 1em;
+    $zaviye: -30deg;
+    h4 {
+      color: $rang;
+    }
+    h3 {
+      color: var(--nclr-4);
+    }
+    p {
+      color: var(--nclr-1);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+  }
+
+  .neon4 {
+    $rang: var(--nclr-4);
+    $andaze: 1em;
+    $zaviye: 30deg;
+    h4 {
+      color: $rang;
+    }
+    h3 {
+      color: var(--nclr-1);
+    }
+    p {
+      color: var(--nclr-3);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+  }
+
+  .neon5 {
+    $rang: var(--nclr-1);
+    $andaze: 1em;
+    $zaviye: -30deg;
+    h4 {
+      color: $rang;
+    }
+    h3 {
+      color: var(--nclr-3);
+    }
+    p {
+      color: var(--nclr-7);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+  }
+  .neon6 {
+    $rang: var(--nclr-3);
+    $andaze: 1em;
+    $zaviye: 30deg;
+    h4 {
+      color: $rang;
+    }
+    h3 {
+      color: var(--nclr-7);
+    }
+    p {
+      color: var(--nclr-5);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+  }
+  .neon7 {
+    $rang: var(--nclr-7);
+    $andaze: 1em;
+    $zaviye: -30deg;
+    h4 {
+      color: $rang;
+    }
+    h3 {
+      color: var(--nclr-5);
+    }
+    p {
+      color: var(--nclr-2);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+  }
+  .neon8 {
+    $rang: var(--nclr-5);
+    $andaze: 1em;
+    $zaviye: 30deg;
+    h4 {
+      color: $rang;
+    }
+    h3 {
+      color: var(--nclr-2);
+    }
+    p {
+      color: var(--nclr-4);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+  }
+  .neon9 {
+    $rang: var(--nclr-9);
+    $andaze: 1em;
+    $zaviye: -30deg;
+    h4 {
+      color: $rang;
+    }
+    h3 {
+      color: var(--nclr-4);
+    }
+    p {
+      color: var(--nclr-6);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+  }
+
+  @media (min-width: 9000px) {
+    grid-template-columns: repeat(4, 1fr);
+
+    &-0 {
+      grid-column: 1/5;
+      text-align: center;
+    }
+  }
+}
+
+.DL-grid {
+  width: 90%;
+  margin: 3rem auto;
+  display: grid;
+  grid-gap: 3.5em;
+  margin-top: 5em;
+  justify-content: center;
+  align-content: center;
+  /*
+  margin: 5em auto;
+  direction: rtl;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 3.5em;
+  padding: 10px;
+  justify-items: center;
+  align-content: center;
+*/
+  &-item1 {
+    width: 100%;
+    padding: 1rem;
+    text-align: right;
+
+    .txtcontainer {
+      padding: 1em !important;
+    }
+
+    .neonDL {
+      $rang: var(--nclr-6);
+      $andaze: 1em;
+      $zaviye: 0deg;
+      h4 {
+        color: var(--nclr-7);
+        letter-spacing: 0.25em;
+      }
+      h3 {
+        color: var(--nclr-4);
+      }
+      p {
+        color: var(--nclr-3);
+        font-family: "nazanin";
+        font-size: 20px;
+      }
+      ul {
+        color: var(--nclr-4);
+        padding-right: 0.75em;
+        font-family: "nazanin";
+        font-size: 20px;
+      }
+      li {
+        //list-style: inside;
+        padding-right: 0.5em;
+      }
+      @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
+    }
+  }
+  &-item2 {
+    width: 100%;
+    margin: 3em auto;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+
+    .posabs {
+      width: 200px;
+      height: 300px;
+      background-image: url(/img/banner_image_2.png);
+      background-position: center;
+      background-size: 90%;
+      background-repeat: no-repeat;
+    }
+
+    .neon-circle {
+      top: 0px;
+      left: 0px;
+      right: 0px;
+    }
+
+    .neonpaper {
+      width: 100%;
+      $rang: var(--nclr-2);
+      $andaze: 1em;
+      $zaviye: 0deg;
+
+      h4 {
+        color: $rang;
+      }
+      h3 {
+        color: var(--nclr-4);
+      }
+      p {
+        color: var(--nclr-3);
+      }
+      @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
+    }
+
+    .dlbtn {
+      margin-top: 1rem;
+      padding: 0.5em;
+
+      $rang: var(--nclr-9);
+      $andaze: 1em;
+      $zaviye: 0deg;
+
+      &-pos {
+        width: 150px;
+      }
+
+      @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
+    }
+
+    //box-shadow: 0px 0px 10px gray;
+    //border-radius: 1rem;
+  }
+}
+
+.neonQ {
+  width: 90%;
+  margin: 3rem auto;
+  display: grid;
+  grid-gap: 3.5em;
+  margin-top: 5em;
+  justify-content: center;
+  align-content: center;
+
+  text-align: center;
+
+  &0 {
+    padding: 0.5rem 0rem;
+    max-width: 300px;
+    text-align: center;
+    //box-shadow: 0px 0px 10px gray;
+    //border-radius: 1rem;
+  }
+
+  .Q {
+    p {
+      text-align: right;
+      font-family: "nazanin";
+      padding: 0px 0.75em;
+    }
+    h4 {
+      font-size: 18px;
+      font-family: "nazanin";
+      padding: 0px 1em;
+    }
+  }
+
+  &0 {
+    height: 100%;
+    width: 100%;
+    $rang: var(--nclr-7);
+    $andaze: 1em;
+    $zaviye: 0deg;
+    h4 {
+      font-size: 0.75em;
+      color: var(--nclr-2);
+      letter-spacing: 0.25em;
+    }
+    h3 {
+      font-size: 1.25em;
+      color: var(--nclr-4);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 1em, 2em);
+  }
+
+  &1 {
+    $rang: var(--nclr-1);
+    $andaze: 1em;
+    $zaviye: 0deg;
+
+    p {
+      color: var(--nclr-4);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
+  }
+
+  &2 {
+    $rang: var(--nclr-4);
+    $andaze: 1em;
+    $zaviye: 0deg;
+
+    p {
+      color: var(--nclr-3);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
+  }
+  &3 {
+    $rang: var(--nclr-3);
+    $andaze: 1em;
+    $zaviye: 0deg;
+
+    p {
+      color: var(--nclr-6);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
+  }
+  &4 {
+    $rang: var(--nclr-6);
+    $andaze: 1em;
+    $zaviye: 0deg;
+
+    p {
+      color: var(--nclr-9);
+    }
+    @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
+  }
+}
+
+/*
+
+body {
+  background-color: #000;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+  perspective: 10em;
+  perspective-origin: 50% calc(50% - 2.5em);
+}
+
+.scene {
+  position: relative;
+  transform-style: preserve-3d;
+
+  transform: rotateY(45deg);
+  //animation: sceneRotate var(--rotateSpeed) infinite linear;
+}
+
+.cube {
+  transform-style: preserve-3d;
+
+  $wpx: 200px;
+  $hpx: 100px;
+  $zpx: 50px;
+
+  position: absolute;
+  //bottom: -1em;
+  //left: -1em;
+
+  .front,
+  .back {
+    position: absolute;
+    width: $wpx;
+    height: $hpx;
+    background: var(--cubeColor);
+    box-shadow: 0 0 0.5em #000a inset;
+  }
+
+  .left,
+  .right {
+    position: absolute;
+    width: $zpx;
+    height: $hpx;
+    background: var(--cubeColor);
+    box-shadow: 0 0 0.5em #000a inset;
+  }
+  .top,
+  .bottom {
+    position: absolute;
+    width: $wpx;
+    height: $zpx;
+    background: var(--cubeColor);
+    box-shadow: 0 0 0.5em #000a inset;
+  }
+
+  .front {
+    transform: translate(-50%, -50%) translateZ($zpx/2);
+  }
+  .back {
+    transform: translate(-50%, -50%) rotateY(180deg) translateZ($zpx/2);
+  }
+  .right {
+    transform: translate(-50%, -50%) rotateY(90deg) translateZ($wpx/2);
+  }
+  .left {
+    transform: translate(-50%, -50%) rotateY(270deg) translateZ($wpx/2);
+  }
+  .top {
+    transform: translate(-50%, -50%) rotateX(90deg) translateZ($hpx/2) ;
+  }
+  .bottom {
+    transform: translate(-50%, -50%) rotateX(270deg) translateZ($hpx/2);
+  }
+}
+
+
+
+
+
+*/
