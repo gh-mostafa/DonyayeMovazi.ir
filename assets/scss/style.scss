@@ -668,6 +668,345 @@ body {
   @include neonbtn($rang, $andaze, $zaviye, 1em, 50%);
 }
 
+.menuclose{
+  .ml1{
+    transform: translateY(+8px) rotateZ(45deg);
+    transition: transform 1s,opacity 1s;
+  }
+  .ml2{
+    opacity: 0;
+    transition: transform 1s,opacity 1s;
+  }
+  .ml3{
+    transform: translateY(-8px) rotateZ(-45deg);
+    transition: transform 1s,opacity 1s;
+  }
+}
+.menuopen{
+  .ml1{
+    transform: translateY(0) rotateZ(0deg);
+    transition: transform 1s,opacity 1s;
+  }
+  .ml2{
+    opacity: 1;
+    transition: transform 1s,opacity 1s;
+  }
+  .ml3{
+    transform: translateY(0) rotateZ(0deg);
+    transition: transform 1s,opacity 1s;
+  }
+}
+
+
+.menu-items {
+  position: fixed;
+  display: grid;
+  //flex-direction: column-reverse;
+  //flex: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  z-index: 1;
+  bottom: calc(2em + 50px);
+  left: 1em;
+  width: 50px;
+
+  justify-content: left;
+  align-items: center;
+
+  .isactive {
+    transition: transform ease-in $animspeed;
+    transform: scale(2) translateX(5px);
+    z-index: 3 !important;
+  }
+
+
+  .menui:hover,
+  .menui:focus {
+    z-index: 5 !important;
+
+    .notactive {
+      transition: transform ease-in $animspeed;
+      transform: scale(2) translateX(5px);
+    }
+  }
+
+
+}
+
+.xMenu {
+  opacity: 0;
+  animation: dmenuanimX;
+  animation-duration: 2s;
+  .mbtnh {
+    animation: dmenuanimX;
+    animation-duration: 1s;
+  }
+
+  .mbtn1 {
+    animation: dmenuanimX;
+    animation-duration: 1.1s;
+  }
+
+  .mbtn2 {
+    animation: dmenuanimX;
+    animation-duration: 1.2s;
+  }
+
+  .mbtn5 {
+    animation: dmenuanimX;
+    animation-duration: 1.3s;
+  }
+
+  .mbtn3 {
+    animation: dmenuanimX;
+    animation-duration: 1.4s;
+  }
+
+  .mbtn4 {
+    animation: dmenuanimX;
+    animation-duration: 1.5s;
+  }
+}
+
+.aMenu {
+  animation: dmenuanim;
+  animation-duration: 1s;
+
+  .mbtnh {
+    animation: dmenuanim;
+    animation-duration: 1s;
+  }
+
+  .mbtn1 {
+    animation: dmenuanim;
+    animation-duration: 1.1s;
+  }
+
+  .mbtn2 {
+    animation: dmenuanim;
+    animation-duration: 1.2s;
+  }
+
+  .mbtn5 {
+    animation: dmenuanim;
+    animation-duration: 1.3s;
+  }
+
+  .mbtn3 {
+    animation: dmenuanim;
+    animation-duration: 1.4s;
+  }
+
+  .mbtn4 {
+    animation: dmenuanim;
+    animation-duration: 1.5s;
+  }
+
+}
+
+@keyframes dmenuanimX {
+  0% {
+    opacity: 1;
+    transition: ease-in-out both;
+  }
+
+  75% {
+    opacity: 0.5;
+    transition: ease-inboth;
+  }
+
+  100% {
+    opacity: 0;
+    transition: ease-outboth;
+  }
+}
+
+@keyframes dmenuanim {
+  0% {
+    transform: translateX(-50px);
+    transition: ease-in-out both;
+  }
+
+  75% {
+    transform: translateX(15px);
+    transition: ease-in both;
+  }
+
+  100% {
+    transform: translateX(0px);
+    transition: ease-out both;
+  }
+}
+
+
+
+.menui {
+  //position: absolute;
+  display: grid;
+  z-index: 1;
+  bottom: 1em;
+  right: 1em;
+  width: 30px;
+  height: 30px;
+
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: flex !important;
+    text-decoration: none;
+    margin: 0px !important;
+    padding: 0px !important;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1em;
+  }
+
+  &box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+}
+
+.mbtnh {
+  $rang: var(--nclr-7);
+  $andaze: 1;
+  $zaviye: 0;
+  font-size: 10px;
+
+  a {
+    flex-direction: column;
+
+    .sp1 {
+      display: block;
+      color: var(--nclr-1);
+    }
+
+    .sp2 {
+      display: block;
+      color: var(--nclr-3);
+    }
+  }
+
+  &box {
+    @at-root .night #{&} {
+      animation: menubtnanim 5s infinite;
+    }
+  }
+
+  @include neonbtn($rang, $andaze, $zaviye, 0.1em, 50%);
+}
+
+.mbtn5 {
+  $rang: var(--nclr-2);
+  $andaze: 1;
+  $zaviye: 0;
+
+  a {
+    .mnicon {
+      color: var(--nclr-9);
+    }
+  }
+
+  &box {
+    @at-root .night #{&} {
+      animation: menubtnanim 5s infinite;
+    }
+  }
+
+  @include neonbtn($rang, $andaze, $zaviye, 0.1em, 50%);
+}
+
+.mbtn1 {
+  $rang: var(--nclr-1);
+  $andaze: 1;
+  $zaviye: 0;
+
+  a {
+    .mnicon {
+      color: var(--nclr-2);
+    }
+  }
+
+  &box {
+    @at-root .night #{&} {
+      animation: menubtnanim 5s infinite;
+    }
+  }
+
+  @include neonbtn($rang, $andaze, $zaviye, 0.1em, 50%);
+}
+
+.mbtn2 {
+  $rang: var(--nclr-3);
+  $andaze: 1;
+  $zaviye: 0;
+
+  a {
+    .mnicon {
+      color: var(--nclr-4);
+    }
+  }
+
+  &box {
+    @at-root .night #{&} {
+      animation: menubtnanim 5s infinite;
+    }
+  }
+
+  @include neonbtn($rang, $andaze, $zaviye, 0.1em, 50%);
+}
+
+.mbtn3 {
+  $rang: var(--nclr-5);
+  $andaze: 1;
+  $zaviye: 0;
+
+  a {
+    .mnicon {
+      color: var(--nclr-7);
+    }
+  }
+
+  &box {
+    @at-root .night #{&} {
+      animation: menubtnanim 5s infinite;
+    }
+  }
+
+  @include neonbtn($rang, $andaze, $zaviye, 0.1em, 50%);
+}
+
+.mbtn4 {
+  $rang: var(--nclr-8);
+  $andaze: 1;
+  $zaviye: 0;
+
+  a {
+    .mnicon {
+      color: var(--nclr-9);
+    }
+  }
+
+  &box {
+    @at-root .night #{&} {
+      animation: menubtnanim 5s infinite;
+    }
+  }
+
+  @include neonbtn($rang, $andaze, $zaviye, 0.1em, 50%);
+}
+
+
+@keyframes menubtnanim {}
+
+
+
 .godl {
   position: fixed;
   display: grid;
@@ -1109,14 +1448,7 @@ body {
     @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
   }
 
-  @media (min-width: 9000px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    &-0 {
-      grid-column: 1/5;
-      text-align: center;
-    }
-  }
 }
 
 .DL-grid {
@@ -1220,7 +1552,7 @@ body {
         z-index: -1;
 
         opacity: 0;
-        
+
         @at-root .night #{&} {
           opacity: 1;
         }

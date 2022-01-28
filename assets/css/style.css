@@ -1182,7 +1182,1928 @@ body ul {
   opacity: 1;
 }
 
-.godl {
+.menuclose .ml1 {
+  -webkit-transform: translateY(8px) rotateZ(45deg);
+          transform: translateY(8px) rotateZ(45deg);
+  -webkit-transition: opacity 1s,-webkit-transform 1s;
+  transition: opacity 1s,-webkit-transform 1s;
+  transition: transform 1s,opacity 1s;
+  transition: transform 1s,opacity 1s,-webkit-transform 1s;
+}
+
+.menuclose .ml2 {
+  opacity: 0;
+  -webkit-transition: opacity 1s,-webkit-transform 1s;
+  transition: opacity 1s,-webkit-transform 1s;
+  transition: transform 1s,opacity 1s;
+  transition: transform 1s,opacity 1s,-webkit-transform 1s;
+}
+
+.menuclose .ml3 {
+  -webkit-transform: translateY(-8px) rotateZ(-45deg);
+          transform: translateY(-8px) rotateZ(-45deg);
+  -webkit-transition: opacity 1s,-webkit-transform 1s;
+  transition: opacity 1s,-webkit-transform 1s;
+  transition: transform 1s,opacity 1s;
+  transition: transform 1s,opacity 1s,-webkit-transform 1s;
+}
+
+.menuopen .ml1 {
+  -webkit-transform: translateY(0) rotateZ(0deg);
+          transform: translateY(0) rotateZ(0deg);
+  -webkit-transition: opacity 1s,-webkit-transform 1s;
+  transition: opacity 1s,-webkit-transform 1s;
+  transition: transform 1s,opacity 1s;
+  transition: transform 1s,opacity 1s,-webkit-transform 1s;
+}
+
+.menuopen .ml2 {
+  opacity: 1;
+  -webkit-transition: opacity 1s,-webkit-transform 1s;
+  transition: opacity 1s,-webkit-transform 1s;
+  transition: transform 1s,opacity 1s;
+  transition: transform 1s,opacity 1s,-webkit-transform 1s;
+}
+
+.menuopen .ml3 {
+  -webkit-transform: translateY(0) rotateZ(0deg);
+          transform: translateY(0) rotateZ(0deg);
+  -webkit-transition: opacity 1s,-webkit-transform 1s;
+  transition: opacity 1s,-webkit-transform 1s;
+  transition: transform 1s,opacity 1s;
+  transition: transform 1s,opacity 1s,-webkit-transform 1s;
+}
+
+.menu-items {
+  position: fixed;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  z-index: 1;
+  bottom: calc(2em + 50px);
+  left: 1em;
+  width: 50px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-items .isactive {
+  -webkit-transition: -webkit-transform ease-in 1s;
+  transition: -webkit-transform ease-in 1s;
+  transition: transform ease-in 1s;
+  transition: transform ease-in 1s, -webkit-transform ease-in 1s;
+  -webkit-transform: scale(2) translateX(5px);
+          transform: scale(2) translateX(5px);
+  z-index: 3 !important;
+}
+
+.menu-items .menui:hover,
+.menu-items .menui:focus {
+  z-index: 5 !important;
+}
+
+.menu-items .menui:hover .notactive,
+.menu-items .menui:focus .notactive {
+  -webkit-transition: -webkit-transform ease-in 1s;
+  transition: -webkit-transform ease-in 1s;
+  transition: transform ease-in 1s;
+  transition: transform ease-in 1s, -webkit-transform ease-in 1s;
+  -webkit-transform: scale(2) translateX(5px);
+          transform: scale(2) translateX(5px);
+}
+
+.xMenu {
+  opacity: 0;
+  -webkit-animation: dmenuanimX;
+          animation: dmenuanimX;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.xMenu .mbtnh {
+  -webkit-animation: dmenuanimX;
+          animation: dmenuanimX;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.xMenu .mbtn1 {
+  -webkit-animation: dmenuanimX;
+          animation: dmenuanimX;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+}
+
+.xMenu .mbtn2 {
+  -webkit-animation: dmenuanimX;
+          animation: dmenuanimX;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+.xMenu .mbtn5 {
+  -webkit-animation: dmenuanimX;
+          animation: dmenuanimX;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+}
+
+.xMenu .mbtn3 {
+  -webkit-animation: dmenuanimX;
+          animation: dmenuanimX;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+}
+
+.xMenu .mbtn4 {
+  -webkit-animation: dmenuanimX;
+          animation: dmenuanimX;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.aMenu {
+  -webkit-animation: dmenuanim;
+          animation: dmenuanim;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.aMenu .mbtnh {
+  -webkit-animation: dmenuanim;
+          animation: dmenuanim;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.aMenu .mbtn1 {
+  -webkit-animation: dmenuanim;
+          animation: dmenuanim;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+}
+
+.aMenu .mbtn2 {
+  -webkit-animation: dmenuanim;
+          animation: dmenuanim;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+.aMenu .mbtn5 {
+  -webkit-animation: dmenuanim;
+          animation: dmenuanim;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+}
+
+.aMenu .mbtn3 {
+  -webkit-animation: dmenuanim;
+          animation: dmenuanim;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+}
+
+.aMenu .mbtn4 {
+  -webkit-animation: dmenuanim;
+          animation: dmenuanim;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes dmenuanimX {
+  0% {
+    opacity: 1;
+    -webkit-transition: ease-in-out both;
+    transition: ease-in-out both;
+  }
+  75% {
+    opacity: 0.5;
+    -webkit-transition: ease-inboth;
+    transition: ease-inboth;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: ease-outboth;
+    transition: ease-outboth;
+  }
+}
+
+@keyframes dmenuanimX {
+  0% {
+    opacity: 1;
+    -webkit-transition: ease-in-out both;
+    transition: ease-in-out both;
+  }
+  75% {
+    opacity: 0.5;
+    -webkit-transition: ease-inboth;
+    transition: ease-inboth;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: ease-outboth;
+    transition: ease-outboth;
+  }
+}
+
+@-webkit-keyframes dmenuanim {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    -webkit-transition: ease-in-out both;
+    transition: ease-in-out both;
+  }
+  75% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+    -webkit-transition: ease-in both;
+    transition: ease-in both;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-transition: ease-out both;
+    transition: ease-out both;
+  }
+}
+
+@keyframes dmenuanim {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    -webkit-transition: ease-in-out both;
+    transition: ease-in-out both;
+  }
+  75% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+    -webkit-transition: ease-in both;
+    transition: ease-in both;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-transition: ease-out both;
+    transition: ease-out both;
+  }
+}
+
+.menui {
+  display: -ms-grid;
+  display: grid;
+  z-index: 1;
+  bottom: 1em;
+  right: 1em;
+  width: 30px;
+  height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menui a {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  text-decoration: none;
+  margin: 0px !important;
+  padding: 0px !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1em;
+}
+
+.menuibox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mbtnh {
+  font-size: 10px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 10em;
+          perspective: 10em;
+  -webkit-perspective-origin: 50% 47.5%em;
+          perspective-origin: 50% 47.5%em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mbtnh a {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mbtnh a .sp1 {
+  display: block;
+  color: var(--nclr-1);
+}
+
+.mbtnh a .sp2 {
+  display: block;
+  color: var(--nclr-3);
+}
+
+.night .mbtnhbox {
+  -webkit-animation: menubtnanim 5s infinite;
+          animation: menubtnanim 5s infinite;
+}
+
+.mbtnh .cirbox {
+  -webkit-transition: font-size 1.5s ease-in-out;
+  transition: font-size 1.5s ease-in-out;
+  font-size: 0.33333em;
+}
+
+.night .mbtnh .neon-button {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+}
+
+.night .mbtnh .neon-txt {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+}
+
+.night .mbtnh .neon-wall {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+}
+
+.night .mbtnh .neon-circle {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+}
+
+.mbtnh .neon-button,
+.mbtnh .neon-txt,
+.mbtnh .neon-wall,
+.mbtnh .neon-circle {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-family: "Blabeloo";
+  display: inline-block;
+  text-decoration: none;
+  color: var(--nclr-7);
+  border: var(--nclr-7) 0.125em solid;
+  padding: 0.5em;
+  border-radius: 50%;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtnh .neon-circle::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-7);
+          box-shadow: 0px 0px 0.5em 1.25em var(--nclr-7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.night .mbtnh .neon-circle::before {
+  opacity: 0.2;
+}
+
+.mbtnh .neon-wall::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-7);
+  top: 0%;
+  left: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtnh .neon-wall::before {
+  opacity: 0.2;
+}
+
+.mbtnh .neon-wall::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-7);
+  top: 0%;
+  right: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtnh .neon-wall::after {
+  opacity: 0.2;
+}
+
+.night .neon-button::before {
+  opacity: 0.4 !important;
+}
+
+.night .neon-txt::before {
+  opacity: 0.4 !important;
+}
+
+.mbtnh .neon-button::before,
+.mbtnh .neon-txt::before {
+  will-change: opacity;
+  will-change: transform;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-7);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 1.5em;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-filter: blur(1em);
+          filter: blur(1em);
+  opacity: 0;
+}
+
+.night .mbtnh .neon-button::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+}
+
+.night .mbtnh .neon-txt::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+}
+
+.mbtnh .neon-button::after,
+.mbtnh .neon-txt::after {
+  will-change: opacity;
+  will-change: transform;
+  content: "";
+  position: absolute;
+  top: -0.05em;
+  bottom: -0.05em;
+  left: -0.05em;
+  right: -0.05em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 0;
+  background-color: var(--nclr-7);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+}
+
+.night .mbtnh .neon-button:hover {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtnh .neon-button:hover p,
+.night .mbtnh .neon-button:hover h3,
+.night .mbtnh .neon-button:hover h4,
+.night .mbtnh .neon-button:hover a,
+.night .mbtnh .neon-button:hover span {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtnh .neon-button:focus {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtnh .neon-button:focus p,
+.night .mbtnh .neon-button:focus h3,
+.night .mbtnh .neon-button:focus h4,
+.night .mbtnh .neon-button:focus a,
+.night .mbtnh .neon-button:focus span {
+  color: var(--clr-bg-dark);
+}
+
+.mbtnh .neon-button:hover,
+.mbtnh .neon-button:focus {
+  color: var(--clr-bg-light);
+  text-shadow: none;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtnh .neon-button:hover .cirbox,
+.mbtnh .neon-button:focus .cirbox {
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
+  font-size: 16px;
+}
+
+.mbtnh .neon-button:hover p,
+.mbtnh .neon-button:hover h3,
+.mbtnh .neon-button:hover h4,
+.mbtnh .neon-button:hover a,
+.mbtnh .neon-button:hover span,
+.mbtnh .neon-button:focus p,
+.mbtnh .neon-button:focus h3,
+.mbtnh .neon-button:focus h4,
+.mbtnh .neon-button:focus a,
+.mbtnh .neon-button:focus span {
+  color: var(--clr-bg-light);
+}
+
+.mbtnh .neon-button:hover::after,
+.mbtnh .neon-button:focus::after {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.mbtn5 {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 10em;
+          perspective: 10em;
+  -webkit-perspective-origin: 50% 47.5%em;
+          perspective-origin: 50% 47.5%em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mbtn5 a .mnicon {
+  color: var(--nclr-9);
+}
+
+.night .mbtn5box {
+  -webkit-animation: menubtnanim 5s infinite;
+          animation: menubtnanim 5s infinite;
+}
+
+.mbtn5 .cirbox {
+  -webkit-transition: font-size 1.5s ease-in-out;
+  transition: font-size 1.5s ease-in-out;
+  font-size: 0.33333em;
+}
+
+.night .mbtn5 .neon-button {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+}
+
+.night .mbtn5 .neon-txt {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+}
+
+.night .mbtn5 .neon-wall {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+}
+
+.night .mbtn5 .neon-circle {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+}
+
+.mbtn5 .neon-button,
+.mbtn5 .neon-txt,
+.mbtn5 .neon-wall,
+.mbtn5 .neon-circle {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-family: "Blabeloo";
+  display: inline-block;
+  text-decoration: none;
+  color: var(--nclr-2);
+  border: var(--nclr-2) 0.125em solid;
+  padding: 0.5em;
+  border-radius: 50%;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtn5 .neon-circle::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-2);
+          box-shadow: 0px 0px 0.5em 1.25em var(--nclr-2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.night .mbtn5 .neon-circle::before {
+  opacity: 0.2;
+}
+
+.mbtn5 .neon-wall::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-2);
+  top: 0%;
+  left: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtn5 .neon-wall::before {
+  opacity: 0.2;
+}
+
+.mbtn5 .neon-wall::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-2);
+  top: 0%;
+  right: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtn5 .neon-wall::after {
+  opacity: 0.2;
+}
+
+.night .neon-button::before {
+  opacity: 0.4 !important;
+}
+
+.night .neon-txt::before {
+  opacity: 0.4 !important;
+}
+
+.mbtn5 .neon-button::before,
+.mbtn5 .neon-txt::before {
+  will-change: opacity;
+  will-change: transform;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-2);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 1.5em;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-filter: blur(1em);
+          filter: blur(1em);
+  opacity: 0;
+}
+
+.night .mbtn5 .neon-button::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-2) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-2) !important;
+}
+
+.night .mbtn5 .neon-txt::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-2) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-2) !important;
+}
+
+.mbtn5 .neon-button::after,
+.mbtn5 .neon-txt::after {
+  will-change: opacity;
+  will-change: transform;
+  content: "";
+  position: absolute;
+  top: -0.05em;
+  bottom: -0.05em;
+  left: -0.05em;
+  right: -0.05em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 0;
+  background-color: var(--nclr-2);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+}
+
+.night .mbtn5 .neon-button:hover {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn5 .neon-button:hover p,
+.night .mbtn5 .neon-button:hover h3,
+.night .mbtn5 .neon-button:hover h4,
+.night .mbtn5 .neon-button:hover a,
+.night .mbtn5 .neon-button:hover span {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn5 .neon-button:focus {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn5 .neon-button:focus p,
+.night .mbtn5 .neon-button:focus h3,
+.night .mbtn5 .neon-button:focus h4,
+.night .mbtn5 .neon-button:focus a,
+.night .mbtn5 .neon-button:focus span {
+  color: var(--clr-bg-dark);
+}
+
+.mbtn5 .neon-button:hover,
+.mbtn5 .neon-button:focus {
+  color: var(--clr-bg-light);
+  text-shadow: none;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtn5 .neon-button:hover .cirbox,
+.mbtn5 .neon-button:focus .cirbox {
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
+  font-size: 16px;
+}
+
+.mbtn5 .neon-button:hover p,
+.mbtn5 .neon-button:hover h3,
+.mbtn5 .neon-button:hover h4,
+.mbtn5 .neon-button:hover a,
+.mbtn5 .neon-button:hover span,
+.mbtn5 .neon-button:focus p,
+.mbtn5 .neon-button:focus h3,
+.mbtn5 .neon-button:focus h4,
+.mbtn5 .neon-button:focus a,
+.mbtn5 .neon-button:focus span {
+  color: var(--clr-bg-light);
+}
+
+.mbtn5 .neon-button:hover::after,
+.mbtn5 .neon-button:focus::after {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.mbtn1 {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 10em;
+          perspective: 10em;
+  -webkit-perspective-origin: 50% 47.5%em;
+          perspective-origin: 50% 47.5%em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mbtn1 a .mnicon {
+  color: var(--nclr-2);
+}
+
+.night .mbtn1box {
+  -webkit-animation: menubtnanim 5s infinite;
+          animation: menubtnanim 5s infinite;
+}
+
+.mbtn1 .cirbox {
+  -webkit-transition: font-size 1.5s ease-in-out;
+  transition: font-size 1.5s ease-in-out;
+  font-size: 0.33333em;
+}
+
+.night .mbtn1 .neon-button {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-1), 0 0 0.5em 0 var(--nclr-1) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-1), 0 0 0.5em 0 var(--nclr-1) !important;
+}
+
+.night .mbtn1 .neon-txt {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-1), 0 0 0.5em 0 var(--nclr-1) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-1), 0 0 0.5em 0 var(--nclr-1) !important;
+}
+
+.night .mbtn1 .neon-wall {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-1), 0 0 0.5em 0 var(--nclr-1) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-1), 0 0 0.5em 0 var(--nclr-1) !important;
+}
+
+.night .mbtn1 .neon-circle {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-1), 0 0 0.5em 0 var(--nclr-1) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-1), 0 0 0.5em 0 var(--nclr-1) !important;
+}
+
+.mbtn1 .neon-button,
+.mbtn1 .neon-txt,
+.mbtn1 .neon-wall,
+.mbtn1 .neon-circle {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-family: "Blabeloo";
+  display: inline-block;
+  text-decoration: none;
+  color: var(--nclr-1);
+  border: var(--nclr-1) 0.125em solid;
+  padding: 0.5em;
+  border-radius: 50%;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtn1 .neon-circle::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-1);
+          box-shadow: 0px 0px 0.5em 1.25em var(--nclr-1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.night .mbtn1 .neon-circle::before {
+  opacity: 0.2;
+}
+
+.mbtn1 .neon-wall::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-1);
+  top: 0%;
+  left: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtn1 .neon-wall::before {
+  opacity: 0.2;
+}
+
+.mbtn1 .neon-wall::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-1);
+  top: 0%;
+  right: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtn1 .neon-wall::after {
+  opacity: 0.2;
+}
+
+.night .neon-button::before {
+  opacity: 0.4 !important;
+}
+
+.night .neon-txt::before {
+  opacity: 0.4 !important;
+}
+
+.mbtn1 .neon-button::before,
+.mbtn1 .neon-txt::before {
+  will-change: opacity;
+  will-change: transform;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-1);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 1.5em;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-filter: blur(1em);
+          filter: blur(1em);
+  opacity: 0;
+}
+
+.night .mbtn1 .neon-button::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-1) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-1) !important;
+}
+
+.night .mbtn1 .neon-txt::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-1) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-1) !important;
+}
+
+.mbtn1 .neon-button::after,
+.mbtn1 .neon-txt::after {
+  will-change: opacity;
+  will-change: transform;
+  content: "";
+  position: absolute;
+  top: -0.05em;
+  bottom: -0.05em;
+  left: -0.05em;
+  right: -0.05em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 0;
+  background-color: var(--nclr-1);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+}
+
+.night .mbtn1 .neon-button:hover {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn1 .neon-button:hover p,
+.night .mbtn1 .neon-button:hover h3,
+.night .mbtn1 .neon-button:hover h4,
+.night .mbtn1 .neon-button:hover a,
+.night .mbtn1 .neon-button:hover span {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn1 .neon-button:focus {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn1 .neon-button:focus p,
+.night .mbtn1 .neon-button:focus h3,
+.night .mbtn1 .neon-button:focus h4,
+.night .mbtn1 .neon-button:focus a,
+.night .mbtn1 .neon-button:focus span {
+  color: var(--clr-bg-dark);
+}
+
+.mbtn1 .neon-button:hover,
+.mbtn1 .neon-button:focus {
+  color: var(--clr-bg-light);
+  text-shadow: none;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtn1 .neon-button:hover .cirbox,
+.mbtn1 .neon-button:focus .cirbox {
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
+  font-size: 16px;
+}
+
+.mbtn1 .neon-button:hover p,
+.mbtn1 .neon-button:hover h3,
+.mbtn1 .neon-button:hover h4,
+.mbtn1 .neon-button:hover a,
+.mbtn1 .neon-button:hover span,
+.mbtn1 .neon-button:focus p,
+.mbtn1 .neon-button:focus h3,
+.mbtn1 .neon-button:focus h4,
+.mbtn1 .neon-button:focus a,
+.mbtn1 .neon-button:focus span {
+  color: var(--clr-bg-light);
+}
+
+.mbtn1 .neon-button:hover::after,
+.mbtn1 .neon-button:focus::after {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.mbtn2 {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 10em;
+          perspective: 10em;
+  -webkit-perspective-origin: 50% 47.5%em;
+          perspective-origin: 50% 47.5%em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mbtn2 a .mnicon {
+  color: var(--nclr-4);
+}
+
+.night .mbtn2box {
+  -webkit-animation: menubtnanim 5s infinite;
+          animation: menubtnanim 5s infinite;
+}
+
+.mbtn2 .cirbox {
+  -webkit-transition: font-size 1.5s ease-in-out;
+  transition: font-size 1.5s ease-in-out;
+  font-size: 0.33333em;
+}
+
+.night .mbtn2 .neon-button {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-3), 0 0 0.5em 0 var(--nclr-3) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-3), 0 0 0.5em 0 var(--nclr-3) !important;
+}
+
+.night .mbtn2 .neon-txt {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-3), 0 0 0.5em 0 var(--nclr-3) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-3), 0 0 0.5em 0 var(--nclr-3) !important;
+}
+
+.night .mbtn2 .neon-wall {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-3), 0 0 0.5em 0 var(--nclr-3) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-3), 0 0 0.5em 0 var(--nclr-3) !important;
+}
+
+.night .mbtn2 .neon-circle {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-3), 0 0 0.5em 0 var(--nclr-3) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-3), 0 0 0.5em 0 var(--nclr-3) !important;
+}
+
+.mbtn2 .neon-button,
+.mbtn2 .neon-txt,
+.mbtn2 .neon-wall,
+.mbtn2 .neon-circle {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-family: "Blabeloo";
+  display: inline-block;
+  text-decoration: none;
+  color: var(--nclr-3);
+  border: var(--nclr-3) 0.125em solid;
+  padding: 0.5em;
+  border-radius: 50%;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtn2 .neon-circle::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-3);
+          box-shadow: 0px 0px 0.5em 1.25em var(--nclr-3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.night .mbtn2 .neon-circle::before {
+  opacity: 0.2;
+}
+
+.mbtn2 .neon-wall::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-3);
+  top: 0%;
+  left: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtn2 .neon-wall::before {
+  opacity: 0.2;
+}
+
+.mbtn2 .neon-wall::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-3);
+  top: 0%;
+  right: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtn2 .neon-wall::after {
+  opacity: 0.2;
+}
+
+.night .neon-button::before {
+  opacity: 0.4 !important;
+}
+
+.night .neon-txt::before {
+  opacity: 0.4 !important;
+}
+
+.mbtn2 .neon-button::before,
+.mbtn2 .neon-txt::before {
+  will-change: opacity;
+  will-change: transform;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-3);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 1.5em;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-filter: blur(1em);
+          filter: blur(1em);
+  opacity: 0;
+}
+
+.night .mbtn2 .neon-button::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-3) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-3) !important;
+}
+
+.night .mbtn2 .neon-txt::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-3) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-3) !important;
+}
+
+.mbtn2 .neon-button::after,
+.mbtn2 .neon-txt::after {
+  will-change: opacity;
+  will-change: transform;
+  content: "";
+  position: absolute;
+  top: -0.05em;
+  bottom: -0.05em;
+  left: -0.05em;
+  right: -0.05em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 0;
+  background-color: var(--nclr-3);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+}
+
+.night .mbtn2 .neon-button:hover {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn2 .neon-button:hover p,
+.night .mbtn2 .neon-button:hover h3,
+.night .mbtn2 .neon-button:hover h4,
+.night .mbtn2 .neon-button:hover a,
+.night .mbtn2 .neon-button:hover span {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn2 .neon-button:focus {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn2 .neon-button:focus p,
+.night .mbtn2 .neon-button:focus h3,
+.night .mbtn2 .neon-button:focus h4,
+.night .mbtn2 .neon-button:focus a,
+.night .mbtn2 .neon-button:focus span {
+  color: var(--clr-bg-dark);
+}
+
+.mbtn2 .neon-button:hover,
+.mbtn2 .neon-button:focus {
+  color: var(--clr-bg-light);
+  text-shadow: none;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtn2 .neon-button:hover .cirbox,
+.mbtn2 .neon-button:focus .cirbox {
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
+  font-size: 16px;
+}
+
+.mbtn2 .neon-button:hover p,
+.mbtn2 .neon-button:hover h3,
+.mbtn2 .neon-button:hover h4,
+.mbtn2 .neon-button:hover a,
+.mbtn2 .neon-button:hover span,
+.mbtn2 .neon-button:focus p,
+.mbtn2 .neon-button:focus h3,
+.mbtn2 .neon-button:focus h4,
+.mbtn2 .neon-button:focus a,
+.mbtn2 .neon-button:focus span {
+  color: var(--clr-bg-light);
+}
+
+.mbtn2 .neon-button:hover::after,
+.mbtn2 .neon-button:focus::after {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.mbtn3 {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 10em;
+          perspective: 10em;
+  -webkit-perspective-origin: 50% 47.5%em;
+          perspective-origin: 50% 47.5%em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mbtn3 a .mnicon {
+  color: var(--nclr-7);
+}
+
+.night .mbtn3box {
+  -webkit-animation: menubtnanim 5s infinite;
+          animation: menubtnanim 5s infinite;
+}
+
+.mbtn3 .cirbox {
+  -webkit-transition: font-size 1.5s ease-in-out;
+  transition: font-size 1.5s ease-in-out;
+  font-size: 0.33333em;
+}
+
+.night .mbtn3 .neon-button {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+}
+
+.night .mbtn3 .neon-txt {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+}
+
+.night .mbtn3 .neon-wall {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+}
+
+.night .mbtn3 .neon-circle {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+}
+
+.mbtn3 .neon-button,
+.mbtn3 .neon-txt,
+.mbtn3 .neon-wall,
+.mbtn3 .neon-circle {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-family: "Blabeloo";
+  display: inline-block;
+  text-decoration: none;
+  color: var(--nclr-5);
+  border: var(--nclr-5) 0.125em solid;
+  padding: 0.5em;
+  border-radius: 50%;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtn3 .neon-circle::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-5);
+          box-shadow: 0px 0px 0.5em 1.25em var(--nclr-5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.night .mbtn3 .neon-circle::before {
+  opacity: 0.2;
+}
+
+.mbtn3 .neon-wall::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-5);
+  top: 0%;
+  left: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtn3 .neon-wall::before {
+  opacity: 0.2;
+}
+
+.mbtn3 .neon-wall::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-5);
+  top: 0%;
+  right: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtn3 .neon-wall::after {
+  opacity: 0.2;
+}
+
+.night .neon-button::before {
+  opacity: 0.4 !important;
+}
+
+.night .neon-txt::before {
+  opacity: 0.4 !important;
+}
+
+.mbtn3 .neon-button::before,
+.mbtn3 .neon-txt::before {
+  will-change: opacity;
+  will-change: transform;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-5);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 1.5em;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-filter: blur(1em);
+          filter: blur(1em);
+  opacity: 0;
+}
+
+.night .mbtn3 .neon-button::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-5) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-5) !important;
+}
+
+.night .mbtn3 .neon-txt::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-5) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-5) !important;
+}
+
+.mbtn3 .neon-button::after,
+.mbtn3 .neon-txt::after {
+  will-change: opacity;
+  will-change: transform;
+  content: "";
+  position: absolute;
+  top: -0.05em;
+  bottom: -0.05em;
+  left: -0.05em;
+  right: -0.05em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 0;
+  background-color: var(--nclr-5);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+}
+
+.night .mbtn3 .neon-button:hover {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn3 .neon-button:hover p,
+.night .mbtn3 .neon-button:hover h3,
+.night .mbtn3 .neon-button:hover h4,
+.night .mbtn3 .neon-button:hover a,
+.night .mbtn3 .neon-button:hover span {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn3 .neon-button:focus {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn3 .neon-button:focus p,
+.night .mbtn3 .neon-button:focus h3,
+.night .mbtn3 .neon-button:focus h4,
+.night .mbtn3 .neon-button:focus a,
+.night .mbtn3 .neon-button:focus span {
+  color: var(--clr-bg-dark);
+}
+
+.mbtn3 .neon-button:hover,
+.mbtn3 .neon-button:focus {
+  color: var(--clr-bg-light);
+  text-shadow: none;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtn3 .neon-button:hover .cirbox,
+.mbtn3 .neon-button:focus .cirbox {
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
+  font-size: 16px;
+}
+
+.mbtn3 .neon-button:hover p,
+.mbtn3 .neon-button:hover h3,
+.mbtn3 .neon-button:hover h4,
+.mbtn3 .neon-button:hover a,
+.mbtn3 .neon-button:hover span,
+.mbtn3 .neon-button:focus p,
+.mbtn3 .neon-button:focus h3,
+.mbtn3 .neon-button:focus h4,
+.mbtn3 .neon-button:focus a,
+.mbtn3 .neon-button:focus span {
+  color: var(--clr-bg-light);
+}
+
+.mbtn3 .neon-button:hover::after,
+.mbtn3 .neon-button:focus::after {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.mbtn4 {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 10em;
+          perspective: 10em;
+  -webkit-perspective-origin: 50% 47.5%em;
+          perspective-origin: 50% 47.5%em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mbtn4 a .mnicon {
+  color: var(--nclr-9);
+}
+
+.night .mbtn4box {
+  -webkit-animation: menubtnanim 5s infinite;
+          animation: menubtnanim 5s infinite;
+}
+
+.mbtn4 .cirbox {
+  -webkit-transition: font-size 1.5s ease-in-out;
+  transition: font-size 1.5s ease-in-out;
+  font-size: 0.33333em;
+}
+
+.night .mbtn4 .neon-button {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-8), 0 0 0.5em 0 var(--nclr-8) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-8), 0 0 0.5em 0 var(--nclr-8) !important;
+}
+
+.night .mbtn4 .neon-txt {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-8), 0 0 0.5em 0 var(--nclr-8) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-8), 0 0 0.5em 0 var(--nclr-8) !important;
+}
+
+.night .mbtn4 .neon-wall {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-8), 0 0 0.5em 0 var(--nclr-8) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-8), 0 0 0.5em 0 var(--nclr-8) !important;
+}
+
+.night .mbtn4 .neon-circle {
+  text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.344), 0 0 0.3em currentColor !important;
+  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-8), 0 0 0.5em 0 var(--nclr-8) !important;
+          box-shadow: inset 0 0 0.5em 0 var(--nclr-8), 0 0 0.5em 0 var(--nclr-8) !important;
+}
+
+.mbtn4 .neon-button,
+.mbtn4 .neon-txt,
+.mbtn4 .neon-wall,
+.mbtn4 .neon-circle {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-family: "Blabeloo";
+  display: inline-block;
+  text-decoration: none;
+  color: var(--nclr-8);
+  border: var(--nclr-8) 0.125em solid;
+  padding: 0.5em;
+  border-radius: 50%;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtn4 .neon-circle::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-8);
+          box-shadow: 0px 0px 0.5em 1.25em var(--nclr-8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.night .mbtn4 .neon-circle::before {
+  opacity: 0.2;
+}
+
+.mbtn4 .neon-wall::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-8);
+  top: 0%;
+  left: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtn4 .neon-wall::before {
+  opacity: 0.2;
+}
+
+.mbtn4 .neon-wall::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-8);
+  top: 0%;
+  right: 105%;
+  width: 100%;
+  height: 100%;
+  max-width: 0.5em;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-filter: blur(0.75em);
+          filter: blur(0.75em);
+  opacity: 0;
+}
+
+.night .mbtn4 .neon-wall::after {
+  opacity: 0.2;
+}
+
+.night .neon-button::before {
+  opacity: 0.4 !important;
+}
+
+.night .neon-txt::before {
+  opacity: 0.4 !important;
+}
+
+.mbtn4 .neon-button::before,
+.mbtn4 .neon-txt::before {
+  will-change: opacity;
+  will-change: transform;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--nclr-8);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 1.5em;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-filter: blur(1em);
+          filter: blur(1em);
+  opacity: 0;
+}
+
+.night .mbtn4 .neon-button::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-8) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-8) !important;
+}
+
+.night .mbtn4 .neon-txt::after {
+  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-8) !important;
+          box-shadow: 0 0 2em 0.5em var(--nclr-8) !important;
+}
+
+.mbtn4 .neon-button::after,
+.mbtn4 .neon-txt::after {
+  will-change: opacity;
+  will-change: transform;
+  content: "";
+  position: absolute;
+  top: -0.05em;
+  bottom: -0.05em;
+  left: -0.05em;
+  right: -0.05em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 0;
+  background-color: var(--nclr-8);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+  transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+}
+
+.night .mbtn4 .neon-button:hover {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn4 .neon-button:hover p,
+.night .mbtn4 .neon-button:hover h3,
+.night .mbtn4 .neon-button:hover h4,
+.night .mbtn4 .neon-button:hover a,
+.night .mbtn4 .neon-button:hover span {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn4 .neon-button:focus {
+  color: var(--clr-bg-dark);
+}
+
+.night .mbtn4 .neon-button:focus p,
+.night .mbtn4 .neon-button:focus h3,
+.night .mbtn4 .neon-button:focus h4,
+.night .mbtn4 .neon-button:focus a,
+.night .mbtn4 .neon-button:focus span {
+  color: var(--clr-bg-dark);
+}
+
+.mbtn4 .neon-button:hover,
+.mbtn4 .neon-button:focus {
+  color: var(--clr-bg-light);
+  text-shadow: none;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mbtn4 .neon-button:hover .cirbox,
+.mbtn4 .neon-button:focus .cirbox {
+  will-change: opacity;
+  will-change: transform;
+  -webkit-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
+  font-size: 16px;
+}
+
+.mbtn4 .neon-button:hover p,
+.mbtn4 .neon-button:hover h3,
+.mbtn4 .neon-button:hover h4,
+.mbtn4 .neon-button:hover a,
+.mbtn4 .neon-button:hover span,
+.mbtn4 .neon-button:focus p,
+.mbtn4 .neon-button:focus h3,
+.mbtn4 .neon-button:focus h4,
+.mbtn4 .neon-button:focus a,
+.mbtn4 .neon-button:focus span {
+  color: var(--clr-bg-light);
+}
+
+.mbtn4 .neon-button:hover::after,
+.mbtn4 .neon-button:focus::after {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+@-webkit-keyframes menubtnanim {}
+
+@keyframes menubtnanim {}.godl {
   position: fixed;
   display: -ms-grid;
   display: grid;
@@ -5358,19 +7279,6 @@ body ul {
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
   opacity: 1;
-}
-
-@media (min-width: 9000px) {
-  .FEA-grid {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .FEA-grid-0 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1/5;
-    text-align: center;
-  }
 }
 
 .DL-grid {

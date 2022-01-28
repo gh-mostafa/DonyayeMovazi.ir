@@ -1,5 +1,7 @@
 //https://www.w3schools.com/js/js_array_sort.asp
 
+
+
 const lamp = document.querySelector('.lamp');
 let mood = "day";
 let nextmood = "night";
@@ -26,8 +28,7 @@ function mBtn() {
     if (mood === "day") {
         mood = "night";
         nextmood = "day";
-    }
-    else {
+    } else {
         mood = "day";
         nextmood = "night";
     }
@@ -42,6 +43,59 @@ function mOut() {
     }
 }
 
+
+const menubtn = document.querySelector('.menubox');
+
+menubtn.addEventListener("click",xMenu);
+function xMenu() {
+    console.log(menubtn);
+
+    const menuIcons = document.querySelector('.menu-items');//document.getElementsByClassName("menu-items");
+
+    if (menuIcons.classList.contains("aMenu")) {
+        menuIcons.classList.add("xMenu");
+        menuIcons.classList.remove("aMenu");
+        menubtn.classList.remove("menuclose");
+        menubtn.classList.add("menuopen");
+
+    }else{
+        menuIcons.classList.add("aMenu");
+        menuIcons.classList.remove("xMenu");
+        menubtn.classList.add("menuclose");
+        menubtn.classList.remove("menuopen");
+    }
+    
+}
+
+window.onscroll = function () {
+    pagepos()
+};
+
+function pagepos() {
+    const pages = document.getElementsByTagName("article");
+    const menuicons = document.getElementsByClassName("menui");
+
+    let indexnumber = 0;
+    for (let i = 0; i < menuicons.length; i++) {
+
+        if (pages[i].getBoundingClientRect().top <= window.innerHeight / 2) {
+            indexnumber = i;
+        }
+    }
+    for (let i = 0; i <  menuicons.length; i++) {
+        if (i != indexnumber) {
+            if (menuicons[i].classList.contains("isactive")) {
+                menuicons[i].classList.remove("isactive");
+            }
+            if (!menuicons[i].children[0].classList.contains("notactive")) {
+                menuicons[i].children[0].classList.add("notactive");
+            }
+        }
+    }
+    menuicons[indexnumber].classList.add("isactive");
+    menuicons[indexnumber].children[0].classList.remove("notactive");
+
+}
 
 /*
 
