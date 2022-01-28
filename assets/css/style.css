@@ -191,10 +191,6 @@ body ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -206,14 +202,6 @@ body ul {
 }
 
 .onvan a {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-decoration: none;
   margin: 0px !important;
   padding: 0px !important;
   -webkit-box-align: center;
@@ -523,10 +511,6 @@ body ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -535,6 +519,16 @@ body ul {
           perspective-origin: 50% 47.5%em;
   display: grid;
   justify-content: center;
+}
+
+.night .lamp {
+  border-color: var(--nclr-3);
+  color: var(--nclr-3);
+}
+
+.day .lamp {
+  border-color: var(--nclr-3);
+  color: var(--nclr-3);
 }
 
 .lamp div {
@@ -565,22 +559,6 @@ body ul {
 .night .lampbox {
   -webkit-animation: lampanim 5s infinite;
           animation: lampanim 5s infinite;
-}
-
-.day .lamp .lamp-img:hover {
-  background-image: url("../img/light-on.png");
-}
-
-.night .lamp {
-  background-image: url("../img/light-off.png");
-}
-
-.day .lamp .lamp-img:focus {
-  background-image: url("../img/light-on.png");
-}
-
-.night .lamp {
-  background-image: url("../img/light-off.png");
 }
 
 .lamp .lamp-img {
@@ -843,22 +821,6 @@ body ul {
   opacity: 1;
 }
 
-.night .lamp .neon-button::before {
-  background-color: var(--nclr-3) !important;
-}
-
-.night .lamp .neon-txt::before {
-  background-color: var(--nclr-3) !important;
-}
-
-.day .lamp .neon-button::before {
-  background-color: var(--nclr-0) !important;
-}
-
-.day .lamp .neon-txt::before {
-  background-color: var(--nclr-0) !important;
-}
-
 .menu {
   position: fixed;
   display: -ms-grid;
@@ -874,10 +836,6 @@ body ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -1238,10 +1196,6 @@ body ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -1549,10 +1503,6 @@ body ul {
 }
 
 .part0 .part1 .neon {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -1821,10 +1771,6 @@ body ul {
 
 .part0 .part2 .neon {
   margin-top: 50px;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -2112,10 +2058,6 @@ body ul {
 }
 
 .DIS-grid .neon1 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -2377,10 +2319,6 @@ body ul {
 }
 
 .DIS-grid .neon2 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -2642,10 +2580,6 @@ body ul {
 }
 
 .DIS-grid .neon3 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -2941,11 +2875,6 @@ body ul {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  /*display: flex;
-      flex-direction: column;
-      flex: 1fr 1fr 2fr;
-      align-items: center;
-      justify-content: space-between;*/
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 2fr 1fr 2fr;
@@ -3001,10 +2930,6 @@ body ul {
 .FEA-grid .neon1 {
   height: 100%;
   width: 100%;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -3271,10 +3196,6 @@ body ul {
 
 .FEA-grid .neon2 {
   font-size: 1em;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -3544,10 +3465,6 @@ body ul {
 }
 
 .FEA-grid .neon3 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -3817,10 +3734,6 @@ body ul {
 }
 
 .FEA-grid .neon4 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -4090,10 +4003,6 @@ body ul {
 }
 
 .FEA-grid .neon5 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -4363,10 +4272,6 @@ body ul {
 }
 
 .FEA-grid .neon6 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -4636,10 +4541,6 @@ body ul {
 }
 
 .FEA-grid .neon7 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -4909,10 +4810,6 @@ body ul {
 }
 
 .FEA-grid .neon8 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -5182,10 +5079,6 @@ body ul {
 }
 
 .FEA-grid .neon9 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -5504,10 +5397,6 @@ body ul {
 
 .DL-grid-item1 .neonDL {
   direction: rtl;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -5817,10 +5706,6 @@ body ul {
 
 .DL-grid-item2 .neonpaper {
   width: 100%;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -6092,10 +5977,6 @@ body ul {
 .DL-grid-item2 .dlbtn {
   margin-top: 1rem;
   padding: 0.5em;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -6400,10 +6281,6 @@ body ul {
 .neonQ0 {
   height: 100%;
   width: 100%;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -6669,10 +6546,6 @@ body ul {
 }
 
 .neonQ1 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -6934,10 +6807,6 @@ body ul {
 }
 
 .neonQ2 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -7199,10 +7068,6 @@ body ul {
 }
 
 .neonQ3 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -7464,10 +7329,6 @@ body ul {
 }
 
 .neonQ4 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -7733,10 +7594,6 @@ body ul {
   width: 100%;
   margin-top: 1rem;
   padding: 0.5em;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -8059,10 +7916,6 @@ body ul {
 
 .links-sm .wtsup {
   font-size: 1;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -8325,10 +8178,6 @@ body ul {
 
 .links-sm .bale {
   font-size: 1;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -8590,10 +8439,6 @@ body ul {
 }
 
 .links-sm .insta {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -8859,10 +8704,6 @@ body ul {
   max-width: 450;
   margin: 2em auto;
   text-align: right;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;

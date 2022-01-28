@@ -13,11 +13,9 @@ $animspeed: 1s;
   --nclr-8: hsl(317 100% 54%);
   --nclr-9: rgb(255, 153, 20);
 
-  //--clr-bg-dark: hsl(323 21% 16%);
   --clr-bg-light: rgb(255, 255, 255);
   --clr-bg-dark: rgb(29, 29, 29);
 
-  //@at-root
 
   --cubeColor: #0ff7;
   --rotateSpeed: 60s;
@@ -57,10 +55,6 @@ $animspeed: 1s;
 }
 
 @mixin neonbtn($neon-color, $fSize, $rDeg, $txtShadow, $borderR) {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
 
   .cirbox {
     transition: font-size #{$animspeed * 1.5} ease-in-out;
@@ -71,7 +65,6 @@ $animspeed: 1s;
   perspective: #{10 * $fSize}em;
   perspective-origin: 50% #{50% - 2.5 * $fSize}em;
 
-  ////position: relative;
   display: grid;
   justify-content: center;
 
@@ -119,7 +112,6 @@ $animspeed: 1s;
 
     font-family: "Blabeloo";
 
-    //font-size: 10vw;
 
     display: inline-block;
     //cursor: pointer;
@@ -140,7 +132,6 @@ $animspeed: 1s;
     will-change: transform;
     transition: transform $animspeed ease-in-out;
 
-    ////position: relative;
   }
 
   .neon-circle::before {
@@ -150,17 +141,11 @@ $animspeed: 1s;
     position: absolute;
     border-radius: $borderR;
     box-shadow: 0px 0px #{0.5 * $fSize}em #{1.25 * $fSize}em $neon-color;
-    //background: $neon-color;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    //max-width: 0.5em;
-
-    //transform: rotateY(90deg);
-    //transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
-    //filter: blur(0.25em);
-
+   
     opacity: 0;
 
     @at-root .night #{&} {
@@ -181,7 +166,6 @@ $animspeed: 1s;
     max-width: #{0.5 * $fSize}em;
 
     transform: rotateY(90deg);
-    //transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
     filter: blur(#{0.75 * $fSize}em);
 
     opacity: 0;
@@ -205,7 +189,6 @@ $animspeed: 1s;
     max-width: #{0.5 * $fSize}em;
 
     transform: rotateY(90deg);
-    //transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
     filter: blur(#{0.75 * $fSize}em);
 
     opacity: 0;
@@ -244,7 +227,6 @@ $animspeed: 1s;
     max-height: #{1.5 * $fSize}em;
 
     transform: rotateX(90deg);
-    //transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
     filter: blur(#{1 * $fSize}em);
     opacity: 0;
 
@@ -394,34 +376,34 @@ body {
 
 @keyframes logoanim {
   0% {
-    transform: rotateZ(-15deg); // translate(-25%);
+    transform: rotateZ(-15deg);
     transition: ease-in-out;
   }
 
   50% {
-    transform: rotateZ(15deg); // translate(-25%);
+    transform: rotateZ(15deg);
     transition: ease-in-out;
   }
 
   100% {
-    transform: rotateZ(-15deg); // translate(-25%);
+    transform: rotateZ(-15deg);
     transition: ease-in-out;
   }
 }
 
 @keyframes lampanim {
   0% {
-    transform: rotateZ(15deg); // translate(0%);
+    transform: rotateZ(15deg);
     transition: ease-in-out;
   }
 
   50% {
-    transform: rotateZ(-15deg); // translate(0%);
+    transform: rotateZ(-15deg);
     transition: ease-in-out;
   }
 
   100% {
-    transform: rotateZ(15deg); // translate(0%);
+    transform: rotateZ(15deg);
     transition: ease-in-out;
   }
 }
@@ -443,13 +425,13 @@ body {
   $zaviye: 0;
 
   a {
-    display: flex !important;
-    flex-direction: column;
-    text-decoration: none;
+    //display: flex !important;
+    //flex-direction: column;
+    //text-decoration: none;
     margin: 0px !important;
     padding: 0px !important;
 
-    align-items: center;
+    align-items:center;
     justify-content: center;
 
     font-size: 1.1em;
@@ -487,7 +469,6 @@ body {
   width: 250px;
   height: 50px;
   transform: translate(50%);
-  //color: var(--clr-bg-dark);
   color: red;
   text-align: center;
   visibility: visible;
@@ -496,6 +477,7 @@ body {
     visibility: hidden;
   }
 }
+
 
 .lamp {
   position: fixed;
@@ -512,18 +494,17 @@ body {
 
   $andaze: 1;
   $zaviye: 0;
-  //@at-root:var(--nclr-3);
-
+  $rang:var(--nclr-0);
   
   @at-root .night #{&} {
-    $rang:var(--nclr-0);
-    border-color:var(--nclr-0);
-    color:var(--nclr-0);
+    $rang:var(--nclr-3);
+    border-color:var(--nclr-3);
+    color:var(--nclr-3);
   }
-  @at-root .night #{&} {
-    $rang:var(--nclr-0);
-    border-color:var(--nclr-0);
-    color:var(--nclr-0);
+  @at-root .day #{&} {
+    $rang:var(--nclr-3);
+    border-color:var(--nclr-3);
+    color:var(--nclr-3);
   }
 
   div {
@@ -536,12 +517,9 @@ body {
     align-items: center;
     justify-content: center;
 
-    //font-size: 1.1em;
-    //color: var(--nclr-1);
   }
 
   &box {
-    //background-color: #fff;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -550,32 +528,6 @@ body {
       animation: lampanim 5s infinite;
     }
   }
-
-
-
-
-  @at-root .day #{&} .lamp-img:hover {
-    background-image: url("../img/light-on.png");
-  }
-
-  @at-root .night #{&} {
-    background-image: url("../img/light-off.png");
-  }
-
-
-
-  @at-root .day #{&} .lamp-img:focus {
-    background-image: url("../img/light-on.png");
-  }
-
-  @at-root .night #{&} {
-    background-image: url("../img/light-off.png");
-  }
-
-
-
-
-
 
   .lamp-img {
     z-index: 1;
@@ -596,44 +548,10 @@ body {
   }
 
 
-
   @include neonbtn($rang, $andaze, $zaviye, 1em, 50%);
 
 }
 
-@at-root .night .lamp .neon-button::before {
-  background-color: var(--nclr-3) !important;
-  $rang: var(--nclr-3);
-}
-@at-root .night .lamp .neon-txt::before {
-  background-color: var(--nclr-3) !important;
-  $rang: var(--nclr-3);
-}
-@at-root .day .lamp .neon-button::before {
-  background-color: var(--nclr-0) !important;
-  $rang: var(--nclr-0);
-}
-@at-root .day .lamp .neon-txt::before {
-  background-color: var(--nclr-0) !important;
-  $rang: var(--nclr-0);
-}
-
-@at-root .night .lamp .neon-button::after {
-  background-color: var(--nclr-3) !important;
-  $rang: var(--nclr-3);
-}
-@at-root .night .lamp .neon-txt::after {
-  background-color: var(--nclr-3) !important;
-  $rang: var(--nclr-3);
-}
-@at-root .day .lamp .neon-button::after {
-  background-color: var(--nclr-0) !important;
-  $rang: var(--nclr-0);
-}
-@at-root .day .lamp .neon-txt::after {
-  background-color: var(--nclr-0) !important;
-  $rang: var(--nclr-0);
-}
 
 
 .menu {
@@ -695,7 +613,6 @@ body {
     div:nth-child(1)::before,
     .ml1 {
       background-color: var(--nclr-2);
-      //color: var(--nclr-1);
     }
 
     .ml2 {
@@ -709,13 +626,11 @@ body {
         background-color: var(--clr-bg-light);
       }
 
-      //color: var(--nclr-3);
     }
 
     div:nth-child(3)::before,
     .ml3 {
       background-color: var(--nclr-7);
-      //color: var(--nclr-3);
     }
 
     &:hover,
@@ -783,15 +698,6 @@ body {
     }
   }
 
-
-  //  &box {
-  //    position: absolute;
-  //    width: 100%;
-  //    height: 100%;
-  //    @if $light-on = = 0 {
-  //      animation: logoanim 5s infinite;
-  //    }
-  //  }
 
 
   &box {
@@ -872,8 +778,6 @@ body {
 }
 
 .DIS-img {
-  //width: 80%;
-  //margin: 0 auto;
   padding: 1rem;
   height: 120px;
 }
@@ -889,8 +793,6 @@ body {
 
   &-item {
     padding: 0.5rem 0rem;
-    //max-width: 300px;
-    //width: 100vw !important;
     text-align: center;
   }
 
@@ -959,30 +861,17 @@ body {
     }
 
     width: 70vw;
-    //align-self: center;
-    //margin: 1.5em auto;
     text-align: center;
   }
 
   &-item {
 
-    //width: 250px;
-    //height: 250px;
-    //max-width: 300px;
-    //max-height: 300px;
-    //align-items: center;
     .cirbox {
       width: 100%;
       margin: 0px;
       padding: 0px;
 
-      /*display: flex;
-      flex-direction: column;
-      flex: 1fr 1fr 2fr;
-      align-items: center;
-      justify-content: space-between;*/
       display: grid;
-      //grid-gap: 0.25em;
       grid-template-rows: 2fr 1fr 2fr;
       justify-items: center;
       align-content: center;
@@ -1278,7 +1167,6 @@ body {
 
       li {
         margin: 1em auto;
-        //list-style: inside;
         padding-right: 0.5em;
       }
 
@@ -1344,8 +1232,6 @@ body {
       @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
     }
 
-    //box-shadow: 0px 0px 10px gray;
-    //border-radius: 1rem;
   }
 }
 
@@ -1371,8 +1257,6 @@ body {
     padding: 0.5rem 0rem;
     max-width: 300px;
     text-align: center;
-    //box-shadow: 0px 0px 10px gray;
-    //border-radius: 1rem;
   }
 
   .Q {
@@ -1588,7 +1472,6 @@ body {
   h3 {
     margin: 1em;
     color: var(--nclr-3);
-    //margin: 1em auto;
     font-family: "nazanin";
   }
 
@@ -1607,8 +1490,6 @@ body {
   transition-property: opacity, filter;
   text-transform: none;
   color: inherit;
-  //border:0;
-  //background-color:transparent
 }
 
 .hamburger.is-active:hover,

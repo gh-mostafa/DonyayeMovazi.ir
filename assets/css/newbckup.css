@@ -176,10 +176,6 @@ body ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -416,249 +412,6 @@ body ul {
   visibility: hidden;
 }
 
-.lamp {
-  position: fixed;
-  display: -ms-grid;
-  display: grid;
-  z-index: 1;
-  top: 1em;
-  right: 1em;
-  width: 50px;
-  height: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-perspective: 10em;
-          perspective: 10em;
-  -webkit-perspective-origin: 50% 47.5%em;
-          perspective-origin: 50% 47.5%em;
-  display: grid;
-  justify-content: center;
-}
-
-.lamp div {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-decoration: none;
-  margin: 0px !important;
-  padding: 0px !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.lampbox {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: lampanim 5s infinite;
-          animation: lampanim 5s infinite;
-}
-
-.lamp .lamp-img {
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/light-off.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50px;
-}
-
-.lamp .lamp-img:hover,
-.lamp .lamp-img:focus {
-  background-image: url("../img/light-on.png");
-}
-
-.lamp .cirbox {
-  -webkit-transition: font-size 1.5s ease-in-out;
-  transition: font-size 1.5s ease-in-out;
-  font-size: 0.33333em;
-}
-
-.lamp .neon-button,
-.lamp .neon-txt,
-.lamp .neon-wall,
-.lamp .neon-circle {
-  height: 100%;
-  width: 100%;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  font-family: "Blabeloo";
-  display: inline-block;
-  text-decoration: none;
-  color: var(--nclr-3);
-  border: var(--nclr-3) 0.125em solid;
-  padding: 0.5em;
-  border-radius: 50%;
-  text-shadow: 0 0 1em rgba(255, 255, 255, 0.344), 0 0 3em currentColor;
-  -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-3), 0 0 0.5em 0 var(--nclr-3);
-          box-shadow: inset 0 0 0.5em 0 var(--nclr-3), 0 0 0.5em 0 var(--nclr-3);
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.lamp .neon-circle::before {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-3);
-          box-shadow: 0px 0px 0.5em 1.25em var(--nclr-3);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
-}
-
-.lamp .neon-wall::before {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  background: var(--nclr-3);
-  top: 0%;
-  left: 105%;
-  width: 100%;
-  height: 100%;
-  max-width: 0.5em;
-  -webkit-transform: rotateY(90deg);
-          transform: rotateY(90deg);
-  -webkit-filter: blur(0.75em);
-          filter: blur(0.75em);
-  opacity: 0.2;
-}
-
-.lamp .neon-wall::after {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  background: var(--nclr-3);
-  top: 0%;
-  right: 105%;
-  width: 100%;
-  height: 100%;
-  max-width: 0.5em;
-  -webkit-transform: rotateY(90deg);
-          transform: rotateY(90deg);
-  -webkit-filter: blur(0.75em);
-          filter: blur(0.75em);
-  opacity: 0.2;
-}
-
-.lamp .neon-button::before,
-.lamp .neon-txt::before {
-  will-change: opacity;
-  will-change: transform;
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  background: var(--nclr-3);
-  top: 120%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 1.5em;
-  -webkit-transform: rotateX(90deg);
-          transform: rotateX(90deg);
-  -webkit-filter: blur(1em);
-          filter: blur(1em);
-  opacity: 0.4;
-}
-
-.lamp .neon-button::after,
-.lamp .neon-txt::after {
-  will-change: opacity;
-  will-change: transform;
-  content: "";
-  position: absolute;
-  top: -0.05em;
-  bottom: -0.05em;
-  left: -0.05em;
-  right: -0.05em;
-  -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-3);
-          box-shadow: 0 0 2em 0.5em var(--nclr-3);
-  opacity: 0;
-  background-color: var(--nclr-3);
-  border-radius: 50%;
-  z-index: -1;
-  -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
-  transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
-  transition: transform 1.5s ease-in-out, opacity 1.5s linear;
-  transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
-}
-
-.lamp .neon-button:hover,
-.lamp .neon-button:focus {
-  color: var(--clr-bg-dark);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.lamp .neon-button:hover .cirbox,
-.lamp .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.lamp .neon-button:hover p,
-.lamp .neon-button:hover h3,
-.lamp .neon-button:hover h4,
-.lamp .neon-button:hover a,
-.lamp .neon-button:hover span,
-.lamp .neon-button:focus p,
-.lamp .neon-button:focus h3,
-.lamp .neon-button:focus h4,
-.lamp .neon-button:focus a,
-.lamp .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.lamp .neon-button:hover::before,
-.lamp .neon-button:focus::before {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
-}
-
-.lamp .neon-button:hover::after,
-.lamp .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
-}
-
 .menu {
   position: fixed;
   display: -ms-grid;
@@ -674,10 +427,6 @@ body ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -944,10 +693,6 @@ body ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -1181,10 +926,6 @@ body ul {
 }
 
 .part0 .part1 .neon {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -1382,10 +1123,6 @@ body ul {
 
 .part0 .part2 .neon {
   margin-top: 50px;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -1602,10 +1339,6 @@ body ul {
 }
 
 .DIS-grid .neon1 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -1796,10 +1529,6 @@ body ul {
 }
 
 .DIS-grid .neon2 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -1990,10 +1719,6 @@ body ul {
 }
 
 .DIS-grid .neon3 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -2218,11 +1943,6 @@ body ul {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  /*display: flex;
-      flex-direction: column;
-      flex: 1fr 1fr 2fr;
-      align-items: center;
-      justify-content: space-between;*/
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 2fr 1fr 2fr;
@@ -2278,10 +1998,6 @@ body ul {
 .FEA-grid .neon1 {
   height: 100%;
   width: 100%;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -2477,10 +2193,6 @@ body ul {
 
 .FEA-grid .neon2 {
   font-size: 1em;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -2679,10 +2391,6 @@ body ul {
 }
 
 .FEA-grid .neon3 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -2881,10 +2589,6 @@ body ul {
 }
 
 .FEA-grid .neon4 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -3083,10 +2787,6 @@ body ul {
 }
 
 .FEA-grid .neon5 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -3285,10 +2985,6 @@ body ul {
 }
 
 .FEA-grid .neon6 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -3487,10 +3183,6 @@ body ul {
 }
 
 .FEA-grid .neon7 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -3689,10 +3381,6 @@ body ul {
 }
 
 .FEA-grid .neon8 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -3891,10 +3579,6 @@ body ul {
 }
 
 .FEA-grid .neon9 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -4117,17 +3801,6 @@ body ul {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  /*
-  margin: 5em auto;
-  direction: rtl;
-
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 3.5em;
-  padding: 10px;
-  justify-items: center;
-  align-content: center;
-*/
 }
 
 .DL-grid-item1 {
@@ -4142,10 +3815,6 @@ body ul {
 
 .DL-grid-item1 .neonDL {
   direction: rtl;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -4384,10 +4053,6 @@ body ul {
 
 .DL-grid-item2 .neonpaper {
   width: 100%;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -4588,10 +4253,6 @@ body ul {
 .DL-grid-item2 .dlbtn {
   margin-top: 1rem;
   padding: 0.5em;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -4825,10 +4486,6 @@ body ul {
 .neonQ0 {
   height: 100%;
   width: 100%;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -5023,10 +4680,6 @@ body ul {
 }
 
 .neonQ1 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -5217,10 +4870,6 @@ body ul {
 }
 
 .neonQ2 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -5411,10 +5060,6 @@ body ul {
 }
 
 .neonQ3 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -5605,10 +5250,6 @@ body ul {
 }
 
 .neonQ4 {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -5803,10 +5444,6 @@ body ul {
   width: 100%;
   margin-top: 1rem;
   padding: 0.5em;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -6058,10 +5695,6 @@ body ul {
 
 .links-sm .wtsup {
   font-size: 1;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -6253,10 +5886,6 @@ body ul {
 
 .links-sm .bale {
   font-size: 1;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -6447,10 +6076,6 @@ body ul {
 }
 
 .links-sm .insta {
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
@@ -6645,10 +6270,6 @@ body ul {
   max-width: 450;
   margin: 2em auto;
   text-align: right;
-  /*animation: sizeanim $animspeed ease-in-out both;
-  @keyframes sizeanim {
-  to{font-size: $fSize;}
-  }*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 10em;
