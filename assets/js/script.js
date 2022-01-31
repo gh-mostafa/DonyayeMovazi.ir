@@ -1,6 +1,9 @@
 //https://www.w3schools.com/js/js_array_sort.asp
 
-
+//  ****** //
+//  ****** //
+//  ****** //
+//  *** lump *** //
 
 const lamp = document.querySelector('.lamp');
 let mood = "day";
@@ -44,13 +47,20 @@ function mOut() {
 }
 
 
+//  ****** //
+//  ****** //
+//  ****** //
+//  *** menu icon *** //
+
+
 const menubtn = document.querySelector('.menubox');
 
-menubtn.addEventListener("click",xMenu);
+menubtn.addEventListener("click", xMenu);
+
 function xMenu() {
     console.log(menubtn);
 
-    const menuIcons = document.querySelector('.menu-items');//document.getElementsByClassName("menu-items");
+    const menuIcons = document.querySelector('.menu-items');
 
     if (menuIcons.classList.contains("aMenu")) {
         menuIcons.classList.add("xMenu");
@@ -58,31 +68,36 @@ function xMenu() {
         menubtn.classList.remove("menuclose");
         menubtn.classList.add("menuopen");
 
-    }else{
+    } else {
         menuIcons.classList.add("aMenu");
         menuIcons.classList.remove("xMenu");
         menubtn.classList.add("menuclose");
         menubtn.classList.remove("menuopen");
     }
-    
+
 }
+
+//  ****** //
+//  ****** //
+//  ****** //
+//  *** progress bar *** //
+let indexnumber = 0;
+const pages = document.getElementsByTagName("article");
+const menuicons = document.getElementsByClassName("menui");
 
 window.onscroll = function () {
     pagepos()
 };
 
 function pagepos() {
-    const pages = document.getElementsByTagName("article");
-    const menuicons = document.getElementsByClassName("menui");
-
-    let indexnumber = 0;
+    indexnumber = 0;
     for (let i = 0; i < menuicons.length; i++) {
 
         if (pages[i].getBoundingClientRect().top <= window.innerHeight / 2) {
             indexnumber = i;
         }
     }
-    for (let i = 0; i <  menuicons.length; i++) {
+    for (let i = 0; i < menuicons.length; i++) {
         if (i != indexnumber) {
             if (menuicons[i].classList.contains("isactive")) {
                 menuicons[i].classList.remove("isactive");
@@ -94,6 +109,51 @@ function pagepos() {
     }
     menuicons[indexnumber].classList.add("isactive");
     menuicons[indexnumber].children[0].classList.remove("notactive");
+
+}
+
+
+
+//  ****** //
+//  ****** //
+//  ****** //
+//  *** smooth scroll *** //
+document.querySelector(".onvan").addEventListener("click", function () {
+    toElement(pages[0])
+});
+document.querySelector(".godl").addEventListener("click", function () {
+    toElement(pages[3])
+});
+
+for (let i = 0; i < menuicons.length; i++) {
+    menuicons[i].addEventListener("click", function () {
+        toElement(pages[i])
+    });
+}
+
+function toElement(elem) {
+    elem.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+
+//  ****** //
+//  ****** //
+//  ****** //
+//  *** electric effect *** //
+
+const elc = document.getElementsByClassName("elcshow");
+
+for (let i = 0; i < elc.length; i++) {
+
+    function setRandomAnimationDuration() {
+        if (indexnumber === 4) {
+            elc[i].style.setProperty('--animation-time', Math.floor(Math.random() * 10 + 1) + "s");
+        }
+    }
+
+    elc[i].addEventListener("animationiteration", setRandomAnimationDuration);
 
 }
 
