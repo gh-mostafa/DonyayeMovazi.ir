@@ -12426,9 +12426,14 @@ body ul {
 
 .esra,
 .cert {
-  margin-top: 1em;
+  padding: 2em;
+  margin-top: 1.5em 0;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.esra img,
+.cert img {
   border-radius: 15px;
 }
 /*# sourceMappingURL=style.css.map */
