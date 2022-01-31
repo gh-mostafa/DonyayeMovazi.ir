@@ -333,7 +333,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-//overflow: hidden;
+  //overflow: hidden;
 
   @at-root .day {
     background: var(--clr-bg-light);
@@ -1033,6 +1033,16 @@ body {
   @include neonbtn($rang, $andaze, $zaviye, 0.1em, 50%);
 }
 
+.cp {
+  direction: rtl;
+  font-family: "nazanin";
+  font-size: 16px;
+  text-align: center;
+
+  color: var(--nclr-7);
+}
+
+
 .container {
   width: 80%;
   margin: 0px auto;
@@ -1151,7 +1161,7 @@ body {
     @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
   }
 
-  @media (min-width: 9000px) {
+  @media (min-width: 1024px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -1249,6 +1259,8 @@ body {
   }
 
   .neon2 {
+    margin-top: 2em;
+
     $rang: var(--nclr-6);
     $andaze: 1;
     font-size: 1em;
@@ -1409,6 +1421,105 @@ body {
     @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
   }
 
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    & div:nth-child(1) {
+      grid-column: 2/4;
+    }
+
+    & div:nth-child(2) {
+      grid-column: 1/2;
+    }
+
+    & div:nth-child(3),
+    & div:nth-child(4),
+    & div:nth-child(7),
+    & div:nth-child(8) {
+      justify-self: center;
+    }
+
+    .neon3 {
+      $rang: var(--nclr-2);
+      $andaze: 1;
+      $zaviye: 0;
+
+      h4 {
+        color: $rang;
+      }
+
+      h3 {
+        color: var(--nclr-4);
+      }
+
+      p {
+        color: var(--nclr-1);
+      }
+
+      @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+    }
+
+    .neon4 {
+      $rang: var(--nclr-4);
+      $andaze: 1;
+      $zaviye: 0;
+
+      h4 {
+        color: $rang;
+      }
+
+      h3 {
+        color: var(--nclr-1);
+      }
+
+      p {
+        color: var(--nclr-3);
+      }
+
+      @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+    }
+
+    .neon7 {
+      $rang: var(--nclr-7);
+      $andaze: 1;
+      $zaviye: 0;
+
+      h4 {
+        color: $rang;
+      }
+
+      h3 {
+        color: var(--nclr-5);
+      }
+
+      p {
+        color: var(--nclr-2);
+      }
+
+      @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+    }
+
+    .neon8 {
+      $rang: var(--nclr-5);
+      $andaze: 1;
+      $zaviye: 0;
+
+      h4 {
+        color: $rang;
+      }
+
+      h3 {
+        color: var(--nclr-2);
+      }
+
+      p {
+        color: var(--nclr-4);
+      }
+
+      @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+    }
+
+  }
 
 }
 
@@ -1421,17 +1532,7 @@ body {
   justify-content: center;
   align-content: center;
 
-  /*
-  margin: 5em auto;
-  direction: rtl;
 
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 3.5em;
-  padding: 10px;
-  justify-items: center;
-  align-content: center;
-*/
   &-item1 {
     width: 100%;
     padding: 1rem;
@@ -1563,6 +1664,21 @@ body {
     }
 
   }
+
+
+  @media (min-width: 1024px) {
+    &-item1 {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    &-item2 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    grid-template-columns: auto auto;
+  }
 }
 
 .neonQ {
@@ -1674,13 +1790,13 @@ body {
 
 
 .night .elcshow {
-  --animation-time: 2s; 
+  --animation-time: 2s;
 
-    & *,
-    & *::after,
-    & *::before {
-      animation: electricshow var(--animation-time) step-end infinite;
-    }
+  & *,
+  & *::after,
+  & *::before {
+    animation: electricshow var(--animation-time) step-end infinite;
+  }
 
 }
 
@@ -1714,6 +1830,15 @@ body {
   }
 
   @include neonbtn($rang, $andaze, $zaviye, 1em, 1em);
+}
+
+
+#CUS {
+  display: grid;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .links-sm {
@@ -1802,6 +1927,36 @@ body {
 
     @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
   }
+
+  @media (min-width: 768px) {
+    grid-template-columns: auto auto auto;
+
+
+    .bale {
+      $rang: var(--nclr-9);
+      $andaze: 1;
+      font-size: $andaze;
+      $zaviye: 0;
+
+      a {
+        color: var(--nclr-1);
+      }
+
+      @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+    }
+
+    .insta {
+      $rang: var(--nclr-7);
+      $andaze: 1;
+      $zaviye: -30;
+
+      a {
+        color: var(--nclr-5);
+      }
+
+      @include neonbtn($rang, $andaze, $zaviye, 0em, 50%);
+    }
+  }
 }
 
 .address {
@@ -1829,14 +1984,14 @@ body {
   @include neonbtn($rang, $andaze, $zaviye, 0em, 1em);
 }
 
-.cp{
-  direction: rtl;
-  font-family: "nazanin";
-  font-size: 16px;
-  text-align: center;
 
-  color: var(--nclr-7);
+.esra,
+.cert {
+  margin-top: 1em;
+  justify-self: center;
+  border-radius: 15px;
 }
+
 
 
 

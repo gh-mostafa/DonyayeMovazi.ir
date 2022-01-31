@@ -3402,6 +3402,14 @@ body ul {
   opacity: 1;
 }
 
+.cp {
+  direction: rtl;
+  font-family: "nazanin";
+  font-size: 16px;
+  text-align: center;
+  color: var(--nclr-7);
+}
+
 .container {
   width: 80%;
   margin: 0px auto;
@@ -4769,7 +4777,7 @@ body ul {
   opacity: 1;
 }
 
-@media (min-width: 9000px) {
+@media (min-width: 1024px) {
   .DIS-grid {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -5124,6 +5132,7 @@ body ul {
 }
 
 .FEA-grid .neon2 {
+  margin-top: 2em;
   font-size: 1em;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -7276,6 +7285,986 @@ body ul {
   opacity: 1;
 }
 
+@media (min-width: 1024px) {
+  .FEA-grid {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .FEA-grid div:nth-child(1) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+  .FEA-grid div:nth-child(2) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .FEA-grid div:nth-child(3),
+  .FEA-grid div:nth-child(4),
+  .FEA-grid div:nth-child(7),
+  .FEA-grid div:nth-child(8) {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .FEA-grid .neon3 {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 10em;
+            perspective: 10em;
+    -webkit-perspective-origin: 50% 47.5%em;
+            perspective-origin: 50% 47.5%em;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .FEA-grid .neon3 h4 {
+    color: var(--nclr-2);
+  }
+  .FEA-grid .neon3 h3 {
+    color: var(--nclr-4);
+  }
+  .FEA-grid .neon3 p {
+    color: var(--nclr-1);
+  }
+  .FEA-grid .neon3 .cirbox {
+    -webkit-transition: font-size 1.5s ease-in-out;
+    transition: font-size 1.5s ease-in-out;
+    font-size: 0.33333em;
+  }
+  .night .FEA-grid .neon3 .neon-button {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+  }
+  .night .FEA-grid .neon3 .neon-txt {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+  }
+  .night .FEA-grid .neon3 .neon-wall {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+  }
+  .night .FEA-grid .neon3 .neon-circle {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-2), 0 0 0.5em 0 var(--nclr-2) !important;
+  }
+  .FEA-grid .neon3 .neon-button,
+  .FEA-grid .neon3 .neon-txt,
+  .FEA-grid .neon3 .neon-wall,
+  .FEA-grid .neon3 .neon-circle {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    font-family: "Blabeloo";
+    display: inline-block;
+    text-decoration: none;
+    color: var(--nclr-2);
+    border: var(--nclr-2) 0.125em solid;
+    padding: 0.5em;
+    border-radius: 50%;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon3 .neon-circle::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-2);
+            box-shadow: 0px 0px 0.5em 1.25em var(--nclr-2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .night .FEA-grid .neon3 .neon-circle::before {
+    opacity: 0.2;
+  }
+  .FEA-grid .neon3 .neon-wall::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-2);
+    top: 0%;
+    left: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon3 .neon-wall::before {
+    opacity: 0.2;
+  }
+  .FEA-grid .neon3 .neon-wall::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-2);
+    top: 0%;
+    right: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon3 .neon-wall::after {
+    opacity: 0.2;
+  }
+  .night .neon-button::before {
+    opacity: 0.4 !important;
+  }
+  .night .neon-txt::before {
+    opacity: 0.4 !important;
+  }
+  .FEA-grid .neon3 .neon-button::before,
+  .FEA-grid .neon3 .neon-txt::before {
+    will-change: opacity;
+    will-change: transform;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-2);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 1.5em;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-filter: blur(1em);
+            filter: blur(1em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon3 .neon-button::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-2) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-2) !important;
+  }
+  .night .FEA-grid .neon3 .neon-txt::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-2) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-2) !important;
+  }
+  .FEA-grid .neon3 .neon-button::after,
+  .FEA-grid .neon3 .neon-txt::after {
+    will-change: opacity;
+    will-change: transform;
+    content: "";
+    position: absolute;
+    top: -0.05em;
+    bottom: -0.05em;
+    left: -0.05em;
+    right: -0.05em;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    opacity: 0;
+    background-color: var(--nclr-2);
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  }
+  .night .FEA-grid .neon3 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon3 .neon-button:hover p,
+  .night .FEA-grid .neon3 .neon-button:hover h3,
+  .night .FEA-grid .neon3 .neon-button:hover h4,
+  .night .FEA-grid .neon3 .neon-button:hover a,
+  .night .FEA-grid .neon3 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon3 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon3 .neon-button:focus p,
+  .night .FEA-grid .neon3 .neon-button:focus h3,
+  .night .FEA-grid .neon3 .neon-button:focus h4,
+  .night .FEA-grid .neon3 .neon-button:focus a,
+  .night .FEA-grid .neon3 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon3 .neon-button:hover,
+  .FEA-grid .neon3 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon3 .neon-button:hover .cirbox,
+  .FEA-grid .neon3 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon3 .neon-button:hover p,
+  .FEA-grid .neon3 .neon-button:hover h3,
+  .FEA-grid .neon3 .neon-button:hover h4,
+  .FEA-grid .neon3 .neon-button:hover a,
+  .FEA-grid .neon3 .neon-button:hover span,
+  .FEA-grid .neon3 .neon-button:focus p,
+  .FEA-grid .neon3 .neon-button:focus h3,
+  .FEA-grid .neon3 .neon-button:focus h4,
+  .FEA-grid .neon3 .neon-button:focus a,
+  .FEA-grid .neon3 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon3 .neon-button:hover::after,
+  .FEA-grid .neon3 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
+  .FEA-grid .neon4 {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 10em;
+            perspective: 10em;
+    -webkit-perspective-origin: 50% 47.5%em;
+            perspective-origin: 50% 47.5%em;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .FEA-grid .neon4 h4 {
+    color: var(--nclr-4);
+  }
+  .FEA-grid .neon4 h3 {
+    color: var(--nclr-1);
+  }
+  .FEA-grid .neon4 p {
+    color: var(--nclr-3);
+  }
+  .FEA-grid .neon4 .cirbox {
+    -webkit-transition: font-size 1.5s ease-in-out;
+    transition: font-size 1.5s ease-in-out;
+    font-size: 0.33333em;
+  }
+  .night .FEA-grid .neon4 .neon-button {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-4), 0 0 0.5em 0 var(--nclr-4) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-4), 0 0 0.5em 0 var(--nclr-4) !important;
+  }
+  .night .FEA-grid .neon4 .neon-txt {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-4), 0 0 0.5em 0 var(--nclr-4) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-4), 0 0 0.5em 0 var(--nclr-4) !important;
+  }
+  .night .FEA-grid .neon4 .neon-wall {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-4), 0 0 0.5em 0 var(--nclr-4) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-4), 0 0 0.5em 0 var(--nclr-4) !important;
+  }
+  .night .FEA-grid .neon4 .neon-circle {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-4), 0 0 0.5em 0 var(--nclr-4) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-4), 0 0 0.5em 0 var(--nclr-4) !important;
+  }
+  .FEA-grid .neon4 .neon-button,
+  .FEA-grid .neon4 .neon-txt,
+  .FEA-grid .neon4 .neon-wall,
+  .FEA-grid .neon4 .neon-circle {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    font-family: "Blabeloo";
+    display: inline-block;
+    text-decoration: none;
+    color: var(--nclr-4);
+    border: var(--nclr-4) 0.125em solid;
+    padding: 0.5em;
+    border-radius: 50%;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon4 .neon-circle::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-4);
+            box-shadow: 0px 0px 0.5em 1.25em var(--nclr-4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .night .FEA-grid .neon4 .neon-circle::before {
+    opacity: 0.2;
+  }
+  .FEA-grid .neon4 .neon-wall::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-4);
+    top: 0%;
+    left: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon4 .neon-wall::before {
+    opacity: 0.2;
+  }
+  .FEA-grid .neon4 .neon-wall::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-4);
+    top: 0%;
+    right: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon4 .neon-wall::after {
+    opacity: 0.2;
+  }
+  .night .neon-button::before {
+    opacity: 0.4 !important;
+  }
+  .night .neon-txt::before {
+    opacity: 0.4 !important;
+  }
+  .FEA-grid .neon4 .neon-button::before,
+  .FEA-grid .neon4 .neon-txt::before {
+    will-change: opacity;
+    will-change: transform;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-4);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 1.5em;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-filter: blur(1em);
+            filter: blur(1em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon4 .neon-button::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-4) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-4) !important;
+  }
+  .night .FEA-grid .neon4 .neon-txt::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-4) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-4) !important;
+  }
+  .FEA-grid .neon4 .neon-button::after,
+  .FEA-grid .neon4 .neon-txt::after {
+    will-change: opacity;
+    will-change: transform;
+    content: "";
+    position: absolute;
+    top: -0.05em;
+    bottom: -0.05em;
+    left: -0.05em;
+    right: -0.05em;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    opacity: 0;
+    background-color: var(--nclr-4);
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  }
+  .night .FEA-grid .neon4 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon4 .neon-button:hover p,
+  .night .FEA-grid .neon4 .neon-button:hover h3,
+  .night .FEA-grid .neon4 .neon-button:hover h4,
+  .night .FEA-grid .neon4 .neon-button:hover a,
+  .night .FEA-grid .neon4 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon4 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon4 .neon-button:focus p,
+  .night .FEA-grid .neon4 .neon-button:focus h3,
+  .night .FEA-grid .neon4 .neon-button:focus h4,
+  .night .FEA-grid .neon4 .neon-button:focus a,
+  .night .FEA-grid .neon4 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon4 .neon-button:hover,
+  .FEA-grid .neon4 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon4 .neon-button:hover .cirbox,
+  .FEA-grid .neon4 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon4 .neon-button:hover p,
+  .FEA-grid .neon4 .neon-button:hover h3,
+  .FEA-grid .neon4 .neon-button:hover h4,
+  .FEA-grid .neon4 .neon-button:hover a,
+  .FEA-grid .neon4 .neon-button:hover span,
+  .FEA-grid .neon4 .neon-button:focus p,
+  .FEA-grid .neon4 .neon-button:focus h3,
+  .FEA-grid .neon4 .neon-button:focus h4,
+  .FEA-grid .neon4 .neon-button:focus a,
+  .FEA-grid .neon4 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon4 .neon-button:hover::after,
+  .FEA-grid .neon4 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
+  .FEA-grid .neon7 {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 10em;
+            perspective: 10em;
+    -webkit-perspective-origin: 50% 47.5%em;
+            perspective-origin: 50% 47.5%em;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .FEA-grid .neon7 h4 {
+    color: var(--nclr-7);
+  }
+  .FEA-grid .neon7 h3 {
+    color: var(--nclr-5);
+  }
+  .FEA-grid .neon7 p {
+    color: var(--nclr-2);
+  }
+  .FEA-grid .neon7 .cirbox {
+    -webkit-transition: font-size 1.5s ease-in-out;
+    transition: font-size 1.5s ease-in-out;
+    font-size: 0.33333em;
+  }
+  .night .FEA-grid .neon7 .neon-button {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+  }
+  .night .FEA-grid .neon7 .neon-txt {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+  }
+  .night .FEA-grid .neon7 .neon-wall {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+  }
+  .night .FEA-grid .neon7 .neon-circle {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+  }
+  .FEA-grid .neon7 .neon-button,
+  .FEA-grid .neon7 .neon-txt,
+  .FEA-grid .neon7 .neon-wall,
+  .FEA-grid .neon7 .neon-circle {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    font-family: "Blabeloo";
+    display: inline-block;
+    text-decoration: none;
+    color: var(--nclr-7);
+    border: var(--nclr-7) 0.125em solid;
+    padding: 0.5em;
+    border-radius: 50%;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon7 .neon-circle::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-7);
+            box-shadow: 0px 0px 0.5em 1.25em var(--nclr-7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .night .FEA-grid .neon7 .neon-circle::before {
+    opacity: 0.2;
+  }
+  .FEA-grid .neon7 .neon-wall::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-7);
+    top: 0%;
+    left: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon7 .neon-wall::before {
+    opacity: 0.2;
+  }
+  .FEA-grid .neon7 .neon-wall::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-7);
+    top: 0%;
+    right: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon7 .neon-wall::after {
+    opacity: 0.2;
+  }
+  .night .neon-button::before {
+    opacity: 0.4 !important;
+  }
+  .night .neon-txt::before {
+    opacity: 0.4 !important;
+  }
+  .FEA-grid .neon7 .neon-button::before,
+  .FEA-grid .neon7 .neon-txt::before {
+    will-change: opacity;
+    will-change: transform;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-7);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 1.5em;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-filter: blur(1em);
+            filter: blur(1em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon7 .neon-button::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+  }
+  .night .FEA-grid .neon7 .neon-txt::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+  }
+  .FEA-grid .neon7 .neon-button::after,
+  .FEA-grid .neon7 .neon-txt::after {
+    will-change: opacity;
+    will-change: transform;
+    content: "";
+    position: absolute;
+    top: -0.05em;
+    bottom: -0.05em;
+    left: -0.05em;
+    right: -0.05em;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    opacity: 0;
+    background-color: var(--nclr-7);
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  }
+  .night .FEA-grid .neon7 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon7 .neon-button:hover p,
+  .night .FEA-grid .neon7 .neon-button:hover h3,
+  .night .FEA-grid .neon7 .neon-button:hover h4,
+  .night .FEA-grid .neon7 .neon-button:hover a,
+  .night .FEA-grid .neon7 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon7 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon7 .neon-button:focus p,
+  .night .FEA-grid .neon7 .neon-button:focus h3,
+  .night .FEA-grid .neon7 .neon-button:focus h4,
+  .night .FEA-grid .neon7 .neon-button:focus a,
+  .night .FEA-grid .neon7 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon7 .neon-button:hover,
+  .FEA-grid .neon7 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon7 .neon-button:hover .cirbox,
+  .FEA-grid .neon7 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon7 .neon-button:hover p,
+  .FEA-grid .neon7 .neon-button:hover h3,
+  .FEA-grid .neon7 .neon-button:hover h4,
+  .FEA-grid .neon7 .neon-button:hover a,
+  .FEA-grid .neon7 .neon-button:hover span,
+  .FEA-grid .neon7 .neon-button:focus p,
+  .FEA-grid .neon7 .neon-button:focus h3,
+  .FEA-grid .neon7 .neon-button:focus h4,
+  .FEA-grid .neon7 .neon-button:focus a,
+  .FEA-grid .neon7 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon7 .neon-button:hover::after,
+  .FEA-grid .neon7 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
+  .FEA-grid .neon8 {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 10em;
+            perspective: 10em;
+    -webkit-perspective-origin: 50% 47.5%em;
+            perspective-origin: 50% 47.5%em;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .FEA-grid .neon8 h4 {
+    color: var(--nclr-5);
+  }
+  .FEA-grid .neon8 h3 {
+    color: var(--nclr-2);
+  }
+  .FEA-grid .neon8 p {
+    color: var(--nclr-4);
+  }
+  .FEA-grid .neon8 .cirbox {
+    -webkit-transition: font-size 1.5s ease-in-out;
+    transition: font-size 1.5s ease-in-out;
+    font-size: 0.33333em;
+  }
+  .night .FEA-grid .neon8 .neon-button {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+  }
+  .night .FEA-grid .neon8 .neon-txt {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+  }
+  .night .FEA-grid .neon8 .neon-wall {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+  }
+  .night .FEA-grid .neon8 .neon-circle {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-5), 0 0 0.5em 0 var(--nclr-5) !important;
+  }
+  .FEA-grid .neon8 .neon-button,
+  .FEA-grid .neon8 .neon-txt,
+  .FEA-grid .neon8 .neon-wall,
+  .FEA-grid .neon8 .neon-circle {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    font-family: "Blabeloo";
+    display: inline-block;
+    text-decoration: none;
+    color: var(--nclr-5);
+    border: var(--nclr-5) 0.125em solid;
+    padding: 0.5em;
+    border-radius: 50%;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon8 .neon-circle::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-5);
+            box-shadow: 0px 0px 0.5em 1.25em var(--nclr-5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .night .FEA-grid .neon8 .neon-circle::before {
+    opacity: 0.2;
+  }
+  .FEA-grid .neon8 .neon-wall::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-5);
+    top: 0%;
+    left: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon8 .neon-wall::before {
+    opacity: 0.2;
+  }
+  .FEA-grid .neon8 .neon-wall::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-5);
+    top: 0%;
+    right: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon8 .neon-wall::after {
+    opacity: 0.2;
+  }
+  .night .neon-button::before {
+    opacity: 0.4 !important;
+  }
+  .night .neon-txt::before {
+    opacity: 0.4 !important;
+  }
+  .FEA-grid .neon8 .neon-button::before,
+  .FEA-grid .neon8 .neon-txt::before {
+    will-change: opacity;
+    will-change: transform;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-5);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 1.5em;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-filter: blur(1em);
+            filter: blur(1em);
+    opacity: 0;
+  }
+  .night .FEA-grid .neon8 .neon-button::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-5) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-5) !important;
+  }
+  .night .FEA-grid .neon8 .neon-txt::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-5) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-5) !important;
+  }
+  .FEA-grid .neon8 .neon-button::after,
+  .FEA-grid .neon8 .neon-txt::after {
+    will-change: opacity;
+    will-change: transform;
+    content: "";
+    position: absolute;
+    top: -0.05em;
+    bottom: -0.05em;
+    left: -0.05em;
+    right: -0.05em;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    opacity: 0;
+    background-color: var(--nclr-5);
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  }
+  .night .FEA-grid .neon8 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon8 .neon-button:hover p,
+  .night .FEA-grid .neon8 .neon-button:hover h3,
+  .night .FEA-grid .neon8 .neon-button:hover h4,
+  .night .FEA-grid .neon8 .neon-button:hover a,
+  .night .FEA-grid .neon8 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon8 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon8 .neon-button:focus p,
+  .night .FEA-grid .neon8 .neon-button:focus h3,
+  .night .FEA-grid .neon8 .neon-button:focus h4,
+  .night .FEA-grid .neon8 .neon-button:focus a,
+  .night .FEA-grid .neon8 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon8 .neon-button:hover,
+  .FEA-grid .neon8 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon8 .neon-button:hover .cirbox,
+  .FEA-grid .neon8 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon8 .neon-button:hover p,
+  .FEA-grid .neon8 .neon-button:hover h3,
+  .FEA-grid .neon8 .neon-button:hover h4,
+  .FEA-grid .neon8 .neon-button:hover a,
+  .FEA-grid .neon8 .neon-button:hover span,
+  .FEA-grid .neon8 .neon-button:focus p,
+  .FEA-grid .neon8 .neon-button:focus h3,
+  .FEA-grid .neon8 .neon-button:focus h4,
+  .FEA-grid .neon8 .neon-button:focus a,
+  .FEA-grid .neon8 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon8 .neon-button:hover::after,
+  .FEA-grid .neon8 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
+}
+
 .DL-grid {
   width: 90%;
   margin: 3rem auto;
@@ -7288,17 +8277,6 @@ body ul {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  /*
-  margin: 5em auto;
-  direction: rtl;
-
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 3.5em;
-  padding: 10px;
-  justify-items: center;
-  align-content: center;
-*/
 }
 
 .DL-grid-item1 {
@@ -8172,6 +9150,29 @@ body ul {
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
   opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .DL-grid {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .DL-grid-item1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .DL-grid-item2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
 }
 
 .neonQ {
@@ -9824,6 +10825,18 @@ body ul {
   opacity: 1;
 }
 
+#CUS {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 1024px) {
+  #CUS {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 .links-sm {
   margin: 0px;
   padding: 0px;
@@ -10663,6 +11676,480 @@ body ul {
   opacity: 1;
 }
 
+@media (min-width: 768px) {
+  .links-sm {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .links-sm .bale {
+    font-size: 1;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 10em;
+            perspective: 10em;
+    -webkit-perspective-origin: 50% 47.5%em;
+            perspective-origin: 50% 47.5%em;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .links-sm .bale a {
+    color: var(--nclr-1);
+  }
+  .links-sm .bale .cirbox {
+    -webkit-transition: font-size 1.5s ease-in-out;
+    transition: font-size 1.5s ease-in-out;
+    font-size: 0.33333em;
+  }
+  .night .links-sm .bale .neon-button {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-9), 0 0 0.5em 0 var(--nclr-9) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-9), 0 0 0.5em 0 var(--nclr-9) !important;
+  }
+  .night .links-sm .bale .neon-txt {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-9), 0 0 0.5em 0 var(--nclr-9) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-9), 0 0 0.5em 0 var(--nclr-9) !important;
+  }
+  .night .links-sm .bale .neon-wall {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-9), 0 0 0.5em 0 var(--nclr-9) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-9), 0 0 0.5em 0 var(--nclr-9) !important;
+  }
+  .night .links-sm .bale .neon-circle {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-9), 0 0 0.5em 0 var(--nclr-9) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-9), 0 0 0.5em 0 var(--nclr-9) !important;
+  }
+  .links-sm .bale .neon-button,
+  .links-sm .bale .neon-txt,
+  .links-sm .bale .neon-wall,
+  .links-sm .bale .neon-circle {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    font-family: "Blabeloo";
+    display: inline-block;
+    text-decoration: none;
+    color: var(--nclr-9);
+    border: var(--nclr-9) 0.125em solid;
+    padding: 0.5em;
+    border-radius: 50%;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .links-sm .bale .neon-circle::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-9);
+            box-shadow: 0px 0px 0.5em 1.25em var(--nclr-9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .night .links-sm .bale .neon-circle::before {
+    opacity: 0.2;
+  }
+  .links-sm .bale .neon-wall::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-9);
+    top: 0%;
+    left: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .links-sm .bale .neon-wall::before {
+    opacity: 0.2;
+  }
+  .links-sm .bale .neon-wall::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-9);
+    top: 0%;
+    right: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .links-sm .bale .neon-wall::after {
+    opacity: 0.2;
+  }
+  .night .neon-button::before {
+    opacity: 0.4 !important;
+  }
+  .night .neon-txt::before {
+    opacity: 0.4 !important;
+  }
+  .links-sm .bale .neon-button::before,
+  .links-sm .bale .neon-txt::before {
+    will-change: opacity;
+    will-change: transform;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-9);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 1.5em;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-filter: blur(1em);
+            filter: blur(1em);
+    opacity: 0;
+  }
+  .night .links-sm .bale .neon-button::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-9) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-9) !important;
+  }
+  .night .links-sm .bale .neon-txt::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-9) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-9) !important;
+  }
+  .links-sm .bale .neon-button::after,
+  .links-sm .bale .neon-txt::after {
+    will-change: opacity;
+    will-change: transform;
+    content: "";
+    position: absolute;
+    top: -0.05em;
+    bottom: -0.05em;
+    left: -0.05em;
+    right: -0.05em;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    opacity: 0;
+    background-color: var(--nclr-9);
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  }
+  .night .links-sm .bale .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .bale .neon-button:hover p,
+  .night .links-sm .bale .neon-button:hover h3,
+  .night .links-sm .bale .neon-button:hover h4,
+  .night .links-sm .bale .neon-button:hover a,
+  .night .links-sm .bale .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .bale .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .bale .neon-button:focus p,
+  .night .links-sm .bale .neon-button:focus h3,
+  .night .links-sm .bale .neon-button:focus h4,
+  .night .links-sm .bale .neon-button:focus a,
+  .night .links-sm .bale .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .links-sm .bale .neon-button:hover,
+  .links-sm .bale .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .links-sm .bale .neon-button:hover .cirbox,
+  .links-sm .bale .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .links-sm .bale .neon-button:hover p,
+  .links-sm .bale .neon-button:hover h3,
+  .links-sm .bale .neon-button:hover h4,
+  .links-sm .bale .neon-button:hover a,
+  .links-sm .bale .neon-button:hover span,
+  .links-sm .bale .neon-button:focus p,
+  .links-sm .bale .neon-button:focus h3,
+  .links-sm .bale .neon-button:focus h4,
+  .links-sm .bale .neon-button:focus a,
+  .links-sm .bale .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .links-sm .bale .neon-button:hover::after,
+  .links-sm .bale .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
+  .links-sm .insta {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 10em;
+            perspective: 10em;
+    -webkit-perspective-origin: 50% 47.5%em;
+            perspective-origin: 50% 47.5%em;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .links-sm .insta a {
+    color: var(--nclr-5);
+  }
+  .links-sm .insta .cirbox {
+    -webkit-transition: font-size 1.5s ease-in-out;
+    transition: font-size 1.5s ease-in-out;
+    font-size: 0.33333em;
+  }
+  .night .links-sm .insta .neon-button {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+  }
+  .night .links-sm .insta .neon-txt {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+  }
+  .night .links-sm .insta .neon-wall {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+  }
+  .night .links-sm .insta .neon-circle {
+    text-shadow: 0 0 0em rgba(255, 255, 255, 0.344), 0 0 0em currentColor !important;
+    -webkit-box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+            box-shadow: inset 0 0 0.5em 0 var(--nclr-7), 0 0 0.5em 0 var(--nclr-7) !important;
+  }
+  .links-sm .insta .neon-button,
+  .links-sm .insta .neon-txt,
+  .links-sm .insta .neon-wall,
+  .links-sm .insta .neon-circle {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotateY(-30deg);
+            transform: rotateY(-30deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    font-family: "Blabeloo";
+    display: inline-block;
+    text-decoration: none;
+    color: var(--nclr-7);
+    border: var(--nclr-7) 0.125em solid;
+    padding: 0.5em;
+    border-radius: 50%;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .links-sm .insta .neon-circle::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0.5em 1.25em var(--nclr-7);
+            box-shadow: 0px 0px 0.5em 1.25em var(--nclr-7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .night .links-sm .insta .neon-circle::before {
+    opacity: 0.2;
+  }
+  .links-sm .insta .neon-wall::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-7);
+    top: 0%;
+    left: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .links-sm .insta .neon-wall::before {
+    opacity: 0.2;
+  }
+  .links-sm .insta .neon-wall::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-7);
+    top: 0%;
+    right: 105%;
+    width: 100%;
+    height: 100%;
+    max-width: 0.5em;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(0.75em);
+            filter: blur(0.75em);
+    opacity: 0;
+  }
+  .night .links-sm .insta .neon-wall::after {
+    opacity: 0.2;
+  }
+  .night .neon-button::before {
+    opacity: 0.4 !important;
+  }
+  .night .neon-txt::before {
+    opacity: 0.4 !important;
+  }
+  .links-sm .insta .neon-button::before,
+  .links-sm .insta .neon-txt::before {
+    will-change: opacity;
+    will-change: transform;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--nclr-7);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 1.5em;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-filter: blur(1em);
+            filter: blur(1em);
+    opacity: 0;
+  }
+  .night .links-sm .insta .neon-button::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+  }
+  .night .links-sm .insta .neon-txt::after {
+    -webkit-box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+            box-shadow: 0 0 2em 0.5em var(--nclr-7) !important;
+  }
+  .links-sm .insta .neon-button::after,
+  .links-sm .insta .neon-txt::after {
+    will-change: opacity;
+    will-change: transform;
+    content: "";
+    position: absolute;
+    top: -0.05em;
+    bottom: -0.05em;
+    left: -0.05em;
+    right: -0.05em;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    opacity: 0;
+    background-color: var(--nclr-7);
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear;
+    transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
+  }
+  .night .links-sm .insta .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .insta .neon-button:hover p,
+  .night .links-sm .insta .neon-button:hover h3,
+  .night .links-sm .insta .neon-button:hover h4,
+  .night .links-sm .insta .neon-button:hover a,
+  .night .links-sm .insta .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .insta .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .insta .neon-button:focus p,
+  .night .links-sm .insta .neon-button:focus h3,
+  .night .links-sm .insta .neon-button:focus h4,
+  .night .links-sm .insta .neon-button:focus a,
+  .night .links-sm .insta .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .links-sm .insta .neon-button:hover,
+  .links-sm .insta .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .links-sm .insta .neon-button:hover .cirbox,
+  .links-sm .insta .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .links-sm .insta .neon-button:hover p,
+  .links-sm .insta .neon-button:hover h3,
+  .links-sm .insta .neon-button:hover h4,
+  .links-sm .insta .neon-button:hover a,
+  .links-sm .insta .neon-button:hover span,
+  .links-sm .insta .neon-button:focus p,
+  .links-sm .insta .neon-button:focus h3,
+  .links-sm .insta .neon-button:focus h4,
+  .links-sm .insta .neon-button:focus a,
+  .links-sm .insta .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .links-sm .insta .neon-button:hover::after,
+  .links-sm .insta .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
+}
+
 .address {
   width: 80%;
   max-width: 450;
@@ -10937,11 +12424,11 @@ body ul {
   opacity: 1;
 }
 
-.cp {
-  direction: rtl;
-  font-family: "nazanin";
-  font-size: 16px;
-  text-align: center;
-  color: var(--nclr-7);
+.esra,
+.cert {
+  margin-top: 1em;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 15px;
 }
 /*# sourceMappingURL=style.css.map */
