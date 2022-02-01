@@ -265,67 +265,73 @@ $animspeed: 1s;
   }
 
 
-  @at-root .night #{&} .neon-button:hover {
-    color: var(--clr-bg-dark);
 
-    p,
-    h3,
-    h4,
-    a,
-    span {
+
+  @media (min-width: 1024px) {
+
+    @at-root .night #{&} .neon-button:hover {
       color: var(--clr-bg-dark);
+
+      p,
+      h3,
+      h4,
+      a,
+      span {
+        color: var(--clr-bg-dark);
+      }
     }
-  }
 
-  @at-root .night #{&} .neon-button:focus {
-    color: var(--clr-bg-dark);
-
-    p,
-    h3,
-    h4,
-    a,
-    span {
+    @at-root .night #{&} .neon-button:focus {
       color: var(--clr-bg-dark);
-    }
-  }
 
-  .neon-button:hover,
-  .neon-button:focus {
-    $fSize: 16px;
-
-    .cirbox {
-      will-change: opacity;
-      will-change: transform;
-
-      transition: font-size $animspeed ease-in-out;
-      font-size: $fSize;
+      p,
+      h3,
+      h4,
+      a,
+      span {
+        color: var(--clr-bg-dark);
+      }
     }
 
+    .neon-button:hover,
+    .neon-button:focus {
+      $fSize: 16px;
+
+      .cirbox {
+        will-change: opacity;
+        will-change: transform;
+
+        transition: font-size $animspeed ease-in-out;
+        font-size: $fSize;
+      }
 
 
-    color: var(--clr-bg-light);
 
-    p,
-    h3,
-    h4,
-    a,
-    span {
       color: var(--clr-bg-light);
+
+      p,
+      h3,
+      h4,
+      a,
+      span {
+        color: var(--clr-bg-light);
+      }
+
+
+      text-shadow: none;
+
+      transform: rotateY(0deg);
+      transition: transform $animspeed ease-in-out;
     }
 
 
-    text-shadow: none;
 
-    transform: rotateY(0deg);
-    transition: transform $animspeed ease-in-out;
-  }
+    .neon-button:hover::after,
+    .neon-button:focus::after {
+      transition: opacity $animspeed ease-in-out;
+      opacity: 1;
+    }
 
-
-
-  .neon-button:hover::after,
-  .neon-button:focus::after {
-    transition: opacity $animspeed ease-in-out;
-    opacity: 1;
   }
 }
 
@@ -633,21 +639,25 @@ body {
       background-color: var(--nclr-7);
     }
 
-    &:hover,
-    &:focus {
-      @at-root .night #{&} {
 
-        div,
-        div::before {
-          background-color: var(--clr-bg-dark);
+    @media (min-width: 1024px) {
+
+      &:hover,
+      &:focus {
+        @at-root .night #{&} {
+
+          div,
+          div::before {
+            background-color: var(--clr-bg-dark);
+          }
         }
-      }
 
-      @at-root .day #{&} {
+        @at-root .day #{&} {
 
-        div,
-        div::before {
-          background-color: var(--clr-bg-light);
+          div,
+          div::before {
+            background-color: var(--clr-bg-light);
+          }
         }
       }
     }
@@ -720,16 +730,18 @@ body {
   }
 
 
-  .menui:hover,
-  .menui:focus {
-    z-index: 5 !important;
+  @media (min-width: 1024px) {
 
-    .notactive {
-      transition: transform ease-in $animspeed;
-      transform: scale(2) translateX(5px);
+    .menui:hover,
+    .menui:focus {
+      z-index: 5 !important;
+
+      .notactive {
+        transition: transform ease-in $animspeed;
+        transform: scale(2) translateX(5px);
+      }
     }
   }
-
 
 }
 

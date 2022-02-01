@@ -411,69 +411,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .onvan .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .onvan .neon-button:hover p,
-.night .onvan .neon-button:hover h3,
-.night .onvan .neon-button:hover h4,
-.night .onvan .neon-button:hover a,
-.night .onvan .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .onvan .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .onvan .neon-button:focus p,
-.night .onvan .neon-button:focus h3,
-.night .onvan .neon-button:focus h4,
-.night .onvan .neon-button:focus a,
-.night .onvan .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.onvan .neon-button:hover,
-.onvan .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.onvan .neon-button:hover .cirbox,
-.onvan .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.onvan .neon-button:hover p,
-.onvan .neon-button:hover h3,
-.onvan .neon-button:hover h4,
-.onvan .neon-button:hover a,
-.onvan .neon-button:hover span,
-.onvan .neon-button:focus p,
-.onvan .neon-button:focus h3,
-.onvan .neon-button:focus h4,
-.onvan .neon-button:focus a,
-.onvan .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.onvan .neon-button:hover::after,
-.onvan .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .onvan .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .onvan .neon-button:hover p,
+  .night .onvan .neon-button:hover h3,
+  .night .onvan .neon-button:hover h4,
+  .night .onvan .neon-button:hover a,
+  .night .onvan .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .onvan .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .onvan .neon-button:focus p,
+  .night .onvan .neon-button:focus h3,
+  .night .onvan .neon-button:focus h4,
+  .night .onvan .neon-button:focus a,
+  .night .onvan .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .onvan .neon-button:hover,
+  .onvan .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .onvan .neon-button:hover .cirbox,
+  .onvan .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .onvan .neon-button:hover p,
+  .onvan .neon-button:hover h3,
+  .onvan .neon-button:hover h4,
+  .onvan .neon-button:hover a,
+  .onvan .neon-button:hover span,
+  .onvan .neon-button:focus p,
+  .onvan .neon-button:focus h3,
+  .onvan .neon-button:focus h4,
+  .onvan .neon-button:focus a,
+  .onvan .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .onvan .neon-button:hover::after,
+  .onvan .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .matn {
@@ -757,69 +752,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .lamp .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .lamp .neon-button:hover p,
-.night .lamp .neon-button:hover h3,
-.night .lamp .neon-button:hover h4,
-.night .lamp .neon-button:hover a,
-.night .lamp .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .lamp .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .lamp .neon-button:focus p,
-.night .lamp .neon-button:focus h3,
-.night .lamp .neon-button:focus h4,
-.night .lamp .neon-button:focus a,
-.night .lamp .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.lamp .neon-button:hover,
-.lamp .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.lamp .neon-button:hover .cirbox,
-.lamp .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.lamp .neon-button:hover p,
-.lamp .neon-button:hover h3,
-.lamp .neon-button:hover h4,
-.lamp .neon-button:hover a,
-.lamp .neon-button:hover span,
-.lamp .neon-button:focus p,
-.lamp .neon-button:focus h3,
-.lamp .neon-button:focus h4,
-.lamp .neon-button:focus a,
-.lamp .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.lamp .neon-button:hover::after,
-.lamp .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .lamp .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .lamp .neon-button:hover p,
+  .night .lamp .neon-button:hover h3,
+  .night .lamp .neon-button:hover h4,
+  .night .lamp .neon-button:hover a,
+  .night .lamp .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .lamp .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .lamp .neon-button:focus p,
+  .night .lamp .neon-button:focus h3,
+  .night .lamp .neon-button:focus h4,
+  .night .lamp .neon-button:focus a,
+  .night .lamp .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .lamp .neon-button:hover,
+  .lamp .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .lamp .neon-button:hover .cirbox,
+  .lamp .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .lamp .neon-button:hover p,
+  .lamp .neon-button:hover h3,
+  .lamp .neon-button:hover h4,
+  .lamp .neon-button:hover a,
+  .lamp .neon-button:hover span,
+  .lamp .neon-button:focus p,
+  .lamp .neon-button:focus h3,
+  .lamp .neon-button:focus h4,
+  .lamp .neon-button:focus a,
+  .lamp .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .lamp .neon-button:hover::after,
+  .lamp .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .menu {
@@ -916,16 +906,17 @@ body ul {
   background-color: var(--nclr-7);
 }
 
-.night .menu .mls:hover div,
-.night .menu .mls:hover div::before, .menu .mls:focus div,
-.menu .mls:focus div::before {
-  background-color: var(--clr-bg-dark);
-}
-
-.day .menu .mls:hover div,
-.day .menu .mls:hover div::before, .menu .mls:focus div,
-.menu .mls:focus div::before {
-  background-color: var(--clr-bg-light);
+@media (min-width: 1024px) {
+  .night .menu .mls:hover div,
+  .night .menu .mls:hover div::before, .menu .mls:focus div,
+  .menu .mls:focus div::before {
+    background-color: var(--clr-bg-dark);
+  }
+  .day .menu .mls:hover div,
+  .day .menu .mls:hover div::before, .menu .mls:focus div,
+  .menu .mls:focus div::before {
+    background-color: var(--clr-bg-light);
+  }
 }
 
 .menubox {
@@ -1117,69 +1108,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .menu .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .menu .neon-button:hover p,
-.night .menu .neon-button:hover h3,
-.night .menu .neon-button:hover h4,
-.night .menu .neon-button:hover a,
-.night .menu .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .menu .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .menu .neon-button:focus p,
-.night .menu .neon-button:focus h3,
-.night .menu .neon-button:focus h4,
-.night .menu .neon-button:focus a,
-.night .menu .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.menu .neon-button:hover,
-.menu .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.menu .neon-button:hover .cirbox,
-.menu .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.menu .neon-button:hover p,
-.menu .neon-button:hover h3,
-.menu .neon-button:hover h4,
-.menu .neon-button:hover a,
-.menu .neon-button:hover span,
-.menu .neon-button:focus p,
-.menu .neon-button:focus h3,
-.menu .neon-button:focus h4,
-.menu .neon-button:focus a,
-.menu .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.menu .neon-button:hover::after,
-.menu .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .menu .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .menu .neon-button:hover p,
+  .night .menu .neon-button:hover h3,
+  .night .menu .neon-button:hover h4,
+  .night .menu .neon-button:hover a,
+  .night .menu .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .menu .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .menu .neon-button:focus p,
+  .night .menu .neon-button:focus h3,
+  .night .menu .neon-button:focus h4,
+  .night .menu .neon-button:focus a,
+  .night .menu .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .menu .neon-button:hover,
+  .menu .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .menu .neon-button:hover .cirbox,
+  .menu .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .menu .neon-button:hover p,
+  .menu .neon-button:hover h3,
+  .menu .neon-button:hover h4,
+  .menu .neon-button:hover a,
+  .menu .neon-button:hover span,
+  .menu .neon-button:focus p,
+  .menu .neon-button:focus h3,
+  .menu .neon-button:focus h4,
+  .menu .neon-button:focus a,
+  .menu .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .menu .neon-button:hover::after,
+  .menu .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .menuclose .ml1 {
@@ -1261,19 +1247,20 @@ body ul {
   z-index: 3 !important;
 }
 
-.menu-items .menui:hover,
-.menu-items .menui:focus {
-  z-index: 5 !important;
-}
-
-.menu-items .menui:hover .notactive,
-.menu-items .menui:focus .notactive {
-  -webkit-transition: -webkit-transform ease-in 1s;
-  transition: -webkit-transform ease-in 1s;
-  transition: transform ease-in 1s;
-  transition: transform ease-in 1s, -webkit-transform ease-in 1s;
-  -webkit-transform: scale(2) translateX(5px);
-          transform: scale(2) translateX(5px);
+@media (min-width: 1024px) {
+  .menu-items .menui:hover,
+  .menu-items .menui:focus {
+    z-index: 5 !important;
+  }
+  .menu-items .menui:hover .notactive,
+  .menu-items .menui:focus .notactive {
+    -webkit-transition: -webkit-transform ease-in 1s;
+    transition: -webkit-transform ease-in 1s;
+    transition: transform ease-in 1s;
+    transition: transform ease-in 1s, -webkit-transform ease-in 1s;
+    -webkit-transform: scale(2) translateX(5px);
+            transform: scale(2) translateX(5px);
+  }
 }
 
 .xMenu {
@@ -1736,69 +1723,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .mbtnh .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtnh .neon-button:hover p,
-.night .mbtnh .neon-button:hover h3,
-.night .mbtnh .neon-button:hover h4,
-.night .mbtnh .neon-button:hover a,
-.night .mbtnh .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtnh .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtnh .neon-button:focus p,
-.night .mbtnh .neon-button:focus h3,
-.night .mbtnh .neon-button:focus h4,
-.night .mbtnh .neon-button:focus a,
-.night .mbtnh .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.mbtnh .neon-button:hover,
-.mbtnh .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.mbtnh .neon-button:hover .cirbox,
-.mbtnh .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.mbtnh .neon-button:hover p,
-.mbtnh .neon-button:hover h3,
-.mbtnh .neon-button:hover h4,
-.mbtnh .neon-button:hover a,
-.mbtnh .neon-button:hover span,
-.mbtnh .neon-button:focus p,
-.mbtnh .neon-button:focus h3,
-.mbtnh .neon-button:focus h4,
-.mbtnh .neon-button:focus a,
-.mbtnh .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.mbtnh .neon-button:hover::after,
-.mbtnh .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .mbtnh .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtnh .neon-button:hover p,
+  .night .mbtnh .neon-button:hover h3,
+  .night .mbtnh .neon-button:hover h4,
+  .night .mbtnh .neon-button:hover a,
+  .night .mbtnh .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtnh .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtnh .neon-button:focus p,
+  .night .mbtnh .neon-button:focus h3,
+  .night .mbtnh .neon-button:focus h4,
+  .night .mbtnh .neon-button:focus a,
+  .night .mbtnh .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .mbtnh .neon-button:hover,
+  .mbtnh .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .mbtnh .neon-button:hover .cirbox,
+  .mbtnh .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .mbtnh .neon-button:hover p,
+  .mbtnh .neon-button:hover h3,
+  .mbtnh .neon-button:hover h4,
+  .mbtnh .neon-button:hover a,
+  .mbtnh .neon-button:hover span,
+  .mbtnh .neon-button:focus p,
+  .mbtnh .neon-button:focus h3,
+  .mbtnh .neon-button:focus h4,
+  .mbtnh .neon-button:focus a,
+  .mbtnh .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .mbtnh .neon-button:hover::after,
+  .mbtnh .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .mbtn5 {
@@ -1997,69 +1979,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .mbtn5 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn5 .neon-button:hover p,
-.night .mbtn5 .neon-button:hover h3,
-.night .mbtn5 .neon-button:hover h4,
-.night .mbtn5 .neon-button:hover a,
-.night .mbtn5 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn5 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn5 .neon-button:focus p,
-.night .mbtn5 .neon-button:focus h3,
-.night .mbtn5 .neon-button:focus h4,
-.night .mbtn5 .neon-button:focus a,
-.night .mbtn5 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.mbtn5 .neon-button:hover,
-.mbtn5 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.mbtn5 .neon-button:hover .cirbox,
-.mbtn5 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.mbtn5 .neon-button:hover p,
-.mbtn5 .neon-button:hover h3,
-.mbtn5 .neon-button:hover h4,
-.mbtn5 .neon-button:hover a,
-.mbtn5 .neon-button:hover span,
-.mbtn5 .neon-button:focus p,
-.mbtn5 .neon-button:focus h3,
-.mbtn5 .neon-button:focus h4,
-.mbtn5 .neon-button:focus a,
-.mbtn5 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.mbtn5 .neon-button:hover::after,
-.mbtn5 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .mbtn5 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn5 .neon-button:hover p,
+  .night .mbtn5 .neon-button:hover h3,
+  .night .mbtn5 .neon-button:hover h4,
+  .night .mbtn5 .neon-button:hover a,
+  .night .mbtn5 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn5 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn5 .neon-button:focus p,
+  .night .mbtn5 .neon-button:focus h3,
+  .night .mbtn5 .neon-button:focus h4,
+  .night .mbtn5 .neon-button:focus a,
+  .night .mbtn5 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .mbtn5 .neon-button:hover,
+  .mbtn5 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .mbtn5 .neon-button:hover .cirbox,
+  .mbtn5 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .mbtn5 .neon-button:hover p,
+  .mbtn5 .neon-button:hover h3,
+  .mbtn5 .neon-button:hover h4,
+  .mbtn5 .neon-button:hover a,
+  .mbtn5 .neon-button:hover span,
+  .mbtn5 .neon-button:focus p,
+  .mbtn5 .neon-button:focus h3,
+  .mbtn5 .neon-button:focus h4,
+  .mbtn5 .neon-button:focus a,
+  .mbtn5 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .mbtn5 .neon-button:hover::after,
+  .mbtn5 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .mbtn1 {
@@ -2258,69 +2235,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .mbtn1 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn1 .neon-button:hover p,
-.night .mbtn1 .neon-button:hover h3,
-.night .mbtn1 .neon-button:hover h4,
-.night .mbtn1 .neon-button:hover a,
-.night .mbtn1 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn1 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn1 .neon-button:focus p,
-.night .mbtn1 .neon-button:focus h3,
-.night .mbtn1 .neon-button:focus h4,
-.night .mbtn1 .neon-button:focus a,
-.night .mbtn1 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.mbtn1 .neon-button:hover,
-.mbtn1 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.mbtn1 .neon-button:hover .cirbox,
-.mbtn1 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.mbtn1 .neon-button:hover p,
-.mbtn1 .neon-button:hover h3,
-.mbtn1 .neon-button:hover h4,
-.mbtn1 .neon-button:hover a,
-.mbtn1 .neon-button:hover span,
-.mbtn1 .neon-button:focus p,
-.mbtn1 .neon-button:focus h3,
-.mbtn1 .neon-button:focus h4,
-.mbtn1 .neon-button:focus a,
-.mbtn1 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.mbtn1 .neon-button:hover::after,
-.mbtn1 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .mbtn1 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn1 .neon-button:hover p,
+  .night .mbtn1 .neon-button:hover h3,
+  .night .mbtn1 .neon-button:hover h4,
+  .night .mbtn1 .neon-button:hover a,
+  .night .mbtn1 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn1 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn1 .neon-button:focus p,
+  .night .mbtn1 .neon-button:focus h3,
+  .night .mbtn1 .neon-button:focus h4,
+  .night .mbtn1 .neon-button:focus a,
+  .night .mbtn1 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .mbtn1 .neon-button:hover,
+  .mbtn1 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .mbtn1 .neon-button:hover .cirbox,
+  .mbtn1 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .mbtn1 .neon-button:hover p,
+  .mbtn1 .neon-button:hover h3,
+  .mbtn1 .neon-button:hover h4,
+  .mbtn1 .neon-button:hover a,
+  .mbtn1 .neon-button:hover span,
+  .mbtn1 .neon-button:focus p,
+  .mbtn1 .neon-button:focus h3,
+  .mbtn1 .neon-button:focus h4,
+  .mbtn1 .neon-button:focus a,
+  .mbtn1 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .mbtn1 .neon-button:hover::after,
+  .mbtn1 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .mbtn2 {
@@ -2519,69 +2491,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .mbtn2 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn2 .neon-button:hover p,
-.night .mbtn2 .neon-button:hover h3,
-.night .mbtn2 .neon-button:hover h4,
-.night .mbtn2 .neon-button:hover a,
-.night .mbtn2 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn2 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn2 .neon-button:focus p,
-.night .mbtn2 .neon-button:focus h3,
-.night .mbtn2 .neon-button:focus h4,
-.night .mbtn2 .neon-button:focus a,
-.night .mbtn2 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.mbtn2 .neon-button:hover,
-.mbtn2 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.mbtn2 .neon-button:hover .cirbox,
-.mbtn2 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.mbtn2 .neon-button:hover p,
-.mbtn2 .neon-button:hover h3,
-.mbtn2 .neon-button:hover h4,
-.mbtn2 .neon-button:hover a,
-.mbtn2 .neon-button:hover span,
-.mbtn2 .neon-button:focus p,
-.mbtn2 .neon-button:focus h3,
-.mbtn2 .neon-button:focus h4,
-.mbtn2 .neon-button:focus a,
-.mbtn2 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.mbtn2 .neon-button:hover::after,
-.mbtn2 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .mbtn2 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn2 .neon-button:hover p,
+  .night .mbtn2 .neon-button:hover h3,
+  .night .mbtn2 .neon-button:hover h4,
+  .night .mbtn2 .neon-button:hover a,
+  .night .mbtn2 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn2 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn2 .neon-button:focus p,
+  .night .mbtn2 .neon-button:focus h3,
+  .night .mbtn2 .neon-button:focus h4,
+  .night .mbtn2 .neon-button:focus a,
+  .night .mbtn2 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .mbtn2 .neon-button:hover,
+  .mbtn2 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .mbtn2 .neon-button:hover .cirbox,
+  .mbtn2 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .mbtn2 .neon-button:hover p,
+  .mbtn2 .neon-button:hover h3,
+  .mbtn2 .neon-button:hover h4,
+  .mbtn2 .neon-button:hover a,
+  .mbtn2 .neon-button:hover span,
+  .mbtn2 .neon-button:focus p,
+  .mbtn2 .neon-button:focus h3,
+  .mbtn2 .neon-button:focus h4,
+  .mbtn2 .neon-button:focus a,
+  .mbtn2 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .mbtn2 .neon-button:hover::after,
+  .mbtn2 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .mbtn3 {
@@ -2780,69 +2747,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .mbtn3 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn3 .neon-button:hover p,
-.night .mbtn3 .neon-button:hover h3,
-.night .mbtn3 .neon-button:hover h4,
-.night .mbtn3 .neon-button:hover a,
-.night .mbtn3 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn3 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn3 .neon-button:focus p,
-.night .mbtn3 .neon-button:focus h3,
-.night .mbtn3 .neon-button:focus h4,
-.night .mbtn3 .neon-button:focus a,
-.night .mbtn3 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.mbtn3 .neon-button:hover,
-.mbtn3 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.mbtn3 .neon-button:hover .cirbox,
-.mbtn3 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.mbtn3 .neon-button:hover p,
-.mbtn3 .neon-button:hover h3,
-.mbtn3 .neon-button:hover h4,
-.mbtn3 .neon-button:hover a,
-.mbtn3 .neon-button:hover span,
-.mbtn3 .neon-button:focus p,
-.mbtn3 .neon-button:focus h3,
-.mbtn3 .neon-button:focus h4,
-.mbtn3 .neon-button:focus a,
-.mbtn3 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.mbtn3 .neon-button:hover::after,
-.mbtn3 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .mbtn3 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn3 .neon-button:hover p,
+  .night .mbtn3 .neon-button:hover h3,
+  .night .mbtn3 .neon-button:hover h4,
+  .night .mbtn3 .neon-button:hover a,
+  .night .mbtn3 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn3 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn3 .neon-button:focus p,
+  .night .mbtn3 .neon-button:focus h3,
+  .night .mbtn3 .neon-button:focus h4,
+  .night .mbtn3 .neon-button:focus a,
+  .night .mbtn3 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .mbtn3 .neon-button:hover,
+  .mbtn3 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .mbtn3 .neon-button:hover .cirbox,
+  .mbtn3 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .mbtn3 .neon-button:hover p,
+  .mbtn3 .neon-button:hover h3,
+  .mbtn3 .neon-button:hover h4,
+  .mbtn3 .neon-button:hover a,
+  .mbtn3 .neon-button:hover span,
+  .mbtn3 .neon-button:focus p,
+  .mbtn3 .neon-button:focus h3,
+  .mbtn3 .neon-button:focus h4,
+  .mbtn3 .neon-button:focus a,
+  .mbtn3 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .mbtn3 .neon-button:hover::after,
+  .mbtn3 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .mbtn4 {
@@ -3041,69 +3003,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .mbtn4 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn4 .neon-button:hover p,
-.night .mbtn4 .neon-button:hover h3,
-.night .mbtn4 .neon-button:hover h4,
-.night .mbtn4 .neon-button:hover a,
-.night .mbtn4 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn4 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .mbtn4 .neon-button:focus p,
-.night .mbtn4 .neon-button:focus h3,
-.night .mbtn4 .neon-button:focus h4,
-.night .mbtn4 .neon-button:focus a,
-.night .mbtn4 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.mbtn4 .neon-button:hover,
-.mbtn4 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.mbtn4 .neon-button:hover .cirbox,
-.mbtn4 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.mbtn4 .neon-button:hover p,
-.mbtn4 .neon-button:hover h3,
-.mbtn4 .neon-button:hover h4,
-.mbtn4 .neon-button:hover a,
-.mbtn4 .neon-button:hover span,
-.mbtn4 .neon-button:focus p,
-.mbtn4 .neon-button:focus h3,
-.mbtn4 .neon-button:focus h4,
-.mbtn4 .neon-button:focus a,
-.mbtn4 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.mbtn4 .neon-button:hover::after,
-.mbtn4 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .mbtn4 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn4 .neon-button:hover p,
+  .night .mbtn4 .neon-button:hover h3,
+  .night .mbtn4 .neon-button:hover h4,
+  .night .mbtn4 .neon-button:hover a,
+  .night .mbtn4 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn4 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .mbtn4 .neon-button:focus p,
+  .night .mbtn4 .neon-button:focus h3,
+  .night .mbtn4 .neon-button:focus h4,
+  .night .mbtn4 .neon-button:focus a,
+  .night .mbtn4 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .mbtn4 .neon-button:hover,
+  .mbtn4 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .mbtn4 .neon-button:hover .cirbox,
+  .mbtn4 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .mbtn4 .neon-button:hover p,
+  .mbtn4 .neon-button:hover h3,
+  .mbtn4 .neon-button:hover h4,
+  .mbtn4 .neon-button:hover a,
+  .mbtn4 .neon-button:hover span,
+  .mbtn4 .neon-button:focus p,
+  .mbtn4 .neon-button:focus h3,
+  .mbtn4 .neon-button:focus h4,
+  .mbtn4 .neon-button:focus a,
+  .mbtn4 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .mbtn4 .neon-button:hover::after,
+  .mbtn4 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .godl {
@@ -3340,69 +3297,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .godl .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .godl .neon-button:hover p,
-.night .godl .neon-button:hover h3,
-.night .godl .neon-button:hover h4,
-.night .godl .neon-button:hover a,
-.night .godl .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .godl .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .godl .neon-button:focus p,
-.night .godl .neon-button:focus h3,
-.night .godl .neon-button:focus h4,
-.night .godl .neon-button:focus a,
-.night .godl .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.godl .neon-button:hover,
-.godl .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.godl .neon-button:hover .cirbox,
-.godl .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.godl .neon-button:hover p,
-.godl .neon-button:hover h3,
-.godl .neon-button:hover h4,
-.godl .neon-button:hover a,
-.godl .neon-button:hover span,
-.godl .neon-button:focus p,
-.godl .neon-button:focus h3,
-.godl .neon-button:focus h4,
-.godl .neon-button:focus a,
-.godl .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.godl .neon-button:hover::after,
-.godl .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .godl .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .godl .neon-button:hover p,
+  .night .godl .neon-button:hover h3,
+  .night .godl .neon-button:hover h4,
+  .night .godl .neon-button:hover a,
+  .night .godl .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .godl .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .godl .neon-button:focus p,
+  .night .godl .neon-button:focus h3,
+  .night .godl .neon-button:focus h4,
+  .night .godl .neon-button:focus a,
+  .night .godl .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .godl .neon-button:hover,
+  .godl .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .godl .neon-button:hover .cirbox,
+  .godl .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .godl .neon-button:hover p,
+  .godl .neon-button:hover h3,
+  .godl .neon-button:hover h4,
+  .godl .neon-button:hover a,
+  .godl .neon-button:hover span,
+  .godl .neon-button:focus p,
+  .godl .neon-button:focus h3,
+  .godl .neon-button:focus h4,
+  .godl .neon-button:focus a,
+  .godl .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .godl .neon-button:hover::after,
+  .godl .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .cp {
@@ -3632,69 +3584,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .part0 .part1 .neon .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .part0 .part1 .neon .neon-button:hover p,
-.night .part0 .part1 .neon .neon-button:hover h3,
-.night .part0 .part1 .neon .neon-button:hover h4,
-.night .part0 .part1 .neon .neon-button:hover a,
-.night .part0 .part1 .neon .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .part0 .part1 .neon .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .part0 .part1 .neon .neon-button:focus p,
-.night .part0 .part1 .neon .neon-button:focus h3,
-.night .part0 .part1 .neon .neon-button:focus h4,
-.night .part0 .part1 .neon .neon-button:focus a,
-.night .part0 .part1 .neon .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.part0 .part1 .neon .neon-button:hover,
-.part0 .part1 .neon .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.part0 .part1 .neon .neon-button:hover .cirbox,
-.part0 .part1 .neon .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.part0 .part1 .neon .neon-button:hover p,
-.part0 .part1 .neon .neon-button:hover h3,
-.part0 .part1 .neon .neon-button:hover h4,
-.part0 .part1 .neon .neon-button:hover a,
-.part0 .part1 .neon .neon-button:hover span,
-.part0 .part1 .neon .neon-button:focus p,
-.part0 .part1 .neon .neon-button:focus h3,
-.part0 .part1 .neon .neon-button:focus h4,
-.part0 .part1 .neon .neon-button:focus a,
-.part0 .part1 .neon .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.part0 .part1 .neon .neon-button:hover::after,
-.part0 .part1 .neon .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .part0 .part1 .neon .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .part0 .part1 .neon .neon-button:hover p,
+  .night .part0 .part1 .neon .neon-button:hover h3,
+  .night .part0 .part1 .neon .neon-button:hover h4,
+  .night .part0 .part1 .neon .neon-button:hover a,
+  .night .part0 .part1 .neon .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .part0 .part1 .neon .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .part0 .part1 .neon .neon-button:focus p,
+  .night .part0 .part1 .neon .neon-button:focus h3,
+  .night .part0 .part1 .neon .neon-button:focus h4,
+  .night .part0 .part1 .neon .neon-button:focus a,
+  .night .part0 .part1 .neon .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .part0 .part1 .neon .neon-button:hover,
+  .part0 .part1 .neon .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .part0 .part1 .neon .neon-button:hover .cirbox,
+  .part0 .part1 .neon .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .part0 .part1 .neon .neon-button:hover p,
+  .part0 .part1 .neon .neon-button:hover h3,
+  .part0 .part1 .neon .neon-button:hover h4,
+  .part0 .part1 .neon .neon-button:hover a,
+  .part0 .part1 .neon .neon-button:hover span,
+  .part0 .part1 .neon .neon-button:focus p,
+  .part0 .part1 .neon .neon-button:focus h3,
+  .part0 .part1 .neon .neon-button:focus h4,
+  .part0 .part1 .neon .neon-button:focus a,
+  .part0 .part1 .neon .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .part0 .part1 .neon .neon-button:hover::after,
+  .part0 .part1 .neon .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .part0 .part2 .neon {
@@ -3890,69 +3837,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .part0 .part2 .neon .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .part0 .part2 .neon .neon-button:hover p,
-.night .part0 .part2 .neon .neon-button:hover h3,
-.night .part0 .part2 .neon .neon-button:hover h4,
-.night .part0 .part2 .neon .neon-button:hover a,
-.night .part0 .part2 .neon .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .part0 .part2 .neon .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .part0 .part2 .neon .neon-button:focus p,
-.night .part0 .part2 .neon .neon-button:focus h3,
-.night .part0 .part2 .neon .neon-button:focus h4,
-.night .part0 .part2 .neon .neon-button:focus a,
-.night .part0 .part2 .neon .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.part0 .part2 .neon .neon-button:hover,
-.part0 .part2 .neon .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.part0 .part2 .neon .neon-button:hover .cirbox,
-.part0 .part2 .neon .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.part0 .part2 .neon .neon-button:hover p,
-.part0 .part2 .neon .neon-button:hover h3,
-.part0 .part2 .neon .neon-button:hover h4,
-.part0 .part2 .neon .neon-button:hover a,
-.part0 .part2 .neon .neon-button:hover span,
-.part0 .part2 .neon .neon-button:focus p,
-.part0 .part2 .neon .neon-button:focus h3,
-.part0 .part2 .neon .neon-button:focus h4,
-.part0 .part2 .neon .neon-button:focus a,
-.part0 .part2 .neon .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.part0 .part2 .neon .neon-button:hover::after,
-.part0 .part2 .neon .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .part0 .part2 .neon .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .part0 .part2 .neon .neon-button:hover p,
+  .night .part0 .part2 .neon .neon-button:hover h3,
+  .night .part0 .part2 .neon .neon-button:hover h4,
+  .night .part0 .part2 .neon .neon-button:hover a,
+  .night .part0 .part2 .neon .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .part0 .part2 .neon .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .part0 .part2 .neon .neon-button:focus p,
+  .night .part0 .part2 .neon .neon-button:focus h3,
+  .night .part0 .part2 .neon .neon-button:focus h4,
+  .night .part0 .part2 .neon .neon-button:focus a,
+  .night .part0 .part2 .neon .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .part0 .part2 .neon .neon-button:hover,
+  .part0 .part2 .neon .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .part0 .part2 .neon .neon-button:hover .cirbox,
+  .part0 .part2 .neon .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .part0 .part2 .neon .neon-button:hover p,
+  .part0 .part2 .neon .neon-button:hover h3,
+  .part0 .part2 .neon .neon-button:hover h4,
+  .part0 .part2 .neon .neon-button:hover a,
+  .part0 .part2 .neon .neon-button:hover span,
+  .part0 .part2 .neon .neon-button:focus p,
+  .part0 .part2 .neon .neon-button:focus h3,
+  .part0 .part2 .neon .neon-button:focus h4,
+  .part0 .part2 .neon .neon-button:focus a,
+  .part0 .part2 .neon .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .part0 .part2 .neon .neon-button:hover::after,
+  .part0 .part2 .neon .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .DIS-img {
@@ -4193,69 +4135,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .DIS-grid .neon1 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .DIS-grid .neon1 .neon-button:hover p,
-.night .DIS-grid .neon1 .neon-button:hover h3,
-.night .DIS-grid .neon1 .neon-button:hover h4,
-.night .DIS-grid .neon1 .neon-button:hover a,
-.night .DIS-grid .neon1 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .DIS-grid .neon1 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .DIS-grid .neon1 .neon-button:focus p,
-.night .DIS-grid .neon1 .neon-button:focus h3,
-.night .DIS-grid .neon1 .neon-button:focus h4,
-.night .DIS-grid .neon1 .neon-button:focus a,
-.night .DIS-grid .neon1 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.DIS-grid .neon1 .neon-button:hover,
-.DIS-grid .neon1 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.DIS-grid .neon1 .neon-button:hover .cirbox,
-.DIS-grid .neon1 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.DIS-grid .neon1 .neon-button:hover p,
-.DIS-grid .neon1 .neon-button:hover h3,
-.DIS-grid .neon1 .neon-button:hover h4,
-.DIS-grid .neon1 .neon-button:hover a,
-.DIS-grid .neon1 .neon-button:hover span,
-.DIS-grid .neon1 .neon-button:focus p,
-.DIS-grid .neon1 .neon-button:focus h3,
-.DIS-grid .neon1 .neon-button:focus h4,
-.DIS-grid .neon1 .neon-button:focus a,
-.DIS-grid .neon1 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.DIS-grid .neon1 .neon-button:hover::after,
-.DIS-grid .neon1 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .DIS-grid .neon1 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .DIS-grid .neon1 .neon-button:hover p,
+  .night .DIS-grid .neon1 .neon-button:hover h3,
+  .night .DIS-grid .neon1 .neon-button:hover h4,
+  .night .DIS-grid .neon1 .neon-button:hover a,
+  .night .DIS-grid .neon1 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .DIS-grid .neon1 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .DIS-grid .neon1 .neon-button:focus p,
+  .night .DIS-grid .neon1 .neon-button:focus h3,
+  .night .DIS-grid .neon1 .neon-button:focus h4,
+  .night .DIS-grid .neon1 .neon-button:focus a,
+  .night .DIS-grid .neon1 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .DIS-grid .neon1 .neon-button:hover,
+  .DIS-grid .neon1 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .DIS-grid .neon1 .neon-button:hover .cirbox,
+  .DIS-grid .neon1 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .DIS-grid .neon1 .neon-button:hover p,
+  .DIS-grid .neon1 .neon-button:hover h3,
+  .DIS-grid .neon1 .neon-button:hover h4,
+  .DIS-grid .neon1 .neon-button:hover a,
+  .DIS-grid .neon1 .neon-button:hover span,
+  .DIS-grid .neon1 .neon-button:focus p,
+  .DIS-grid .neon1 .neon-button:focus h3,
+  .DIS-grid .neon1 .neon-button:focus h4,
+  .DIS-grid .neon1 .neon-button:focus a,
+  .DIS-grid .neon1 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .DIS-grid .neon1 .neon-button:hover::after,
+  .DIS-grid .neon1 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .DIS-grid .neon2 {
@@ -4454,69 +4391,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .DIS-grid .neon2 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .DIS-grid .neon2 .neon-button:hover p,
-.night .DIS-grid .neon2 .neon-button:hover h3,
-.night .DIS-grid .neon2 .neon-button:hover h4,
-.night .DIS-grid .neon2 .neon-button:hover a,
-.night .DIS-grid .neon2 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .DIS-grid .neon2 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .DIS-grid .neon2 .neon-button:focus p,
-.night .DIS-grid .neon2 .neon-button:focus h3,
-.night .DIS-grid .neon2 .neon-button:focus h4,
-.night .DIS-grid .neon2 .neon-button:focus a,
-.night .DIS-grid .neon2 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.DIS-grid .neon2 .neon-button:hover,
-.DIS-grid .neon2 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.DIS-grid .neon2 .neon-button:hover .cirbox,
-.DIS-grid .neon2 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.DIS-grid .neon2 .neon-button:hover p,
-.DIS-grid .neon2 .neon-button:hover h3,
-.DIS-grid .neon2 .neon-button:hover h4,
-.DIS-grid .neon2 .neon-button:hover a,
-.DIS-grid .neon2 .neon-button:hover span,
-.DIS-grid .neon2 .neon-button:focus p,
-.DIS-grid .neon2 .neon-button:focus h3,
-.DIS-grid .neon2 .neon-button:focus h4,
-.DIS-grid .neon2 .neon-button:focus a,
-.DIS-grid .neon2 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.DIS-grid .neon2 .neon-button:hover::after,
-.DIS-grid .neon2 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .DIS-grid .neon2 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .DIS-grid .neon2 .neon-button:hover p,
+  .night .DIS-grid .neon2 .neon-button:hover h3,
+  .night .DIS-grid .neon2 .neon-button:hover h4,
+  .night .DIS-grid .neon2 .neon-button:hover a,
+  .night .DIS-grid .neon2 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .DIS-grid .neon2 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .DIS-grid .neon2 .neon-button:focus p,
+  .night .DIS-grid .neon2 .neon-button:focus h3,
+  .night .DIS-grid .neon2 .neon-button:focus h4,
+  .night .DIS-grid .neon2 .neon-button:focus a,
+  .night .DIS-grid .neon2 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .DIS-grid .neon2 .neon-button:hover,
+  .DIS-grid .neon2 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .DIS-grid .neon2 .neon-button:hover .cirbox,
+  .DIS-grid .neon2 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .DIS-grid .neon2 .neon-button:hover p,
+  .DIS-grid .neon2 .neon-button:hover h3,
+  .DIS-grid .neon2 .neon-button:hover h4,
+  .DIS-grid .neon2 .neon-button:hover a,
+  .DIS-grid .neon2 .neon-button:hover span,
+  .DIS-grid .neon2 .neon-button:focus p,
+  .DIS-grid .neon2 .neon-button:focus h3,
+  .DIS-grid .neon2 .neon-button:focus h4,
+  .DIS-grid .neon2 .neon-button:focus a,
+  .DIS-grid .neon2 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .DIS-grid .neon2 .neon-button:hover::after,
+  .DIS-grid .neon2 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .DIS-grid .neon3 {
@@ -4715,69 +4647,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .DIS-grid .neon3 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .DIS-grid .neon3 .neon-button:hover p,
-.night .DIS-grid .neon3 .neon-button:hover h3,
-.night .DIS-grid .neon3 .neon-button:hover h4,
-.night .DIS-grid .neon3 .neon-button:hover a,
-.night .DIS-grid .neon3 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .DIS-grid .neon3 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .DIS-grid .neon3 .neon-button:focus p,
-.night .DIS-grid .neon3 .neon-button:focus h3,
-.night .DIS-grid .neon3 .neon-button:focus h4,
-.night .DIS-grid .neon3 .neon-button:focus a,
-.night .DIS-grid .neon3 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.DIS-grid .neon3 .neon-button:hover,
-.DIS-grid .neon3 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.DIS-grid .neon3 .neon-button:hover .cirbox,
-.DIS-grid .neon3 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.DIS-grid .neon3 .neon-button:hover p,
-.DIS-grid .neon3 .neon-button:hover h3,
-.DIS-grid .neon3 .neon-button:hover h4,
-.DIS-grid .neon3 .neon-button:hover a,
-.DIS-grid .neon3 .neon-button:hover span,
-.DIS-grid .neon3 .neon-button:focus p,
-.DIS-grid .neon3 .neon-button:focus h3,
-.DIS-grid .neon3 .neon-button:focus h4,
-.DIS-grid .neon3 .neon-button:focus a,
-.DIS-grid .neon3 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.DIS-grid .neon3 .neon-button:hover::after,
-.DIS-grid .neon3 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .DIS-grid .neon3 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .DIS-grid .neon3 .neon-button:hover p,
+  .night .DIS-grid .neon3 .neon-button:hover h3,
+  .night .DIS-grid .neon3 .neon-button:hover h4,
+  .night .DIS-grid .neon3 .neon-button:hover a,
+  .night .DIS-grid .neon3 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .DIS-grid .neon3 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .DIS-grid .neon3 .neon-button:focus p,
+  .night .DIS-grid .neon3 .neon-button:focus h3,
+  .night .DIS-grid .neon3 .neon-button:focus h4,
+  .night .DIS-grid .neon3 .neon-button:focus a,
+  .night .DIS-grid .neon3 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .DIS-grid .neon3 .neon-button:hover,
+  .DIS-grid .neon3 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .DIS-grid .neon3 .neon-button:hover .cirbox,
+  .DIS-grid .neon3 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .DIS-grid .neon3 .neon-button:hover p,
+  .DIS-grid .neon3 .neon-button:hover h3,
+  .DIS-grid .neon3 .neon-button:hover h4,
+  .DIS-grid .neon3 .neon-button:hover a,
+  .DIS-grid .neon3 .neon-button:hover span,
+  .DIS-grid .neon3 .neon-button:focus p,
+  .DIS-grid .neon3 .neon-button:focus h3,
+  .DIS-grid .neon3 .neon-button:focus h4,
+  .DIS-grid .neon3 .neon-button:focus a,
+  .DIS-grid .neon3 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .DIS-grid .neon3 .neon-button:hover::after,
+  .DIS-grid .neon3 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -5069,69 +4996,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .FEA-grid .neon1 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon1 .neon-button:hover p,
-.night .FEA-grid .neon1 .neon-button:hover h3,
-.night .FEA-grid .neon1 .neon-button:hover h4,
-.night .FEA-grid .neon1 .neon-button:hover a,
-.night .FEA-grid .neon1 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon1 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon1 .neon-button:focus p,
-.night .FEA-grid .neon1 .neon-button:focus h3,
-.night .FEA-grid .neon1 .neon-button:focus h4,
-.night .FEA-grid .neon1 .neon-button:focus a,
-.night .FEA-grid .neon1 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.FEA-grid .neon1 .neon-button:hover,
-.FEA-grid .neon1 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.FEA-grid .neon1 .neon-button:hover .cirbox,
-.FEA-grid .neon1 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.FEA-grid .neon1 .neon-button:hover p,
-.FEA-grid .neon1 .neon-button:hover h3,
-.FEA-grid .neon1 .neon-button:hover h4,
-.FEA-grid .neon1 .neon-button:hover a,
-.FEA-grid .neon1 .neon-button:hover span,
-.FEA-grid .neon1 .neon-button:focus p,
-.FEA-grid .neon1 .neon-button:focus h3,
-.FEA-grid .neon1 .neon-button:focus h4,
-.FEA-grid .neon1 .neon-button:focus a,
-.FEA-grid .neon1 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.FEA-grid .neon1 .neon-button:hover::after,
-.FEA-grid .neon1 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .FEA-grid .neon1 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon1 .neon-button:hover p,
+  .night .FEA-grid .neon1 .neon-button:hover h3,
+  .night .FEA-grid .neon1 .neon-button:hover h4,
+  .night .FEA-grid .neon1 .neon-button:hover a,
+  .night .FEA-grid .neon1 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon1 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon1 .neon-button:focus p,
+  .night .FEA-grid .neon1 .neon-button:focus h3,
+  .night .FEA-grid .neon1 .neon-button:focus h4,
+  .night .FEA-grid .neon1 .neon-button:focus a,
+  .night .FEA-grid .neon1 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon1 .neon-button:hover,
+  .FEA-grid .neon1 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon1 .neon-button:hover .cirbox,
+  .FEA-grid .neon1 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon1 .neon-button:hover p,
+  .FEA-grid .neon1 .neon-button:hover h3,
+  .FEA-grid .neon1 .neon-button:hover h4,
+  .FEA-grid .neon1 .neon-button:hover a,
+  .FEA-grid .neon1 .neon-button:hover span,
+  .FEA-grid .neon1 .neon-button:focus p,
+  .FEA-grid .neon1 .neon-button:focus h3,
+  .FEA-grid .neon1 .neon-button:focus h4,
+  .FEA-grid .neon1 .neon-button:focus a,
+  .FEA-grid .neon1 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon1 .neon-button:hover::after,
+  .FEA-grid .neon1 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .FEA-grid .neon2 {
@@ -5340,69 +5262,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .FEA-grid .neon2 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon2 .neon-button:hover p,
-.night .FEA-grid .neon2 .neon-button:hover h3,
-.night .FEA-grid .neon2 .neon-button:hover h4,
-.night .FEA-grid .neon2 .neon-button:hover a,
-.night .FEA-grid .neon2 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon2 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon2 .neon-button:focus p,
-.night .FEA-grid .neon2 .neon-button:focus h3,
-.night .FEA-grid .neon2 .neon-button:focus h4,
-.night .FEA-grid .neon2 .neon-button:focus a,
-.night .FEA-grid .neon2 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.FEA-grid .neon2 .neon-button:hover,
-.FEA-grid .neon2 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.FEA-grid .neon2 .neon-button:hover .cirbox,
-.FEA-grid .neon2 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.FEA-grid .neon2 .neon-button:hover p,
-.FEA-grid .neon2 .neon-button:hover h3,
-.FEA-grid .neon2 .neon-button:hover h4,
-.FEA-grid .neon2 .neon-button:hover a,
-.FEA-grid .neon2 .neon-button:hover span,
-.FEA-grid .neon2 .neon-button:focus p,
-.FEA-grid .neon2 .neon-button:focus h3,
-.FEA-grid .neon2 .neon-button:focus h4,
-.FEA-grid .neon2 .neon-button:focus a,
-.FEA-grid .neon2 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.FEA-grid .neon2 .neon-button:hover::after,
-.FEA-grid .neon2 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .FEA-grid .neon2 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon2 .neon-button:hover p,
+  .night .FEA-grid .neon2 .neon-button:hover h3,
+  .night .FEA-grid .neon2 .neon-button:hover h4,
+  .night .FEA-grid .neon2 .neon-button:hover a,
+  .night .FEA-grid .neon2 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon2 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon2 .neon-button:focus p,
+  .night .FEA-grid .neon2 .neon-button:focus h3,
+  .night .FEA-grid .neon2 .neon-button:focus h4,
+  .night .FEA-grid .neon2 .neon-button:focus a,
+  .night .FEA-grid .neon2 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon2 .neon-button:hover,
+  .FEA-grid .neon2 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon2 .neon-button:hover .cirbox,
+  .FEA-grid .neon2 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon2 .neon-button:hover p,
+  .FEA-grid .neon2 .neon-button:hover h3,
+  .FEA-grid .neon2 .neon-button:hover h4,
+  .FEA-grid .neon2 .neon-button:hover a,
+  .FEA-grid .neon2 .neon-button:hover span,
+  .FEA-grid .neon2 .neon-button:focus p,
+  .FEA-grid .neon2 .neon-button:focus h3,
+  .FEA-grid .neon2 .neon-button:focus h4,
+  .FEA-grid .neon2 .neon-button:focus a,
+  .FEA-grid .neon2 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon2 .neon-button:hover::after,
+  .FEA-grid .neon2 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .FEA-grid .neon3 {
@@ -5609,69 +5526,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .FEA-grid .neon3 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon3 .neon-button:hover p,
-.night .FEA-grid .neon3 .neon-button:hover h3,
-.night .FEA-grid .neon3 .neon-button:hover h4,
-.night .FEA-grid .neon3 .neon-button:hover a,
-.night .FEA-grid .neon3 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon3 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon3 .neon-button:focus p,
-.night .FEA-grid .neon3 .neon-button:focus h3,
-.night .FEA-grid .neon3 .neon-button:focus h4,
-.night .FEA-grid .neon3 .neon-button:focus a,
-.night .FEA-grid .neon3 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.FEA-grid .neon3 .neon-button:hover,
-.FEA-grid .neon3 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.FEA-grid .neon3 .neon-button:hover .cirbox,
-.FEA-grid .neon3 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.FEA-grid .neon3 .neon-button:hover p,
-.FEA-grid .neon3 .neon-button:hover h3,
-.FEA-grid .neon3 .neon-button:hover h4,
-.FEA-grid .neon3 .neon-button:hover a,
-.FEA-grid .neon3 .neon-button:hover span,
-.FEA-grid .neon3 .neon-button:focus p,
-.FEA-grid .neon3 .neon-button:focus h3,
-.FEA-grid .neon3 .neon-button:focus h4,
-.FEA-grid .neon3 .neon-button:focus a,
-.FEA-grid .neon3 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.FEA-grid .neon3 .neon-button:hover::after,
-.FEA-grid .neon3 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .FEA-grid .neon3 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon3 .neon-button:hover p,
+  .night .FEA-grid .neon3 .neon-button:hover h3,
+  .night .FEA-grid .neon3 .neon-button:hover h4,
+  .night .FEA-grid .neon3 .neon-button:hover a,
+  .night .FEA-grid .neon3 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon3 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon3 .neon-button:focus p,
+  .night .FEA-grid .neon3 .neon-button:focus h3,
+  .night .FEA-grid .neon3 .neon-button:focus h4,
+  .night .FEA-grid .neon3 .neon-button:focus a,
+  .night .FEA-grid .neon3 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon3 .neon-button:hover,
+  .FEA-grid .neon3 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon3 .neon-button:hover .cirbox,
+  .FEA-grid .neon3 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon3 .neon-button:hover p,
+  .FEA-grid .neon3 .neon-button:hover h3,
+  .FEA-grid .neon3 .neon-button:hover h4,
+  .FEA-grid .neon3 .neon-button:hover a,
+  .FEA-grid .neon3 .neon-button:hover span,
+  .FEA-grid .neon3 .neon-button:focus p,
+  .FEA-grid .neon3 .neon-button:focus h3,
+  .FEA-grid .neon3 .neon-button:focus h4,
+  .FEA-grid .neon3 .neon-button:focus a,
+  .FEA-grid .neon3 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon3 .neon-button:hover::after,
+  .FEA-grid .neon3 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .FEA-grid .neon4 {
@@ -5878,69 +5790,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .FEA-grid .neon4 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon4 .neon-button:hover p,
-.night .FEA-grid .neon4 .neon-button:hover h3,
-.night .FEA-grid .neon4 .neon-button:hover h4,
-.night .FEA-grid .neon4 .neon-button:hover a,
-.night .FEA-grid .neon4 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon4 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon4 .neon-button:focus p,
-.night .FEA-grid .neon4 .neon-button:focus h3,
-.night .FEA-grid .neon4 .neon-button:focus h4,
-.night .FEA-grid .neon4 .neon-button:focus a,
-.night .FEA-grid .neon4 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.FEA-grid .neon4 .neon-button:hover,
-.FEA-grid .neon4 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.FEA-grid .neon4 .neon-button:hover .cirbox,
-.FEA-grid .neon4 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.FEA-grid .neon4 .neon-button:hover p,
-.FEA-grid .neon4 .neon-button:hover h3,
-.FEA-grid .neon4 .neon-button:hover h4,
-.FEA-grid .neon4 .neon-button:hover a,
-.FEA-grid .neon4 .neon-button:hover span,
-.FEA-grid .neon4 .neon-button:focus p,
-.FEA-grid .neon4 .neon-button:focus h3,
-.FEA-grid .neon4 .neon-button:focus h4,
-.FEA-grid .neon4 .neon-button:focus a,
-.FEA-grid .neon4 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.FEA-grid .neon4 .neon-button:hover::after,
-.FEA-grid .neon4 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .FEA-grid .neon4 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon4 .neon-button:hover p,
+  .night .FEA-grid .neon4 .neon-button:hover h3,
+  .night .FEA-grid .neon4 .neon-button:hover h4,
+  .night .FEA-grid .neon4 .neon-button:hover a,
+  .night .FEA-grid .neon4 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon4 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon4 .neon-button:focus p,
+  .night .FEA-grid .neon4 .neon-button:focus h3,
+  .night .FEA-grid .neon4 .neon-button:focus h4,
+  .night .FEA-grid .neon4 .neon-button:focus a,
+  .night .FEA-grid .neon4 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon4 .neon-button:hover,
+  .FEA-grid .neon4 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon4 .neon-button:hover .cirbox,
+  .FEA-grid .neon4 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon4 .neon-button:hover p,
+  .FEA-grid .neon4 .neon-button:hover h3,
+  .FEA-grid .neon4 .neon-button:hover h4,
+  .FEA-grid .neon4 .neon-button:hover a,
+  .FEA-grid .neon4 .neon-button:hover span,
+  .FEA-grid .neon4 .neon-button:focus p,
+  .FEA-grid .neon4 .neon-button:focus h3,
+  .FEA-grid .neon4 .neon-button:focus h4,
+  .FEA-grid .neon4 .neon-button:focus a,
+  .FEA-grid .neon4 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon4 .neon-button:hover::after,
+  .FEA-grid .neon4 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .FEA-grid .neon5 {
@@ -6147,69 +6054,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .FEA-grid .neon5 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon5 .neon-button:hover p,
-.night .FEA-grid .neon5 .neon-button:hover h3,
-.night .FEA-grid .neon5 .neon-button:hover h4,
-.night .FEA-grid .neon5 .neon-button:hover a,
-.night .FEA-grid .neon5 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon5 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon5 .neon-button:focus p,
-.night .FEA-grid .neon5 .neon-button:focus h3,
-.night .FEA-grid .neon5 .neon-button:focus h4,
-.night .FEA-grid .neon5 .neon-button:focus a,
-.night .FEA-grid .neon5 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.FEA-grid .neon5 .neon-button:hover,
-.FEA-grid .neon5 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.FEA-grid .neon5 .neon-button:hover .cirbox,
-.FEA-grid .neon5 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.FEA-grid .neon5 .neon-button:hover p,
-.FEA-grid .neon5 .neon-button:hover h3,
-.FEA-grid .neon5 .neon-button:hover h4,
-.FEA-grid .neon5 .neon-button:hover a,
-.FEA-grid .neon5 .neon-button:hover span,
-.FEA-grid .neon5 .neon-button:focus p,
-.FEA-grid .neon5 .neon-button:focus h3,
-.FEA-grid .neon5 .neon-button:focus h4,
-.FEA-grid .neon5 .neon-button:focus a,
-.FEA-grid .neon5 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.FEA-grid .neon5 .neon-button:hover::after,
-.FEA-grid .neon5 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .FEA-grid .neon5 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon5 .neon-button:hover p,
+  .night .FEA-grid .neon5 .neon-button:hover h3,
+  .night .FEA-grid .neon5 .neon-button:hover h4,
+  .night .FEA-grid .neon5 .neon-button:hover a,
+  .night .FEA-grid .neon5 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon5 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon5 .neon-button:focus p,
+  .night .FEA-grid .neon5 .neon-button:focus h3,
+  .night .FEA-grid .neon5 .neon-button:focus h4,
+  .night .FEA-grid .neon5 .neon-button:focus a,
+  .night .FEA-grid .neon5 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon5 .neon-button:hover,
+  .FEA-grid .neon5 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon5 .neon-button:hover .cirbox,
+  .FEA-grid .neon5 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon5 .neon-button:hover p,
+  .FEA-grid .neon5 .neon-button:hover h3,
+  .FEA-grid .neon5 .neon-button:hover h4,
+  .FEA-grid .neon5 .neon-button:hover a,
+  .FEA-grid .neon5 .neon-button:hover span,
+  .FEA-grid .neon5 .neon-button:focus p,
+  .FEA-grid .neon5 .neon-button:focus h3,
+  .FEA-grid .neon5 .neon-button:focus h4,
+  .FEA-grid .neon5 .neon-button:focus a,
+  .FEA-grid .neon5 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon5 .neon-button:hover::after,
+  .FEA-grid .neon5 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .FEA-grid .neon6 {
@@ -6416,69 +6318,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .FEA-grid .neon6 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon6 .neon-button:hover p,
-.night .FEA-grid .neon6 .neon-button:hover h3,
-.night .FEA-grid .neon6 .neon-button:hover h4,
-.night .FEA-grid .neon6 .neon-button:hover a,
-.night .FEA-grid .neon6 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon6 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon6 .neon-button:focus p,
-.night .FEA-grid .neon6 .neon-button:focus h3,
-.night .FEA-grid .neon6 .neon-button:focus h4,
-.night .FEA-grid .neon6 .neon-button:focus a,
-.night .FEA-grid .neon6 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.FEA-grid .neon6 .neon-button:hover,
-.FEA-grid .neon6 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.FEA-grid .neon6 .neon-button:hover .cirbox,
-.FEA-grid .neon6 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.FEA-grid .neon6 .neon-button:hover p,
-.FEA-grid .neon6 .neon-button:hover h3,
-.FEA-grid .neon6 .neon-button:hover h4,
-.FEA-grid .neon6 .neon-button:hover a,
-.FEA-grid .neon6 .neon-button:hover span,
-.FEA-grid .neon6 .neon-button:focus p,
-.FEA-grid .neon6 .neon-button:focus h3,
-.FEA-grid .neon6 .neon-button:focus h4,
-.FEA-grid .neon6 .neon-button:focus a,
-.FEA-grid .neon6 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.FEA-grid .neon6 .neon-button:hover::after,
-.FEA-grid .neon6 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .FEA-grid .neon6 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon6 .neon-button:hover p,
+  .night .FEA-grid .neon6 .neon-button:hover h3,
+  .night .FEA-grid .neon6 .neon-button:hover h4,
+  .night .FEA-grid .neon6 .neon-button:hover a,
+  .night .FEA-grid .neon6 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon6 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon6 .neon-button:focus p,
+  .night .FEA-grid .neon6 .neon-button:focus h3,
+  .night .FEA-grid .neon6 .neon-button:focus h4,
+  .night .FEA-grid .neon6 .neon-button:focus a,
+  .night .FEA-grid .neon6 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon6 .neon-button:hover,
+  .FEA-grid .neon6 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon6 .neon-button:hover .cirbox,
+  .FEA-grid .neon6 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon6 .neon-button:hover p,
+  .FEA-grid .neon6 .neon-button:hover h3,
+  .FEA-grid .neon6 .neon-button:hover h4,
+  .FEA-grid .neon6 .neon-button:hover a,
+  .FEA-grid .neon6 .neon-button:hover span,
+  .FEA-grid .neon6 .neon-button:focus p,
+  .FEA-grid .neon6 .neon-button:focus h3,
+  .FEA-grid .neon6 .neon-button:focus h4,
+  .FEA-grid .neon6 .neon-button:focus a,
+  .FEA-grid .neon6 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon6 .neon-button:hover::after,
+  .FEA-grid .neon6 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .FEA-grid .neon7 {
@@ -6685,69 +6582,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .FEA-grid .neon7 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon7 .neon-button:hover p,
-.night .FEA-grid .neon7 .neon-button:hover h3,
-.night .FEA-grid .neon7 .neon-button:hover h4,
-.night .FEA-grid .neon7 .neon-button:hover a,
-.night .FEA-grid .neon7 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon7 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon7 .neon-button:focus p,
-.night .FEA-grid .neon7 .neon-button:focus h3,
-.night .FEA-grid .neon7 .neon-button:focus h4,
-.night .FEA-grid .neon7 .neon-button:focus a,
-.night .FEA-grid .neon7 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.FEA-grid .neon7 .neon-button:hover,
-.FEA-grid .neon7 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.FEA-grid .neon7 .neon-button:hover .cirbox,
-.FEA-grid .neon7 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.FEA-grid .neon7 .neon-button:hover p,
-.FEA-grid .neon7 .neon-button:hover h3,
-.FEA-grid .neon7 .neon-button:hover h4,
-.FEA-grid .neon7 .neon-button:hover a,
-.FEA-grid .neon7 .neon-button:hover span,
-.FEA-grid .neon7 .neon-button:focus p,
-.FEA-grid .neon7 .neon-button:focus h3,
-.FEA-grid .neon7 .neon-button:focus h4,
-.FEA-grid .neon7 .neon-button:focus a,
-.FEA-grid .neon7 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.FEA-grid .neon7 .neon-button:hover::after,
-.FEA-grid .neon7 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .FEA-grid .neon7 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon7 .neon-button:hover p,
+  .night .FEA-grid .neon7 .neon-button:hover h3,
+  .night .FEA-grid .neon7 .neon-button:hover h4,
+  .night .FEA-grid .neon7 .neon-button:hover a,
+  .night .FEA-grid .neon7 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon7 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon7 .neon-button:focus p,
+  .night .FEA-grid .neon7 .neon-button:focus h3,
+  .night .FEA-grid .neon7 .neon-button:focus h4,
+  .night .FEA-grid .neon7 .neon-button:focus a,
+  .night .FEA-grid .neon7 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon7 .neon-button:hover,
+  .FEA-grid .neon7 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon7 .neon-button:hover .cirbox,
+  .FEA-grid .neon7 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon7 .neon-button:hover p,
+  .FEA-grid .neon7 .neon-button:hover h3,
+  .FEA-grid .neon7 .neon-button:hover h4,
+  .FEA-grid .neon7 .neon-button:hover a,
+  .FEA-grid .neon7 .neon-button:hover span,
+  .FEA-grid .neon7 .neon-button:focus p,
+  .FEA-grid .neon7 .neon-button:focus h3,
+  .FEA-grid .neon7 .neon-button:focus h4,
+  .FEA-grid .neon7 .neon-button:focus a,
+  .FEA-grid .neon7 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon7 .neon-button:hover::after,
+  .FEA-grid .neon7 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .FEA-grid .neon8 {
@@ -6954,69 +6846,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .FEA-grid .neon8 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon8 .neon-button:hover p,
-.night .FEA-grid .neon8 .neon-button:hover h3,
-.night .FEA-grid .neon8 .neon-button:hover h4,
-.night .FEA-grid .neon8 .neon-button:hover a,
-.night .FEA-grid .neon8 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon8 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon8 .neon-button:focus p,
-.night .FEA-grid .neon8 .neon-button:focus h3,
-.night .FEA-grid .neon8 .neon-button:focus h4,
-.night .FEA-grid .neon8 .neon-button:focus a,
-.night .FEA-grid .neon8 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.FEA-grid .neon8 .neon-button:hover,
-.FEA-grid .neon8 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.FEA-grid .neon8 .neon-button:hover .cirbox,
-.FEA-grid .neon8 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.FEA-grid .neon8 .neon-button:hover p,
-.FEA-grid .neon8 .neon-button:hover h3,
-.FEA-grid .neon8 .neon-button:hover h4,
-.FEA-grid .neon8 .neon-button:hover a,
-.FEA-grid .neon8 .neon-button:hover span,
-.FEA-grid .neon8 .neon-button:focus p,
-.FEA-grid .neon8 .neon-button:focus h3,
-.FEA-grid .neon8 .neon-button:focus h4,
-.FEA-grid .neon8 .neon-button:focus a,
-.FEA-grid .neon8 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.FEA-grid .neon8 .neon-button:hover::after,
-.FEA-grid .neon8 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .FEA-grid .neon8 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon8 .neon-button:hover p,
+  .night .FEA-grid .neon8 .neon-button:hover h3,
+  .night .FEA-grid .neon8 .neon-button:hover h4,
+  .night .FEA-grid .neon8 .neon-button:hover a,
+  .night .FEA-grid .neon8 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon8 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon8 .neon-button:focus p,
+  .night .FEA-grid .neon8 .neon-button:focus h3,
+  .night .FEA-grid .neon8 .neon-button:focus h4,
+  .night .FEA-grid .neon8 .neon-button:focus a,
+  .night .FEA-grid .neon8 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon8 .neon-button:hover,
+  .FEA-grid .neon8 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon8 .neon-button:hover .cirbox,
+  .FEA-grid .neon8 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon8 .neon-button:hover p,
+  .FEA-grid .neon8 .neon-button:hover h3,
+  .FEA-grid .neon8 .neon-button:hover h4,
+  .FEA-grid .neon8 .neon-button:hover a,
+  .FEA-grid .neon8 .neon-button:hover span,
+  .FEA-grid .neon8 .neon-button:focus p,
+  .FEA-grid .neon8 .neon-button:focus h3,
+  .FEA-grid .neon8 .neon-button:focus h4,
+  .FEA-grid .neon8 .neon-button:focus a,
+  .FEA-grid .neon8 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon8 .neon-button:hover::after,
+  .FEA-grid .neon8 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .FEA-grid .neon9 {
@@ -7223,69 +7110,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .FEA-grid .neon9 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon9 .neon-button:hover p,
-.night .FEA-grid .neon9 .neon-button:hover h3,
-.night .FEA-grid .neon9 .neon-button:hover h4,
-.night .FEA-grid .neon9 .neon-button:hover a,
-.night .FEA-grid .neon9 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon9 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .FEA-grid .neon9 .neon-button:focus p,
-.night .FEA-grid .neon9 .neon-button:focus h3,
-.night .FEA-grid .neon9 .neon-button:focus h4,
-.night .FEA-grid .neon9 .neon-button:focus a,
-.night .FEA-grid .neon9 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.FEA-grid .neon9 .neon-button:hover,
-.FEA-grid .neon9 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.FEA-grid .neon9 .neon-button:hover .cirbox,
-.FEA-grid .neon9 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.FEA-grid .neon9 .neon-button:hover p,
-.FEA-grid .neon9 .neon-button:hover h3,
-.FEA-grid .neon9 .neon-button:hover h4,
-.FEA-grid .neon9 .neon-button:hover a,
-.FEA-grid .neon9 .neon-button:hover span,
-.FEA-grid .neon9 .neon-button:focus p,
-.FEA-grid .neon9 .neon-button:focus h3,
-.FEA-grid .neon9 .neon-button:focus h4,
-.FEA-grid .neon9 .neon-button:focus a,
-.FEA-grid .neon9 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.FEA-grid .neon9 .neon-button:hover::after,
-.FEA-grid .neon9 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .FEA-grid .neon9 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon9 .neon-button:hover p,
+  .night .FEA-grid .neon9 .neon-button:hover h3,
+  .night .FEA-grid .neon9 .neon-button:hover h4,
+  .night .FEA-grid .neon9 .neon-button:hover a,
+  .night .FEA-grid .neon9 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon9 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .FEA-grid .neon9 .neon-button:focus p,
+  .night .FEA-grid .neon9 .neon-button:focus h3,
+  .night .FEA-grid .neon9 .neon-button:focus h4,
+  .night .FEA-grid .neon9 .neon-button:focus a,
+  .night .FEA-grid .neon9 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .FEA-grid .neon9 .neon-button:hover,
+  .FEA-grid .neon9 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .FEA-grid .neon9 .neon-button:hover .cirbox,
+  .FEA-grid .neon9 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .FEA-grid .neon9 .neon-button:hover p,
+  .FEA-grid .neon9 .neon-button:hover h3,
+  .FEA-grid .neon9 .neon-button:hover h4,
+  .FEA-grid .neon9 .neon-button:hover a,
+  .FEA-grid .neon9 .neon-button:hover span,
+  .FEA-grid .neon9 .neon-button:focus p,
+  .FEA-grid .neon9 .neon-button:focus h3,
+  .FEA-grid .neon9 .neon-button:focus h4,
+  .FEA-grid .neon9 .neon-button:focus a,
+  .FEA-grid .neon9 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .FEA-grid .neon9 .neon-button:hover::after,
+  .FEA-grid .neon9 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -7492,6 +7374,9 @@ body ul {
     transition: transform 1.5s ease-in-out, opacity 1.5s linear;
     transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
   }
+}
+
+@media (min-width: 1024px) and (min-width: 1024px) {
   .night .FEA-grid .neon3 .neon-button:hover {
     color: var(--clr-bg-dark);
   }
@@ -7549,6 +7434,9 @@ body ul {
     transition: opacity 1s ease-in-out;
     opacity: 1;
   }
+}
+
+@media (min-width: 1024px) {
   .FEA-grid .neon4 {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
@@ -7731,6 +7619,9 @@ body ul {
     transition: transform 1.5s ease-in-out, opacity 1.5s linear;
     transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
   }
+}
+
+@media (min-width: 1024px) and (min-width: 1024px) {
   .night .FEA-grid .neon4 .neon-button:hover {
     color: var(--clr-bg-dark);
   }
@@ -7788,6 +7679,9 @@ body ul {
     transition: opacity 1s ease-in-out;
     opacity: 1;
   }
+}
+
+@media (min-width: 1024px) {
   .FEA-grid .neon7 {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
@@ -7970,6 +7864,9 @@ body ul {
     transition: transform 1.5s ease-in-out, opacity 1.5s linear;
     transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
   }
+}
+
+@media (min-width: 1024px) and (min-width: 1024px) {
   .night .FEA-grid .neon7 .neon-button:hover {
     color: var(--clr-bg-dark);
   }
@@ -8027,6 +7924,9 @@ body ul {
     transition: opacity 1s ease-in-out;
     opacity: 1;
   }
+}
+
+@media (min-width: 1024px) {
   .FEA-grid .neon8 {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
@@ -8209,6 +8109,9 @@ body ul {
     transition: transform 1.5s ease-in-out, opacity 1.5s linear;
     transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
   }
+}
+
+@media (min-width: 1024px) and (min-width: 1024px) {
   .night .FEA-grid .neon8 .neon-button:hover {
     color: var(--clr-bg-dark);
   }
@@ -8513,69 +8416,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .DL-grid-item1 .neonDL .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .DL-grid-item1 .neonDL .neon-button:hover p,
-.night .DL-grid-item1 .neonDL .neon-button:hover h3,
-.night .DL-grid-item1 .neonDL .neon-button:hover h4,
-.night .DL-grid-item1 .neonDL .neon-button:hover a,
-.night .DL-grid-item1 .neonDL .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .DL-grid-item1 .neonDL .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .DL-grid-item1 .neonDL .neon-button:focus p,
-.night .DL-grid-item1 .neonDL .neon-button:focus h3,
-.night .DL-grid-item1 .neonDL .neon-button:focus h4,
-.night .DL-grid-item1 .neonDL .neon-button:focus a,
-.night .DL-grid-item1 .neonDL .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.DL-grid-item1 .neonDL .neon-button:hover,
-.DL-grid-item1 .neonDL .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.DL-grid-item1 .neonDL .neon-button:hover .cirbox,
-.DL-grid-item1 .neonDL .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.DL-grid-item1 .neonDL .neon-button:hover p,
-.DL-grid-item1 .neonDL .neon-button:hover h3,
-.DL-grid-item1 .neonDL .neon-button:hover h4,
-.DL-grid-item1 .neonDL .neon-button:hover a,
-.DL-grid-item1 .neonDL .neon-button:hover span,
-.DL-grid-item1 .neonDL .neon-button:focus p,
-.DL-grid-item1 .neonDL .neon-button:focus h3,
-.DL-grid-item1 .neonDL .neon-button:focus h4,
-.DL-grid-item1 .neonDL .neon-button:focus a,
-.DL-grid-item1 .neonDL .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.DL-grid-item1 .neonDL .neon-button:hover::after,
-.DL-grid-item1 .neonDL .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .DL-grid-item1 .neonDL .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .DL-grid-item1 .neonDL .neon-button:hover p,
+  .night .DL-grid-item1 .neonDL .neon-button:hover h3,
+  .night .DL-grid-item1 .neonDL .neon-button:hover h4,
+  .night .DL-grid-item1 .neonDL .neon-button:hover a,
+  .night .DL-grid-item1 .neonDL .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .DL-grid-item1 .neonDL .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .DL-grid-item1 .neonDL .neon-button:focus p,
+  .night .DL-grid-item1 .neonDL .neon-button:focus h3,
+  .night .DL-grid-item1 .neonDL .neon-button:focus h4,
+  .night .DL-grid-item1 .neonDL .neon-button:focus a,
+  .night .DL-grid-item1 .neonDL .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .DL-grid-item1 .neonDL .neon-button:hover,
+  .DL-grid-item1 .neonDL .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .DL-grid-item1 .neonDL .neon-button:hover .cirbox,
+  .DL-grid-item1 .neonDL .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .DL-grid-item1 .neonDL .neon-button:hover p,
+  .DL-grid-item1 .neonDL .neon-button:hover h3,
+  .DL-grid-item1 .neonDL .neon-button:hover h4,
+  .DL-grid-item1 .neonDL .neon-button:hover a,
+  .DL-grid-item1 .neonDL .neon-button:hover span,
+  .DL-grid-item1 .neonDL .neon-button:focus p,
+  .DL-grid-item1 .neonDL .neon-button:focus h3,
+  .DL-grid-item1 .neonDL .neon-button:focus h4,
+  .DL-grid-item1 .neonDL .neon-button:focus a,
+  .DL-grid-item1 .neonDL .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .DL-grid-item1 .neonDL .neon-button:hover::after,
+  .DL-grid-item1 .neonDL .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .DL-grid-item2 {
@@ -8827,69 +8725,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .DL-grid-item2 .neonpaper .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .DL-grid-item2 .neonpaper .neon-button:hover p,
-.night .DL-grid-item2 .neonpaper .neon-button:hover h3,
-.night .DL-grid-item2 .neonpaper .neon-button:hover h4,
-.night .DL-grid-item2 .neonpaper .neon-button:hover a,
-.night .DL-grid-item2 .neonpaper .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .DL-grid-item2 .neonpaper .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .DL-grid-item2 .neonpaper .neon-button:focus p,
-.night .DL-grid-item2 .neonpaper .neon-button:focus h3,
-.night .DL-grid-item2 .neonpaper .neon-button:focus h4,
-.night .DL-grid-item2 .neonpaper .neon-button:focus a,
-.night .DL-grid-item2 .neonpaper .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.DL-grid-item2 .neonpaper .neon-button:hover,
-.DL-grid-item2 .neonpaper .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.DL-grid-item2 .neonpaper .neon-button:hover .cirbox,
-.DL-grid-item2 .neonpaper .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.DL-grid-item2 .neonpaper .neon-button:hover p,
-.DL-grid-item2 .neonpaper .neon-button:hover h3,
-.DL-grid-item2 .neonpaper .neon-button:hover h4,
-.DL-grid-item2 .neonpaper .neon-button:hover a,
-.DL-grid-item2 .neonpaper .neon-button:hover span,
-.DL-grid-item2 .neonpaper .neon-button:focus p,
-.DL-grid-item2 .neonpaper .neon-button:focus h3,
-.DL-grid-item2 .neonpaper .neon-button:focus h4,
-.DL-grid-item2 .neonpaper .neon-button:focus a,
-.DL-grid-item2 .neonpaper .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.DL-grid-item2 .neonpaper .neon-button:hover::after,
-.DL-grid-item2 .neonpaper .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .DL-grid-item2 .neonpaper .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .DL-grid-item2 .neonpaper .neon-button:hover p,
+  .night .DL-grid-item2 .neonpaper .neon-button:hover h3,
+  .night .DL-grid-item2 .neonpaper .neon-button:hover h4,
+  .night .DL-grid-item2 .neonpaper .neon-button:hover a,
+  .night .DL-grid-item2 .neonpaper .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .DL-grid-item2 .neonpaper .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .DL-grid-item2 .neonpaper .neon-button:focus p,
+  .night .DL-grid-item2 .neonpaper .neon-button:focus h3,
+  .night .DL-grid-item2 .neonpaper .neon-button:focus h4,
+  .night .DL-grid-item2 .neonpaper .neon-button:focus a,
+  .night .DL-grid-item2 .neonpaper .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .DL-grid-item2 .neonpaper .neon-button:hover,
+  .DL-grid-item2 .neonpaper .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .DL-grid-item2 .neonpaper .neon-button:hover .cirbox,
+  .DL-grid-item2 .neonpaper .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .DL-grid-item2 .neonpaper .neon-button:hover p,
+  .DL-grid-item2 .neonpaper .neon-button:hover h3,
+  .DL-grid-item2 .neonpaper .neon-button:hover h4,
+  .DL-grid-item2 .neonpaper .neon-button:hover a,
+  .DL-grid-item2 .neonpaper .neon-button:hover span,
+  .DL-grid-item2 .neonpaper .neon-button:focus p,
+  .DL-grid-item2 .neonpaper .neon-button:focus h3,
+  .DL-grid-item2 .neonpaper .neon-button:focus h4,
+  .DL-grid-item2 .neonpaper .neon-button:focus a,
+  .DL-grid-item2 .neonpaper .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .DL-grid-item2 .neonpaper .neon-button:hover::after,
+  .DL-grid-item2 .neonpaper .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .DL-grid-item2 .dlbtn {
@@ -9090,69 +8983,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .DL-grid-item2 .dlbtn .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .DL-grid-item2 .dlbtn .neon-button:hover p,
-.night .DL-grid-item2 .dlbtn .neon-button:hover h3,
-.night .DL-grid-item2 .dlbtn .neon-button:hover h4,
-.night .DL-grid-item2 .dlbtn .neon-button:hover a,
-.night .DL-grid-item2 .dlbtn .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .DL-grid-item2 .dlbtn .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .DL-grid-item2 .dlbtn .neon-button:focus p,
-.night .DL-grid-item2 .dlbtn .neon-button:focus h3,
-.night .DL-grid-item2 .dlbtn .neon-button:focus h4,
-.night .DL-grid-item2 .dlbtn .neon-button:focus a,
-.night .DL-grid-item2 .dlbtn .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.DL-grid-item2 .dlbtn .neon-button:hover,
-.DL-grid-item2 .dlbtn .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.DL-grid-item2 .dlbtn .neon-button:hover .cirbox,
-.DL-grid-item2 .dlbtn .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.DL-grid-item2 .dlbtn .neon-button:hover p,
-.DL-grid-item2 .dlbtn .neon-button:hover h3,
-.DL-grid-item2 .dlbtn .neon-button:hover h4,
-.DL-grid-item2 .dlbtn .neon-button:hover a,
-.DL-grid-item2 .dlbtn .neon-button:hover span,
-.DL-grid-item2 .dlbtn .neon-button:focus p,
-.DL-grid-item2 .dlbtn .neon-button:focus h3,
-.DL-grid-item2 .dlbtn .neon-button:focus h4,
-.DL-grid-item2 .dlbtn .neon-button:focus a,
-.DL-grid-item2 .dlbtn .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.DL-grid-item2 .dlbtn .neon-button:hover::after,
-.DL-grid-item2 .dlbtn .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .DL-grid-item2 .dlbtn .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .DL-grid-item2 .dlbtn .neon-button:hover p,
+  .night .DL-grid-item2 .dlbtn .neon-button:hover h3,
+  .night .DL-grid-item2 .dlbtn .neon-button:hover h4,
+  .night .DL-grid-item2 .dlbtn .neon-button:hover a,
+  .night .DL-grid-item2 .dlbtn .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .DL-grid-item2 .dlbtn .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .DL-grid-item2 .dlbtn .neon-button:focus p,
+  .night .DL-grid-item2 .dlbtn .neon-button:focus h3,
+  .night .DL-grid-item2 .dlbtn .neon-button:focus h4,
+  .night .DL-grid-item2 .dlbtn .neon-button:focus a,
+  .night .DL-grid-item2 .dlbtn .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .DL-grid-item2 .dlbtn .neon-button:hover,
+  .DL-grid-item2 .dlbtn .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .DL-grid-item2 .dlbtn .neon-button:hover .cirbox,
+  .DL-grid-item2 .dlbtn .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .DL-grid-item2 .dlbtn .neon-button:hover p,
+  .DL-grid-item2 .dlbtn .neon-button:hover h3,
+  .DL-grid-item2 .dlbtn .neon-button:hover h4,
+  .DL-grid-item2 .dlbtn .neon-button:hover a,
+  .DL-grid-item2 .dlbtn .neon-button:hover span,
+  .DL-grid-item2 .dlbtn .neon-button:focus p,
+  .DL-grid-item2 .dlbtn .neon-button:focus h3,
+  .DL-grid-item2 .dlbtn .neon-button:focus h4,
+  .DL-grid-item2 .dlbtn .neon-button:focus a,
+  .DL-grid-item2 .dlbtn .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .DL-grid-item2 .dlbtn .neon-button:hover::after,
+  .DL-grid-item2 .dlbtn .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -9421,69 +9309,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .neonQ0 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ0 .neon-button:hover p,
-.night .neonQ0 .neon-button:hover h3,
-.night .neonQ0 .neon-button:hover h4,
-.night .neonQ0 .neon-button:hover a,
-.night .neonQ0 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ0 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ0 .neon-button:focus p,
-.night .neonQ0 .neon-button:focus h3,
-.night .neonQ0 .neon-button:focus h4,
-.night .neonQ0 .neon-button:focus a,
-.night .neonQ0 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.neonQ0 .neon-button:hover,
-.neonQ0 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.neonQ0 .neon-button:hover .cirbox,
-.neonQ0 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.neonQ0 .neon-button:hover p,
-.neonQ0 .neon-button:hover h3,
-.neonQ0 .neon-button:hover h4,
-.neonQ0 .neon-button:hover a,
-.neonQ0 .neon-button:hover span,
-.neonQ0 .neon-button:focus p,
-.neonQ0 .neon-button:focus h3,
-.neonQ0 .neon-button:focus h4,
-.neonQ0 .neon-button:focus a,
-.neonQ0 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.neonQ0 .neon-button:hover::after,
-.neonQ0 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .neonQ0 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ0 .neon-button:hover p,
+  .night .neonQ0 .neon-button:hover h3,
+  .night .neonQ0 .neon-button:hover h4,
+  .night .neonQ0 .neon-button:hover a,
+  .night .neonQ0 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ0 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ0 .neon-button:focus p,
+  .night .neonQ0 .neon-button:focus h3,
+  .night .neonQ0 .neon-button:focus h4,
+  .night .neonQ0 .neon-button:focus a,
+  .night .neonQ0 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .neonQ0 .neon-button:hover,
+  .neonQ0 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .neonQ0 .neon-button:hover .cirbox,
+  .neonQ0 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .neonQ0 .neon-button:hover p,
+  .neonQ0 .neon-button:hover h3,
+  .neonQ0 .neon-button:hover h4,
+  .neonQ0 .neon-button:hover a,
+  .neonQ0 .neon-button:hover span,
+  .neonQ0 .neon-button:focus p,
+  .neonQ0 .neon-button:focus h3,
+  .neonQ0 .neon-button:focus h4,
+  .neonQ0 .neon-button:focus a,
+  .neonQ0 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .neonQ0 .neon-button:hover::after,
+  .neonQ0 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .neonQ1 {
@@ -9682,69 +9565,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .neonQ1 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ1 .neon-button:hover p,
-.night .neonQ1 .neon-button:hover h3,
-.night .neonQ1 .neon-button:hover h4,
-.night .neonQ1 .neon-button:hover a,
-.night .neonQ1 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ1 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ1 .neon-button:focus p,
-.night .neonQ1 .neon-button:focus h3,
-.night .neonQ1 .neon-button:focus h4,
-.night .neonQ1 .neon-button:focus a,
-.night .neonQ1 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.neonQ1 .neon-button:hover,
-.neonQ1 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.neonQ1 .neon-button:hover .cirbox,
-.neonQ1 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.neonQ1 .neon-button:hover p,
-.neonQ1 .neon-button:hover h3,
-.neonQ1 .neon-button:hover h4,
-.neonQ1 .neon-button:hover a,
-.neonQ1 .neon-button:hover span,
-.neonQ1 .neon-button:focus p,
-.neonQ1 .neon-button:focus h3,
-.neonQ1 .neon-button:focus h4,
-.neonQ1 .neon-button:focus a,
-.neonQ1 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.neonQ1 .neon-button:hover::after,
-.neonQ1 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .neonQ1 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ1 .neon-button:hover p,
+  .night .neonQ1 .neon-button:hover h3,
+  .night .neonQ1 .neon-button:hover h4,
+  .night .neonQ1 .neon-button:hover a,
+  .night .neonQ1 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ1 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ1 .neon-button:focus p,
+  .night .neonQ1 .neon-button:focus h3,
+  .night .neonQ1 .neon-button:focus h4,
+  .night .neonQ1 .neon-button:focus a,
+  .night .neonQ1 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .neonQ1 .neon-button:hover,
+  .neonQ1 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .neonQ1 .neon-button:hover .cirbox,
+  .neonQ1 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .neonQ1 .neon-button:hover p,
+  .neonQ1 .neon-button:hover h3,
+  .neonQ1 .neon-button:hover h4,
+  .neonQ1 .neon-button:hover a,
+  .neonQ1 .neon-button:hover span,
+  .neonQ1 .neon-button:focus p,
+  .neonQ1 .neon-button:focus h3,
+  .neonQ1 .neon-button:focus h4,
+  .neonQ1 .neon-button:focus a,
+  .neonQ1 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .neonQ1 .neon-button:hover::after,
+  .neonQ1 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .neonQ2 {
@@ -9943,69 +9821,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .neonQ2 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ2 .neon-button:hover p,
-.night .neonQ2 .neon-button:hover h3,
-.night .neonQ2 .neon-button:hover h4,
-.night .neonQ2 .neon-button:hover a,
-.night .neonQ2 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ2 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ2 .neon-button:focus p,
-.night .neonQ2 .neon-button:focus h3,
-.night .neonQ2 .neon-button:focus h4,
-.night .neonQ2 .neon-button:focus a,
-.night .neonQ2 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.neonQ2 .neon-button:hover,
-.neonQ2 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.neonQ2 .neon-button:hover .cirbox,
-.neonQ2 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.neonQ2 .neon-button:hover p,
-.neonQ2 .neon-button:hover h3,
-.neonQ2 .neon-button:hover h4,
-.neonQ2 .neon-button:hover a,
-.neonQ2 .neon-button:hover span,
-.neonQ2 .neon-button:focus p,
-.neonQ2 .neon-button:focus h3,
-.neonQ2 .neon-button:focus h4,
-.neonQ2 .neon-button:focus a,
-.neonQ2 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.neonQ2 .neon-button:hover::after,
-.neonQ2 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .neonQ2 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ2 .neon-button:hover p,
+  .night .neonQ2 .neon-button:hover h3,
+  .night .neonQ2 .neon-button:hover h4,
+  .night .neonQ2 .neon-button:hover a,
+  .night .neonQ2 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ2 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ2 .neon-button:focus p,
+  .night .neonQ2 .neon-button:focus h3,
+  .night .neonQ2 .neon-button:focus h4,
+  .night .neonQ2 .neon-button:focus a,
+  .night .neonQ2 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .neonQ2 .neon-button:hover,
+  .neonQ2 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .neonQ2 .neon-button:hover .cirbox,
+  .neonQ2 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .neonQ2 .neon-button:hover p,
+  .neonQ2 .neon-button:hover h3,
+  .neonQ2 .neon-button:hover h4,
+  .neonQ2 .neon-button:hover a,
+  .neonQ2 .neon-button:hover span,
+  .neonQ2 .neon-button:focus p,
+  .neonQ2 .neon-button:focus h3,
+  .neonQ2 .neon-button:focus h4,
+  .neonQ2 .neon-button:focus a,
+  .neonQ2 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .neonQ2 .neon-button:hover::after,
+  .neonQ2 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .neonQ3 {
@@ -10204,69 +10077,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .neonQ3 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ3 .neon-button:hover p,
-.night .neonQ3 .neon-button:hover h3,
-.night .neonQ3 .neon-button:hover h4,
-.night .neonQ3 .neon-button:hover a,
-.night .neonQ3 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ3 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ3 .neon-button:focus p,
-.night .neonQ3 .neon-button:focus h3,
-.night .neonQ3 .neon-button:focus h4,
-.night .neonQ3 .neon-button:focus a,
-.night .neonQ3 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.neonQ3 .neon-button:hover,
-.neonQ3 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.neonQ3 .neon-button:hover .cirbox,
-.neonQ3 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.neonQ3 .neon-button:hover p,
-.neonQ3 .neon-button:hover h3,
-.neonQ3 .neon-button:hover h4,
-.neonQ3 .neon-button:hover a,
-.neonQ3 .neon-button:hover span,
-.neonQ3 .neon-button:focus p,
-.neonQ3 .neon-button:focus h3,
-.neonQ3 .neon-button:focus h4,
-.neonQ3 .neon-button:focus a,
-.neonQ3 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.neonQ3 .neon-button:hover::after,
-.neonQ3 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .neonQ3 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ3 .neon-button:hover p,
+  .night .neonQ3 .neon-button:hover h3,
+  .night .neonQ3 .neon-button:hover h4,
+  .night .neonQ3 .neon-button:hover a,
+  .night .neonQ3 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ3 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ3 .neon-button:focus p,
+  .night .neonQ3 .neon-button:focus h3,
+  .night .neonQ3 .neon-button:focus h4,
+  .night .neonQ3 .neon-button:focus a,
+  .night .neonQ3 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .neonQ3 .neon-button:hover,
+  .neonQ3 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .neonQ3 .neon-button:hover .cirbox,
+  .neonQ3 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .neonQ3 .neon-button:hover p,
+  .neonQ3 .neon-button:hover h3,
+  .neonQ3 .neon-button:hover h4,
+  .neonQ3 .neon-button:hover a,
+  .neonQ3 .neon-button:hover span,
+  .neonQ3 .neon-button:focus p,
+  .neonQ3 .neon-button:focus h3,
+  .neonQ3 .neon-button:focus h4,
+  .neonQ3 .neon-button:focus a,
+  .neonQ3 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .neonQ3 .neon-button:hover::after,
+  .neonQ3 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .neonQ4 {
@@ -10465,69 +10333,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .neonQ4 .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ4 .neon-button:hover p,
-.night .neonQ4 .neon-button:hover h3,
-.night .neonQ4 .neon-button:hover h4,
-.night .neonQ4 .neon-button:hover a,
-.night .neonQ4 .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ4 .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .neonQ4 .neon-button:focus p,
-.night .neonQ4 .neon-button:focus h3,
-.night .neonQ4 .neon-button:focus h4,
-.night .neonQ4 .neon-button:focus a,
-.night .neonQ4 .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.neonQ4 .neon-button:hover,
-.neonQ4 .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.neonQ4 .neon-button:hover .cirbox,
-.neonQ4 .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.neonQ4 .neon-button:hover p,
-.neonQ4 .neon-button:hover h3,
-.neonQ4 .neon-button:hover h4,
-.neonQ4 .neon-button:hover a,
-.neonQ4 .neon-button:hover span,
-.neonQ4 .neon-button:focus p,
-.neonQ4 .neon-button:focus h3,
-.neonQ4 .neon-button:focus h4,
-.neonQ4 .neon-button:focus a,
-.neonQ4 .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.neonQ4 .neon-button:hover::after,
-.neonQ4 .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .neonQ4 .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ4 .neon-button:hover p,
+  .night .neonQ4 .neon-button:hover h3,
+  .night .neonQ4 .neon-button:hover h4,
+  .night .neonQ4 .neon-button:hover a,
+  .night .neonQ4 .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ4 .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .neonQ4 .neon-button:focus p,
+  .night .neonQ4 .neon-button:focus h3,
+  .night .neonQ4 .neon-button:focus h4,
+  .night .neonQ4 .neon-button:focus a,
+  .night .neonQ4 .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .neonQ4 .neon-button:hover,
+  .neonQ4 .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .neonQ4 .neon-button:hover .cirbox,
+  .neonQ4 .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .neonQ4 .neon-button:hover p,
+  .neonQ4 .neon-button:hover h3,
+  .neonQ4 .neon-button:hover h4,
+  .neonQ4 .neon-button:hover a,
+  .neonQ4 .neon-button:hover span,
+  .neonQ4 .neon-button:focus p,
+  .neonQ4 .neon-button:focus h3,
+  .neonQ4 .neon-button:focus h4,
+  .neonQ4 .neon-button:focus a,
+  .neonQ4 .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .neonQ4 .neon-button:hover::after,
+  .neonQ4 .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .night .elcshow {
@@ -10763,69 +10626,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .links .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .links .neon-button:hover p,
-.night .links .neon-button:hover h3,
-.night .links .neon-button:hover h4,
-.night .links .neon-button:hover a,
-.night .links .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .links .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .links .neon-button:focus p,
-.night .links .neon-button:focus h3,
-.night .links .neon-button:focus h4,
-.night .links .neon-button:focus a,
-.night .links .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.links .neon-button:hover,
-.links .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.links .neon-button:hover .cirbox,
-.links .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.links .neon-button:hover p,
-.links .neon-button:hover h3,
-.links .neon-button:hover h4,
-.links .neon-button:hover a,
-.links .neon-button:hover span,
-.links .neon-button:focus p,
-.links .neon-button:focus h3,
-.links .neon-button:focus h4,
-.links .neon-button:focus a,
-.links .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.links .neon-button:hover::after,
-.links .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .links .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .links .neon-button:hover p,
+  .night .links .neon-button:hover h3,
+  .night .links .neon-button:hover h4,
+  .night .links .neon-button:hover a,
+  .night .links .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .links .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .links .neon-button:focus p,
+  .night .links .neon-button:focus h3,
+  .night .links .neon-button:focus h4,
+  .night .links .neon-button:focus a,
+  .night .links .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .links .neon-button:hover,
+  .links .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .links .neon-button:hover .cirbox,
+  .links .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .links .neon-button:hover p,
+  .links .neon-button:hover h3,
+  .links .neon-button:hover h4,
+  .links .neon-button:hover a,
+  .links .neon-button:hover span,
+  .links .neon-button:focus p,
+  .links .neon-button:focus h3,
+  .links .neon-button:focus h4,
+  .links .neon-button:focus a,
+  .links .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .links .neon-button:hover::after,
+  .links .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 #CUS {
@@ -11091,69 +10949,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .links-sm .wtsup .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .links-sm .wtsup .neon-button:hover p,
-.night .links-sm .wtsup .neon-button:hover h3,
-.night .links-sm .wtsup .neon-button:hover h4,
-.night .links-sm .wtsup .neon-button:hover a,
-.night .links-sm .wtsup .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .links-sm .wtsup .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .links-sm .wtsup .neon-button:focus p,
-.night .links-sm .wtsup .neon-button:focus h3,
-.night .links-sm .wtsup .neon-button:focus h4,
-.night .links-sm .wtsup .neon-button:focus a,
-.night .links-sm .wtsup .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.links-sm .wtsup .neon-button:hover,
-.links-sm .wtsup .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.links-sm .wtsup .neon-button:hover .cirbox,
-.links-sm .wtsup .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.links-sm .wtsup .neon-button:hover p,
-.links-sm .wtsup .neon-button:hover h3,
-.links-sm .wtsup .neon-button:hover h4,
-.links-sm .wtsup .neon-button:hover a,
-.links-sm .wtsup .neon-button:hover span,
-.links-sm .wtsup .neon-button:focus p,
-.links-sm .wtsup .neon-button:focus h3,
-.links-sm .wtsup .neon-button:focus h4,
-.links-sm .wtsup .neon-button:focus a,
-.links-sm .wtsup .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.links-sm .wtsup .neon-button:hover::after,
-.links-sm .wtsup .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .links-sm .wtsup .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .wtsup .neon-button:hover p,
+  .night .links-sm .wtsup .neon-button:hover h3,
+  .night .links-sm .wtsup .neon-button:hover h4,
+  .night .links-sm .wtsup .neon-button:hover a,
+  .night .links-sm .wtsup .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .wtsup .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .wtsup .neon-button:focus p,
+  .night .links-sm .wtsup .neon-button:focus h3,
+  .night .links-sm .wtsup .neon-button:focus h4,
+  .night .links-sm .wtsup .neon-button:focus a,
+  .night .links-sm .wtsup .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .links-sm .wtsup .neon-button:hover,
+  .links-sm .wtsup .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .links-sm .wtsup .neon-button:hover .cirbox,
+  .links-sm .wtsup .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .links-sm .wtsup .neon-button:hover p,
+  .links-sm .wtsup .neon-button:hover h3,
+  .links-sm .wtsup .neon-button:hover h4,
+  .links-sm .wtsup .neon-button:hover a,
+  .links-sm .wtsup .neon-button:hover span,
+  .links-sm .wtsup .neon-button:focus p,
+  .links-sm .wtsup .neon-button:focus h3,
+  .links-sm .wtsup .neon-button:focus h4,
+  .links-sm .wtsup .neon-button:focus a,
+  .links-sm .wtsup .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .links-sm .wtsup .neon-button:hover::after,
+  .links-sm .wtsup .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .links-sm .bale {
@@ -11353,69 +11206,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .links-sm .bale .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .links-sm .bale .neon-button:hover p,
-.night .links-sm .bale .neon-button:hover h3,
-.night .links-sm .bale .neon-button:hover h4,
-.night .links-sm .bale .neon-button:hover a,
-.night .links-sm .bale .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .links-sm .bale .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .links-sm .bale .neon-button:focus p,
-.night .links-sm .bale .neon-button:focus h3,
-.night .links-sm .bale .neon-button:focus h4,
-.night .links-sm .bale .neon-button:focus a,
-.night .links-sm .bale .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.links-sm .bale .neon-button:hover,
-.links-sm .bale .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.links-sm .bale .neon-button:hover .cirbox,
-.links-sm .bale .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.links-sm .bale .neon-button:hover p,
-.links-sm .bale .neon-button:hover h3,
-.links-sm .bale .neon-button:hover h4,
-.links-sm .bale .neon-button:hover a,
-.links-sm .bale .neon-button:hover span,
-.links-sm .bale .neon-button:focus p,
-.links-sm .bale .neon-button:focus h3,
-.links-sm .bale .neon-button:focus h4,
-.links-sm .bale .neon-button:focus a,
-.links-sm .bale .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.links-sm .bale .neon-button:hover::after,
-.links-sm .bale .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .links-sm .bale .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .bale .neon-button:hover p,
+  .night .links-sm .bale .neon-button:hover h3,
+  .night .links-sm .bale .neon-button:hover h4,
+  .night .links-sm .bale .neon-button:hover a,
+  .night .links-sm .bale .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .bale .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .bale .neon-button:focus p,
+  .night .links-sm .bale .neon-button:focus h3,
+  .night .links-sm .bale .neon-button:focus h4,
+  .night .links-sm .bale .neon-button:focus a,
+  .night .links-sm .bale .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .links-sm .bale .neon-button:hover,
+  .links-sm .bale .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .links-sm .bale .neon-button:hover .cirbox,
+  .links-sm .bale .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .links-sm .bale .neon-button:hover p,
+  .links-sm .bale .neon-button:hover h3,
+  .links-sm .bale .neon-button:hover h4,
+  .links-sm .bale .neon-button:hover a,
+  .links-sm .bale .neon-button:hover span,
+  .links-sm .bale .neon-button:focus p,
+  .links-sm .bale .neon-button:focus h3,
+  .links-sm .bale .neon-button:focus h4,
+  .links-sm .bale .neon-button:focus a,
+  .links-sm .bale .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .links-sm .bale .neon-button:hover::after,
+  .links-sm .bale .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .links-sm .insta {
@@ -11614,69 +11462,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .links-sm .insta .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .links-sm .insta .neon-button:hover p,
-.night .links-sm .insta .neon-button:hover h3,
-.night .links-sm .insta .neon-button:hover h4,
-.night .links-sm .insta .neon-button:hover a,
-.night .links-sm .insta .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .links-sm .insta .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .links-sm .insta .neon-button:focus p,
-.night .links-sm .insta .neon-button:focus h3,
-.night .links-sm .insta .neon-button:focus h4,
-.night .links-sm .insta .neon-button:focus a,
-.night .links-sm .insta .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.links-sm .insta .neon-button:hover,
-.links-sm .insta .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.links-sm .insta .neon-button:hover .cirbox,
-.links-sm .insta .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.links-sm .insta .neon-button:hover p,
-.links-sm .insta .neon-button:hover h3,
-.links-sm .insta .neon-button:hover h4,
-.links-sm .insta .neon-button:hover a,
-.links-sm .insta .neon-button:hover span,
-.links-sm .insta .neon-button:focus p,
-.links-sm .insta .neon-button:focus h3,
-.links-sm .insta .neon-button:focus h4,
-.links-sm .insta .neon-button:focus a,
-.links-sm .insta .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.links-sm .insta .neon-button:hover::after,
-.links-sm .insta .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .links-sm .insta .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .insta .neon-button:hover p,
+  .night .links-sm .insta .neon-button:hover h3,
+  .night .links-sm .insta .neon-button:hover h4,
+  .night .links-sm .insta .neon-button:hover a,
+  .night .links-sm .insta .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .insta .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .links-sm .insta .neon-button:focus p,
+  .night .links-sm .insta .neon-button:focus h3,
+  .night .links-sm .insta .neon-button:focus h4,
+  .night .links-sm .insta .neon-button:focus a,
+  .night .links-sm .insta .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .links-sm .insta .neon-button:hover,
+  .links-sm .insta .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .links-sm .insta .neon-button:hover .cirbox,
+  .links-sm .insta .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .links-sm .insta .neon-button:hover p,
+  .links-sm .insta .neon-button:hover h3,
+  .links-sm .insta .neon-button:hover h4,
+  .links-sm .insta .neon-button:hover a,
+  .links-sm .insta .neon-button:hover span,
+  .links-sm .insta .neon-button:focus p,
+  .links-sm .insta .neon-button:focus h3,
+  .links-sm .insta .neon-button:focus h4,
+  .links-sm .insta .neon-button:focus a,
+  .links-sm .insta .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .links-sm .insta .neon-button:hover::after,
+  .links-sm .insta .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -11861,6 +11704,9 @@ body ul {
     transition: transform 1.5s ease-in-out, opacity 1.5s linear;
     transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
   }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
   .night .links-sm .bale .neon-button:hover {
     color: var(--clr-bg-dark);
   }
@@ -11918,6 +11764,9 @@ body ul {
     transition: opacity 1s ease-in-out;
     opacity: 1;
   }
+}
+
+@media (min-width: 768px) {
   .links-sm .insta {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
@@ -12094,6 +11943,9 @@ body ul {
     transition: transform 1.5s ease-in-out, opacity 1.5s linear;
     transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
   }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
   .night .links-sm .insta .neon-button:hover {
     color: var(--clr-bg-dark);
   }
@@ -12362,69 +12214,64 @@ body ul {
   transition: transform 1.5s ease-in-out, opacity 1.5s linear, -webkit-transform 1.5s ease-in-out;
 }
 
-.night .address .neon-button:hover {
-  color: var(--clr-bg-dark);
-}
-
-.night .address .neon-button:hover p,
-.night .address .neon-button:hover h3,
-.night .address .neon-button:hover h4,
-.night .address .neon-button:hover a,
-.night .address .neon-button:hover span {
-  color: var(--clr-bg-dark);
-}
-
-.night .address .neon-button:focus {
-  color: var(--clr-bg-dark);
-}
-
-.night .address .neon-button:focus p,
-.night .address .neon-button:focus h3,
-.night .address .neon-button:focus h4,
-.night .address .neon-button:focus a,
-.night .address .neon-button:focus span {
-  color: var(--clr-bg-dark);
-}
-
-.address .neon-button:hover,
-.address .neon-button:focus {
-  color: var(--clr-bg-light);
-  text-shadow: none;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
-.address .neon-button:hover .cirbox,
-.address .neon-button:focus .cirbox {
-  will-change: opacity;
-  will-change: transform;
-  -webkit-transition: font-size 1s ease-in-out;
-  transition: font-size 1s ease-in-out;
-  font-size: 16px;
-}
-
-.address .neon-button:hover p,
-.address .neon-button:hover h3,
-.address .neon-button:hover h4,
-.address .neon-button:hover a,
-.address .neon-button:hover span,
-.address .neon-button:focus p,
-.address .neon-button:focus h3,
-.address .neon-button:focus h4,
-.address .neon-button:focus a,
-.address .neon-button:focus span {
-  color: var(--clr-bg-light);
-}
-
-.address .neon-button:hover::after,
-.address .neon-button:focus::after {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .night .address .neon-button:hover {
+    color: var(--clr-bg-dark);
+  }
+  .night .address .neon-button:hover p,
+  .night .address .neon-button:hover h3,
+  .night .address .neon-button:hover h4,
+  .night .address .neon-button:hover a,
+  .night .address .neon-button:hover span {
+    color: var(--clr-bg-dark);
+  }
+  .night .address .neon-button:focus {
+    color: var(--clr-bg-dark);
+  }
+  .night .address .neon-button:focus p,
+  .night .address .neon-button:focus h3,
+  .night .address .neon-button:focus h4,
+  .night .address .neon-button:focus a,
+  .night .address .neon-button:focus span {
+    color: var(--clr-bg-dark);
+  }
+  .address .neon-button:hover,
+  .address .neon-button:focus {
+    color: var(--clr-bg-light);
+    text-shadow: none;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .address .neon-button:hover .cirbox,
+  .address .neon-button:focus .cirbox {
+    will-change: opacity;
+    will-change: transform;
+    -webkit-transition: font-size 1s ease-in-out;
+    transition: font-size 1s ease-in-out;
+    font-size: 16px;
+  }
+  .address .neon-button:hover p,
+  .address .neon-button:hover h3,
+  .address .neon-button:hover h4,
+  .address .neon-button:hover a,
+  .address .neon-button:hover span,
+  .address .neon-button:focus p,
+  .address .neon-button:focus h3,
+  .address .neon-button:focus h4,
+  .address .neon-button:focus a,
+  .address .neon-button:focus span {
+    color: var(--clr-bg-light);
+  }
+  .address .neon-button:hover::after,
+  .address .neon-button:focus::after {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+  }
 }
 
 .esra,
