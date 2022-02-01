@@ -124,6 +124,9 @@ document.querySelector(".onvan").addEventListener("click", function () {
 document.querySelector(".godl").addEventListener("click", function () {
     toElement(pages[3])
 });
+document.querySelector(".part2").addEventListener("click", function () {
+    toElement(pages[3])
+});
 
 for (let i = 0; i < menuicons.length; i++) {
     menuicons[i].addEventListener("click", function () {
